@@ -1,0 +1,61 @@
+# scry SQL run 2026-10-07 (gap-closing pass). All free_slack / credit_reservation, spend <= 0.0007 USD total.
+# IDs: sapinker=107225267, slatestarcodex=1526643050, clairlemon=1398479138, garymarcus=232294292, melmitchell1=367297219,
+#      danwilliamsphil=217942278, dioscuri(Henry Shevlin)=17308990, michaelshermer=34868965, mboudry=971835356
+
+Q1 Pinker tweets since 2026-10-05 (17 rows; newest 2026-10-07 16:56 UTC):
+SELECT toString(tweet_id) AS id, min(original_timestamp) AS ts, argMax(text, version) AS t, toString(argMax(quoted_tweet_id, version)) AS q, toString(argMax(in_reply_to_tweet_id, version)) AS r FROM twitter.tweets WHERE author_id = 107225267 AND tweet_id IN (SELECT tweet_id FROM twitter.tweets_by_author WHERE author_id = 107225267 AND bucket_date >= '2026-10-05') GROUP BY tweet_id ORDER BY tweet_id LIMIT 100
+
+Q2 handle resolution:
+SELECT author_handle_lc, toString(author_id) AS aid, last_seen FROM twitter.author_handles WHERE author_handle_lc IN ('garymarcus','melmitchell1','danwilliamsphil','dioscuri','michaelshermer','mboudry','conspicuouscog','sapinker','jerrykaplan','clairlemon') LIMIT 30
+
+Q3 hydrate Pinker podcast tweets:
+SELECT toString(tweet_id) AS id, author_handle, original_timestamp, text, text_is_complete, toString(quoted_tweet_id) AS q FROM twitter.tweets_latest WHERE tweet_id IN (2107818667597758960, 2107871791842509267, 2107871819848200210) LIMIT 10
+
+Q4 Dan Williams since 2026-10-05 (25 rows): same author pattern as Q1 with author_id = 217942278.
+Q5 Scott since 2026-10-06 (13 rows): same pattern, author_id = 1526643050, plus max(like_count).
+
+Q6 Mitchell / Marcus / Lehmann / Shevlin since 2026-10-06, topical (21 rows):
+SELECT author_id, toString(tweet_id) AS id, min(original_timestamp) AS ts, argMax(text, version) AS t, toString(argMax(in_reply_to_tweet_id, version)) AS r, toString(argMax(quoted_tweet_id, version)) AS q FROM twitter.tweets WHERE author_id IN (367297219, 232294292, 1398479138, 17308990) AND tweet_id IN (SELECT tweet_id FROM twitter.tweets_by_author WHERE author_id IN (367297219, 232294292, 1398479138, 17308990) AND bucket_date >= '2026-10-06') AND (hasAnyTokens(search_text_lc, ['pinker','sapinker','scott','alexander','slatestarcodex','doom','doomer','doomers','letter','penance','insulted','insult','x-risk','extinction','superintelligence','agi','instrumental']) ) GROUP BY author_id, tweet_id ORDER BY author_id, tweet_id LIMIT 200
+
+Q7 Substack posts mentioning Pinker since 2026-10-05 (25 rows; found Conspicuous Cognition episode):
+SELECT publication_host, post_id, canonical_url, title, original_author, original_timestamp, post_type, text_quality_state, length(content_text) AS len FROM substack.posts WHERE original_timestamp >= '2026-10-05' AND hasToken(search_text_lc, 'pinker') LIMIT 50
+
+Q8 "laughed out of" near AI/doom on X, 2026-08-15..09-21 (25 rows; only Pinker-related hit is Scott's own 09-20 tweet):
+SELECT toString(tweet_id) AS id, author_handle, original_timestamp, text FROM twitter.tweets WHERE bucket_date >= '2026-08-15' AND bucket_date <= '2026-09-21' AND hasAllTokens(search_text_lc, ['laughed','room']) AND positionCaseInsensitive(text, 'laughed out of') > 0 AND hasAnyTokens(search_text_lc, ['ai','agi','doomer','doomers','pinker','superintelligence','extinction','yudkowsky','rationalists','x-risk','doom','existential']) LIMIT 1 BY tweet_id LIMIT 100
+
+Q9 Pinker all-time vocabulary (34 rows; none apply "paranoid"/"laughed" to AI-risk people):
+SELECT toString(tweet_id) AS id, min(original_timestamp) AS ts, argMax(text, version) AS t, toString(argMax(quoted_tweet_id, version)) AS q FROM twitter.tweets WHERE author_id = 107225267 AND tweet_id IN (SELECT tweet_id FROM twitter.tweets_by_author WHERE author_id = 107225267) AND (hasAnyTokens(search_text_lc, ['paranoid','paranoia','laughed','laughable','laughing','laughingstock','ridicule','ridiculed','ridiculous','alarmist','alarmists','alarmism','hysterical','crackpots','crackpot','kooky','kooks']) OR positionCaseInsensitive(text, 'out of the room') > 0) GROUP BY tweet_id ORDER BY tweet_id LIMIT 200
+
+Q10 YouTube titles with Pinker + AI terms (67 rows, 1.73B rows scanned):
+SELECT video_id, argMax(title, observed_hour) AS title, argMax(channel_name, observed_hour) AS ch, argMax(published_label, observed_hour) AS pub FROM youtube.videos_live WHERE observed_on >= '2026-08-13' AND positionCaseInsensitive(title, 'pinker') > 0 AND (positionCaseInsensitive(title, ' AI') > 0 OR positionCaseInsensitive(title, 'artificial') > 0 OR positionCaseInsensitive(title, 'doom') > 0 OR positionCaseInsensitive(title, 'superintelligence') > 0 OR positionCaseInsensitive(title, 'AGI') > 0 OR positionCaseInsensitive(title, 'machine') > 0) GROUP BY video_id LIMIT 100
+
+Q11 keyword windows in 16 Pinker-AI video transcripts (14 had transcripts):
+SELECT video_id, lang, is_auto_caption, word_count, arrayStringConcat(extractAll(lower(replaceAll(payload, '\n', ' ')), '.{0,200}(?:paranoi|laughed|laugh at|laughing at|out of the room|cult|bridges that|building bridges|civil engineering).{0,200}'), ' ||| ') AS hits FROM youtube.transcripts WHERE video_id IN ('-q_4yVLlOOM','3Ho-vJZsMgk','91TRVubKcEM','AEkuMTWZR1M','DhWvNnQ_iYU','OYx_kfgcfro','P0dkVt7jIfc','QclK9sOpUno','RP_0MpESQy0','YMNVLr7K73M','epQxfSp-rdU','gh2dgsaNY3A','unjWI-SyG-8','zT-eooF0F0w','-tIq6kbrF-4','nrCjVhp4wuo') ORDER BY word_count DESC LIMIT 1 BY video_id, lang LIMIT 50
+Q11b same for ('eWC47agaKpk','JLJ7UL5CzvY') -> 0 rows (not covered); eWC47agaKpk fetched with yt-dlp instead.
+
+Q12 Shermer + Boudry tweets since 2026-09-01 on AI/doom (61 rows; no paranoid/laughed about AI-risk people):
+SELECT author_id, toString(tweet_id) AS id, min(original_timestamp) AS ts, argMax(text, version) AS t FROM twitter.tweets WHERE author_id IN (34868965, 971835356) AND tweet_id IN (SELECT tweet_id FROM twitter.tweets_by_author WHERE author_id IN (34868965, 971835356) AND bucket_date >= '2026-09-01') AND hasAnyTokens(search_text_lc, ['ai','doom','doomer','doomers','doomsday','superintelligence','agi','yudkowsky','rationalists','extinction','pinker','alexander','paranoid','paranoia','laughed','alarmism','apocalypse']) AND NOT startsWith(text, 'RT @') GROUP BY author_id, tweet_id ORDER BY author_id, tweet_id LIMIT 150
+
+Q13 Pinker's Sept-2026 AI tweets with links (22 rows) -> t.co resolved with curl:
+SELECT toString(tweet_id) AS id, min(original_timestamp) AS ts, extractAll(argMax(text, version), 'https://t\\.co/[A-Za-z0-9]+') AS links, substring(argMax(text, version), 1, 160) AS t FROM twitter.tweets WHERE author_id = 107225267 AND tweet_id IN (SELECT tweet_id FROM twitter.tweets_by_author WHERE author_id = 107225267 AND bucket_date >= '2026-09-01') AND hasAnyTokens(search_text_lc, ['ai','doomer','doomers','doom','superintelligence','agi','yudkowsky','rationalist','rationalists','extinction','llm','llms','anthropic','openai','alignment','instrumental','alarmism','apocalypse','existential','kaplan','boudry','mboudry','mueller']) AND NOT startsWith(text, 'RT @') AND position(text, 'https://t.co/') > 0 GROUP BY tweet_id ORDER BY tweet_id LIMIT 100
+
+Q14 anyone: pinker + (laughed|laughing|laughingstock|paranoid|paranoia) + AI token, all time (6 rows):
+SELECT toString(tweet_id) AS id, author_handle, original_timestamp, substring(text, 1, 600) AS t FROM twitter.tweets WHERE hasToken(search_text_lc, 'pinker') AND hasAnyTokens(search_text_lc, ['laughed','laughing','laughingstock','paranoid','paranoia']) AND hasAnyTokens(search_text_lc, ['ai','doomer','doomers','doom','superintelligence','agi','yudkowsky','rationalists','rationalist','extinction','alexander','slatestarcodex','x-risk','alignment']) LIMIT 1 BY tweet_id LIMIT 100
+
+Q15 Lehmann/Boudry/Shermer/Marcus 2026-08-15..09-21 laugh/paranoid/ridicule/"out of the room" (4 rows, none relevant):
+SELECT author_id, toString(tweet_id) AS id, min(original_timestamp) AS ts, substring(argMax(text, version), 1, 700) AS t FROM twitter.tweets WHERE author_id IN (1398479138, 971835356, 34868965, 232294292) AND tweet_id IN (SELECT tweet_id FROM twitter.tweets_by_author WHERE author_id IN (1398479138, 971835356, 34868965, 232294292) AND bucket_date >= '2026-08-15' AND bucket_date <= '2026-09-21') AND (hasAnyTokens(search_text_lc, ['laughed','laughing','laughable','laughingstock','paranoid','paranoia','ridicule','ridiculed']) OR positionCaseInsensitive(text, 'out of the room') > 0) GROUP BY author_id, tweet_id ORDER BY tweet_id LIMIT 100
+
+Q16 Substack follow-ups since 2026-10-06 (9 rows; no new ACX/Mitchell/Marcus post on Pinker):
+SELECT publication_host, canonical_url, title, original_author, original_timestamp, comment_count FROM substack.posts WHERE original_timestamp >= '2026-10-06' AND (publication_host IN ('www.astralcodexten.com','garymarcus.substack.com','aiguide.substack.com','www.conspicuouscognition.com','maartenboudry.substack.com','thezvi.substack.com','thezvi.wordpress.com','www.normaltech.ai') OR (hasToken(search_text_lc, 'pinker') AND hasAnyTokens(search_text_lc, ['alexander','doomer','doomers','doom','superintelligence']))) ORDER BY original_timestamp LIMIT 60
+
+Q17 ACX comments by Pinker/Mitchell/Lehmann/Marcus (2 rows, both "MarcusOfCitium", irrelevant) and comment count (764, 2026-10-06 21:29 .. 10-07 17:41):
+SELECT original_author, handle, original_timestamp, reaction_count, substring(content_text, 1, 300) AS t FROM substack.comments WHERE publication_host = 'www.astralcodexten.com' AND post_id = 218568314 AND (positionCaseInsensitive(original_author, 'pinker') > 0 OR positionCaseInsensitive(original_author, 'mitchell') > 0 OR positionCaseInsensitive(original_author, 'lehmann') > 0 OR positionCaseInsensitive(original_author, 'marcus') > 0) LIMIT 20
+SELECT count() AS n, min(original_timestamp) AS first, max(original_timestamp) AS last FROM substack.comments WHERE publication_host = 'www.astralcodexten.com' AND post_id = 218568314 LIMIT 1
+
+Q18 Pollyanna/Cassandra in Pinker's tweets (32 rows; one project tweet, 2024-07-02):
+SELECT toString(tweet_id) AS id, min(original_timestamp) AS ts, argMax(text, version) AS t FROM twitter.tweets WHERE author_id = 107225267 AND tweet_id IN (SELECT tweet_id FROM twitter.tweets_by_author WHERE author_id = 107225267) AND (hasAnyTokens(search_text_lc, ['pollyanna','cassandra','schoenmakers','nemirow','fatalism','fatalistic','koen']) ) GROUP BY tweet_id ORDER BY tweet_id LIMIT 60
+
+Q19 anyone, 2023+: schoenmakers/schoemakers or pollyanna+cassandra (first version too noisy: Dutch "schoenmakers"=shoemakers); tightened (3 rows; only Pinker's 2024 tweet relevant):
+SELECT toString(tweet_id) AS id, author_handle, original_timestamp, substring(text, 1, 500) AS t FROM twitter.tweets WHERE bucket_date >= '2022-01-01' AND ((hasToken(search_text_lc, 'koen') AND hasAnyTokens(search_text_lc, ['schoenmakers','schoemakers'])) OR (hasAllTokens(search_text_lc, ['pollyanna','cassandra']) AND hasAnyTokens(search_text_lc, ['pinker','sapinker','nemirow','fatalism','doomer']))) LIMIT 1 BY tweet_id LIMIT 60
+
+twitter_search (live tier "temporarily unavailable"; archive only): "from:sapinker since:2026-10-06", "from:sapinker (Scott OR Alexander OR slatestarcodex)", "from:MelMitchell1 since:2026-10-06".
