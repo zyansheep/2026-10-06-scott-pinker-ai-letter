@@ -144,3 +144,24 @@ Asked to submit missing pages. I looked up each open cited URL in the CDX API (m
 - **Submitted, unconfirmed:** scott, manifold, metr, rand_pdf, restart, ruanhtml, tetlockdoi, tetlock_pdf, yudkowsky, zvi187, zvi188. The status endpoint stopped responding, so these are queued at archive.org but not verified.
 - **No job ID returned:** arxiv.org/abs/2609.16247 (twice). The ai-torture-chamber repo got a job on its second try (unconfirmed).
 - **Blocked:** NYT ×2 were captured as 403 block pages, and The Australian refused the crawler. The report links archive.today copies instead (see above).
+
+## Red-team review queries (2026-10-07, scry, free_slack)
+Report not edited; these support a reviewer pass.
+1. Hydrate Pinker/Sebo/Boudry/trace/Lehmann tweets cited in the report:
+```sql
+SELECT toString(tweet_id) AS id, original_timestamp, text, like_count, view_count, text_is_complete FROM twitter.tweets_latest WHERE tweet_id IN (2104555373101256891, 2104555379933798816, 2104561752847306801, 2096236079477096630, 2096236083713327125, 2104221154726572385, 2104222160042553696, 2104628024628928988, 2081377486009463170, 2107605101041127659, 2104031443689361457, 2104220627594772969) LIMIT 30
+```
+→ Suleyman tweet defines "model welfare" as "training AI to reason and act as if it were an entity with sentience … alarmingly implied by Anthropic's "Constitution""; the 09-27 clip ends "unless they're programmed to emulate a human down to the last twitch, they would actually have no incentive to continue their existence"; Boudry's "Pinker is right here" quotes the nuclear-1960s passage.
+2. Reactions since 2026-10-06 mentioning Pinker, by likes:
+```sql
+SELECT toString(tweet_id) AS id, argMax(author_handle, (length(author_handle) > 0, version)) AS h, min(original_timestamp) AS ts, argMax(text, version) AS t, max(like_count) AS likes, max(view_count) AS views FROM twitter.tweets WHERE bucket_date >= '2026-10-06' AND hasToken(search_text_lc, 'pinker') AND NOT startsWith(text, 'RT @') GROUP BY tweet_id ORDER BY likes DESC LIMIT 60
+```
+3. Named commentators (Haider, Hanania, trace, Zvi, Bensinger, ciphergoth) since 2026-10-06:
+```sql
+SELECT toString(tweet_id) AS id, argMax(author_handle, (length(author_handle) > 0, version)) AS h, min(original_timestamp) AS ts, argMax(text, version) AS t, max(like_count) AS likes, max(view_count) AS views, max(reply_count) AS replies FROM twitter.tweets WHERE bucket_date >= '2026-10-06' AND (lower(author_handle) IN ('sarahthehaider','richardhanania','tracewoodgrains','thezvi','robbensinger','ciphergoth')) AND NOT startsWith(text, 'RT @') AND hasAnyTokens(search_text_lc, ['pinker','scott','alexander','duel','dishonorable','debate']) GROUP BY tweet_id ORDER BY ts ASC LIMIT 40
+```
+4. Sarah Haider timeline since 2026-10-06 (found 2107613722789155206, quoting the "watch you squirm" paragraph):
+```sql
+SELECT toString(tweet_id) AS id, min(original_timestamp) AS ts, argMax(text, version) AS t, max(like_count) AS likes, max(view_count) AS views, max(reply_count) AS replies, max(quote_count) AS quotes FROM twitter.tweets WHERE bucket_date >= '2026-10-06' AND lower(author_handle) = 'sarahthehaider' AND NOT startsWith(text, 'RT @') GROUP BY tweet_id ORDER BY ts ASC LIMIT 30
+```
+Also: Google Books SearchWithinVolume2 on hf9MDwAAQBAJ (Enlightenment Now): "superforecasters" → pp. 368–71 (ch. 21 "Reason", pp. 351–84); "missile gap" → p. 291; "Rabinowitch" → p. 311.

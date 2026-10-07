@@ -71,13 +71,13 @@
 - **Status**: `[read-full (syndicated copy)]`
 - **Relevance**: **MODERATE**. No 'insouciant'; targets oligarchs, not researchers
 
-### 9. (unknown) 2026 — 'Things Will Never Be Chill Again': The Doomers Who Shaped the AI Safety Freakout
+### 9. Jin et al. 2026 — 'Things Will Never Be Chill Again': The Doomers Who Shaped the AI Safety Freakout
 - **Title**: 'Things Will Never Be Chill Again': The Doomers Who Shaped the AI Safety Freakout
-- **Authors**: (unknown)
+- **Authors**: Berber Jin, Keach Hagey
 - **Journal**: Wall Street Journal
 - **Year**: 2026
 - **Found via**: Pinker tweet 2026-09-28
-- **Status**: `[read-partial (excerpt)]`
+- **Status**: `[read-full]`
 - **Relevance**: **LOW**. WSJ 'digging' Pinker cites in the cult tweet
 
 ### 10. Boudry 2026 — Why HAL 9000 Feared Death (and Real AIs Don't); What Does AI Want?
@@ -368,6 +368,81 @@
 - **Found via**: post
 - **Status**: `[read-partial]`
 - **Relevance**: **LOW**. 'under 10 percent'
+
+### 44. Williams et al. 2026 — Steven Pinker on AI doom and consciousness (Conspicuous Cognition interview)
+- **Title**: Steven Pinker on AI doom and consciousness (Conspicuous Cognition interview)
+- **Authors**: Dan Williams, Henry Shevlin, Steven Pinker
+- **Year**: 2026
+- **Found via**: gap-closer (Pinker tweet 2026-10-07)
+- **Status**: `[read-full]`
+- **Relevance**: **HIGH**. Pinker's latest statement: 'kind of is a cult'; concessions on connectionism; what would change his mind
+
+### 45. Pinker et al. 2020 — Steven Pinker and Stuart Russell on the Foundations, Benefits, and Possible Existential Risk of AI (FLI podcast)
+- **Title**: Steven Pinker and Stuart Russell on the Foundations, Benefits, and Possible Existential Risk of AI (FLI podcast)
+- **Authors**: Steven Pinker, Stuart Russell, Lucas Perry
+- **Year**: 2020
+- **Found via**: gap-closer
+- **Status**: `[read-partial]`
+- **Relevance**: **HIGH**. Russell rejects Pinker's use of the bridges line
+
+### 46. Bohannon 2015 — Fears of an AI pioneer
+- **Title**: Fears of an AI pioneer
+- **Authors**: John Bohannon
+- **Journal**: Science
+- **Year**: 2015
+- **DOI**: 10.1126/science.349.6245.252
+- **Found via**: gap-closer
+- **Status**: `[read-partial]`
+- **Relevance**: **MODERATE**. Source of the Russell 'building bridges' quote Pinker uses
+
+### 47. Russell 2019 — Human Compatible (p. 158)
+- **Title**: Human Compatible (p. 158)
+- **Authors**: Stuart Russell
+- **Year**: 2019
+- **Found via**: gap-closer (Google Books search-within)
+- **Status**: `[read-partial (snippet)]`
+- **Relevance**: **MODERATE**. 'Pinker's argument entirely misses the point'
+
+### 48. Yudkowsky 2023 — Pausing AI Developments Isn't Enough. We Need to Shut it All Down
+- **Title**: Pausing AI Developments Isn't Enough. We Need to Shut it All Down
+- **Authors**: Eliezer Yudkowsky
+- **Journal**: TIME
+- **Year**: 2023
+- **Found via**: red-team reviewer
+- **Status**: `[read-partial]`
+- **Relevance**: **MODERATE**. Checks Pinker's data-centre-bombing paraphrase
+
+### 49. Anthropic 2025 — Agentic Misalignment: How LLMs could be insider threats
+- **Title**: Agentic Misalignment: How LLMs could be insider threats
+- **Authors**: Anthropic
+- **Year**: 2025
+- **Found via**: red-team reviewer
+- **Status**: `[read-partial]`
+- **Relevance**: **MODERATE**. Simulated self-preservation (blackmail) results; no real-world instances known
+
+### 50. Long et al. 2024 — Taking AI Welfare Seriously
+- **Title**: Taking AI Welfare Seriously
+- **Authors**: Robert Long, Jeff Sebo, et al.
+- **Year**: 2024
+- **Found via**: red-team reviewer
+- **Status**: `[scouted-only]`
+- **Relevance**: **LOW**. Context for Sebo's critique of Pinker
+
+### 51. various 2026 — Pinker's expert list: Ng, Agüera y Arcas, Kaplan, Narayanan & Kapoor (positions and backgrounds)
+- **Title**: Pinker's expert list: Ng, Agüera y Arcas, Kaplan, Narayanan & Kapoor (positions and backgrounds)
+- **Authors**: various
+- **Year**: 2026
+- **Found via**: validator
+- **Status**: `[read-partial]`
+- **Relevance**: **MODERATE**. Ng (The Batch), Agüera y Arcas (Noema), Kaplan (Persuasion, Wikipedia), Narayanan & Kapoor (Knight Columbia): all x-risk skeptics; Ng and Agüera y Arcas are deep-learning insiders
+
+### 52. various 2026 — Claude's enzyme discovery: expert reactions (secondary)
+- **Title**: Claude's enzyme discovery: expert reactions (secondary)
+- **Authors**: various
+- **Year**: 2026
+- **Found via**: validator
+- **Status**: `[read-partial ([2nd] relays of Wired/Bloomberg)]`
+- **Relevance**: **MODERATE**. 'not a breakthrough'; 'the novel thing is how they found it'
 
 ## Sources Not Yet Found / Gaps
 

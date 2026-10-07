@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <script>
+        const subscriberUser = !!document.cookie.split('; ').find(row => row.startsWith('wordpress_subscriber_user='));
+
+        const userDetails = subscriberUser ? JSON.parse(window.localStorage.getItem('userDetails')) : null;
+        const darkModeEnabled = userDetails ? userDetails?.userPreferences?.darkMode === true : false;
+        const stickyHeaderEnabled = userDetails ? userDetails?.userPreferences?.stickyHeader === true : false;
+
+        // Helper function to read cookies
+        function getCookie(name) {
+            var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+            return v ? v[2] : null;
+        }
+
+        // Check for the 'wordpress_premium_member' cookie
+        const hasPremiumCookie = getCookie('wordpress_premium_member') === '1';
+        const hasPremiumRoleInLS = userDetails
+            && userDetails.userRoles
+            && Array.isArray(userDetails.userRoles)
+            && userDetails.userRoles.includes('premium_member');
+        const isPremium = hasPremiumCookie || hasPremiumRoleInLS;
+
+        if (darkModeEnabled) {
+            document.documentElement.classList.add('dark');
+        }
+
+        if (isPremium) {
+            document.documentElement.classList.add('premium');
+        }
+    </script>
+
+            <!-- START email detection/removal script -->
+        <script>
+            !function(){"use strict";const t={adt_ei:{identityApiKey:"plainText",source:"url",type:"plaintext",priority:1},adt_eih:{identityApiKey:"sha256",source:"urlh",type:"hashed",priority:2},sh_kit:{identityApiKey:"sha256",source:"urlhck",type:"hashed",priority:3}},e=Object.keys(t);function i(t){return function(t){const e=t.match(/((?=([a-z0-9._!#$%+^&*()[\]<>-]+))\2@[a-z0-9._-]+\.[a-z0-9._-]+)/gi);return e?e[0]:""}(function(t){return t.replace(/\s/g,"")}(t.toLowerCase()))}!async function(){const n=new URL(window.location.href),o=n.searchParams;let a=null;const r=Object.entries(t).sort(([,t],[,e])=>t.priority-e.priority).map(([t])=>t);for(const e of r){const n=o.get(e),r=t[e];if(!n||!r)continue;const c=decodeURIComponent(n),d="plaintext"===r.type&&i(c),s="hashed"===r.type&&c;if(d||s){a={value:c,config:r};break}}if(a){const{value:t,config:e}=a;window.adthrive=window.adthrive||{},window.adthrive.cmd=window.adthrive.cmd||[],window.adthrive.cmd.push(function(){window.adthrive.identityApi({source:e.source,[e.identityApiKey]:t},({success:i,data:n})=>{i?window.adthrive.log("info","Plugin","detectEmails",`Identity API called with ${e.type} email: ${t}`,n):window.adthrive.log("warning","Plugin","detectEmails",`Failed to call Identity API with ${e.type} email: ${t}`,n)})})}!function(t,e){const i=new URL(e);t.forEach(t=>i.searchParams.delete(t)),history.replaceState(null,"",i.toString())}(e,n)}()}();
+        </script>
+        <!-- END email detection/removal script -->
+                    <!-- Raptive Head Tag Manual -->
+        <script data-no-optimize="1" data-cfasync="false">
+            (function(w, d) {
+
+                if (isPremium) {
+                    return;
+                }
+
+                w.adthrive = w.adthrive || {};
+                w.adthrive.cmd = w.adthrive.cmd || [];
+                w.adthrive.plugin = 'adthrive-ads-manual';
+                w.adthrive.host = 'ads.adthrive.com';
+                var s = d.createElement('script');
+                s.async = true;
+                s.referrerpolicy = 'no-referrer-when-downgrade';
+                s.src = 'https://' + w.adthrive.host + '/sites/69caa2a59c365653ba27aeb9/ads.min.js?referrer=' + w.encodeURIComponent(w.location.href) + '&cb=' + (Math.floor(Math.random() * 100) + 1);
+                var n = d.getElementsByTagName('script')[0];
+                n.parentNode.insertBefore(s, n);
+            })(window, document);
+        </script>
+        <!-- End of Raptive Head Tag -->
+                    <!-- Dianomi Context Feed -->
+        <script type="text/javascript" id="dianomi_context_script" src="https://www.dianomi.com/js/contextfeed.js"></script>
+        <!-- End Dianomi Context Feed -->
+        
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MGRKVFC2');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts pre-connect
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.salon.com/app/themes/salon/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.salon.com/app/themes/salon/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.salon.com/app/themes/salon/assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="https://www.salon.com/app/themes/salon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta property="fb:pages" content="120680396518" />
+    <meta property="fb:app_id" content="134091381200152" />
+    <meta name="p:domain_verify" content="afd252c603232fed8ddf2554b144079b"/>
+
+    <link rel="preload" href="https://www.salon.com/app/themes/salon/dist/assets/icomoon.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="https://www.salon.com/app/themes/salon/dist/assets/Helvetica-Bold-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://www.salon.com/app/themes/salon/dist/assets/Helvetica-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://www.salon.com/app/themes/salon/dist/assets/Helvetica-Oblique-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://www.salon.com/app/themes/salon/dist/assets/Georgia-Bold-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://www.salon.com/app/themes/salon/dist/assets/TimesNewRoman-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v25.9 (Yoast SEO v25.9) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Steven Pinker&#039;s fake enlightenment: His book is full of misleading claims and false assertions - Salon.com</title>
+	<meta name="description" content="Harvard psychologist Pinker&#039;s bestseller &quot;Enlightenment Now&quot; is more than overly optimistic: It&#039;s deeply flawed" />
+	<link rel="canonical" href="https://www.salon.com/2019/01/26/steven-pinkers-fake-enlightenment-his-book-is-full-of-misleading-claims-and-false-assertions/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.salon.com/2019/01/26/steven-pinkers-fake-enlightenment-his-book-is-full-of-misleading-claims-and-false-assertions/?utm_source=website&amp;utm_medium=social&amp;utm_campaign=ogshare&amp;utm_content=og" />
+	<meta property="og:site_name" content="Salon.com" />
+	<meta property="article:publisher" content="120680396518" />
+	<meta property="article:published_time" content="2019-01-26T19:15:38+00:00" />
+	<meta property="article:modified_time" content="2019-01-27T14:46:55+00:00" />
+	<meta property="og:image" content="https://www.salon.com/app/uploads/2019/01/steven-pinker-rv.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="1200"/>
+	<meta property="og:image:height" content="628"/>
+	<meta name="author" content="Émile P. Torres" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://www.salon.com/app/uploads/2019/01/steven-pinker-rv.jpg" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Émile P. Torres" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="11 minutes" />
+	<meta property="article:section" content="All Salon" />
+	<meta property="article:section" content="Science &amp; Health" />
+	<meta property="article:tag" content="&quot;Enlightenment Now&quot;" />
+	<meta property="article:tag" content="academics" />
+	<meta property="article:tag" content="All Salon" />
+	<meta property="article:tag" content="Apocalypse" />
+	<meta property="article:tag" content="apocalyptic anxiety" />
+	<meta property="article:tag" content="apocalyptic thinking" />
+	<meta property="article:tag" content="authors" />
+	<meta property="article:tag" content="Books" />
+	<meta property="article:tag" content="enlightenment" />
+	<meta property="article:tag" content="existential threats" />
+	<meta property="article:tag" content="Intellectual Dark Web" />
+	<meta property="article:tag" content="nuclear fission" />
+	<meta property="article:tag" content="nuclear fusion" />
+	<meta property="article:tag" content="Nuclear Power" />
+	<meta property="article:tag" content="Philosophy" />
+	<meta property="article:tag" content="Psychology" />
+	<meta property="article:tag" content="Quillette" />
+	<meta property="article:tag" content="Science &amp; Health" />
+	<meta property="article:tag" content="Steven Pinker" />
+	<meta property="article:tag" content="The Enlightenment" />
+	<meta property="article:author" content="Émile P. Torres" />
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//a.omappapi.com' />
+<link rel='stylesheet' id='optinmonster-memberpress-css' href='https://www.salon.com/app/plugins/optinmonster/assets/dist/css/memberpress.min.css?ver=2.16.24' media='all' />
+<link rel='stylesheet' id='mp-theme-css' href='https://www.salon.com/app/plugins/memberpress/css/ui/theme.css?ver=1.12.15' media='all' />
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+
+<link rel='stylesheet' id='global-salon-css' href='https://www.salon.com/app/themes/salon/dist/assets/global.css?ver=1.0.31' media='all' />
+<link rel='stylesheet' id='article-salon-css' href='https://www.salon.com/app/themes/salon/dist/assets/article.css?ver=1.0.31' media='all' />
+<link rel='stylesheet' id='ad-salon-css' href='https://www.salon.com/app/themes/salon/dist/assets/ad.css?ver=1.0.31' media='all' />
+<script id="nelio-ab-testing-visitor-type-js" src="https://www.salon.com/app/plugins/nelio-ab-testing/assets/dist/js/visitor-type.js?ver=287e8e4cd3bcff28c95d"></script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Organization","url":"https:\/\/www.salon.com\/","sameAs":["https:\/\/www.facebook.com\/salon","https:\/\/www.instagram.com\/salonofficial","https:\/\/x.com\/salon","https:\/\/www.instagram.com\/salondotcom\/"],"logo":{"@type":"ImageObject","url":"https:\/\/www.salon.com\/app\/themes\/salon\/assets\/img\/salon-logo.svg"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Homepage","item":{"@type":"Thing","@id":"https:\/\/www.salon.com"}},{"@type":"ListItem","position":2,"name":"Science &amp; Health Articles","item":{"@type":"Thing","@id":"https:\/\/www.salon.com\/category\/science-and-health"}},{"@type":"ListItem","position":3,"name":"\u00c9mile P. Torres's Articles","item":{"@type":"Thing","@id":"https:\/\/www.salon.com\/writer\/phil_torres"}}]},{"@type":"NewsArticle","headline":"Steven Pinker's fake enlightenment: His book is full of misleading claims and false assertions","url":"https:\/\/www.salon.com\/2019\/01\/26\/steven-pinkers-fake-enlightenment-his-book-is-full-of-misleading-claims-and-false-assertions\/","thumbnailUrl":"https:\/\/www.salon.com\/app\/uploads\/2019\/01\/steven-pinker-rv-150x150.jpg","alternativeHeadline":"Harvard psychologist Pinker's bestseller \"Enlightenment Now\" is more than overly optimistic: It's deeply flawed","dateCreated":"2019-01-26T19:15:38+00:00","datePublished":"2019-01-26T19:15:38+00:00","dateModified":"2019-01-27T14:46:55+00:00","articleSection":"All Salon, Science &amp; Health","image":["https:\/\/www.salon.com\/app\/uploads\/2019\/01\/steven-pinker-rv-150x150.jpg","https:\/\/www.salon.com\/app\/uploads\/2019\/01\/steven-pinker-rv-300x202.jpg","https:\/\/www.salon.com\/app\/uploads\/2019\/01\/steven-pinker-rv.jpg","https:\/\/www.salon.com\/app\/uploads\/2019\/01\/steven-pinker-rv.jpg"],"keywords":"\"Enlightenment Now\", academics, All Salon, Apocalypse, apocalyptic anxiety, apocalyptic thinking, authors, Books, enlightenment, existential threats, Intellectual Dark Web, nuclear fission, nuclear fusion, Nuclear Power, Philosophy, Psychology, Quillette, Science &amp; Health, Steven Pinker, The Enlightenment","description":"","author":[{"@type":"Person","name":"\u00c9mile P. Torres","jobTitle":"Contributing Writer","description":"\u00c9mile P. Torres is a philosopher and historian whose work focuses on existential threats to civilization and humanity. They have published on a wide range of topics, including machine superintelligence, emerging technologies and religious eschatology, as well as the history and ethics of human extinction. Their forthcoming book is \"Human Extinction: A History of the Science and Ethics of Annihilation\" (Routledge). For more, visit their website and follow them on Twitter.\" For more, visit their <a href=\"https:\/\/www.xriskology.com\/\" target=\"_blank\">website<\/a> and follow them on <a href=\"https:\/\/twitter.com\/xriskology\" target=\"_blank\">Twitter<\/a>. ","url":"https:\/\/www.salon.com\/writer\/phil_torres","sameAs":["https:\/\/x.com\/xriskology"]}],"publisher":{"@type":"Organization","name":"Salon.com","logo":{"@type":"ImageObject","url":"https:\/\/www.salon.com\/app\/themes\/salon\/assets\/img\/salon-logo.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.salon.com\/2019\/01\/26\/steven-pinkers-fake-enlightenment-his-book-is-full-of-misleading-claims-and-false-assertions\/"}}]}</script>
+
+    <!--<script src="https://www.google.com/recaptcha/api.js?render=6LckLQkrAAAAABD30EsnOQxmtgweb-aPZojeUU3v" async defer></script>-->
+    <script>
+        let siteUrl = 'https://www.salon.com';
+        let captchaKey = '6LckLQkrAAAAABD30EsnOQxmtgweb-aPZojeUU3v';
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '134091381200152',
+                cookie     : true,
+                xfbml      : true,
+                version    : 'v21.0'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+      
+<!-- Chartbeat -->
+<script type="text/javascript">
+(function() {
+    
+    let userType = 'anon';
+
+    if (subscriberUser) {
+        
+        if (isPremium) {
+            userType = 'paid';
+        }
+        else {
+            userType = 'lgdin';
+        }
+    }
+
+    let path = window.location.pathname;
+    var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+    _sf_async_config.uid = 1614;
+    _sf_async_config.domain = 'salon.com'; //CHANGE THIS TO THE ROOT DOMAIN
+    _sf_async_config.flickerControl = false;
+    _sf_async_config.path = path;
+    _sf_async_config.sections = "Science & Health"; // CHANGE THIS TO YOUR SECTION NAME(s)
+    _sf_async_config.authors = "phil_torres"; // CHANGE THIS TO YOUR AUTHOR NAME(s)
+
+    var _cbq = window._cbq = (window._cbq || []);
+    _cbq.push(["_acct", userType]);
+
+    function loadChartbeat() {
+        var e = document.createElement('script');
+        var n = document.getElementsByTagName('script')[0];
+        e.type = 'text/javascript';
+        e.async = true;
+        e.src = '//static.chartbeat.com/js/chartbeat.js';;
+        n.parentNode.insertBefore(e, n);
+    }
+    loadChartbeat();
+})();
+</script>
+<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body class="wp-singular post-template-default single single-post postid-789572 single-format-standard wp-theme-salon">
+    <script>
+        if (stickyHeaderEnabled) {
+            document.body.setAttribute('data-fixed', 'true');
+        } else {
+            document.body.removeAttribute('data-fixed');
+        }
+    </script>
+        <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGRKVFC2"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        
+            <div class="loader-modal">
+    <div></div>
+</div>
+        <header class="main-header-container">
+            
+<section class="header__mobile">
+    <div>
+        <div class="header__mobile__logo">
+            <a href="https://www.salon.com" aria-label="To Salon Homepage">
+                <img class="-mt-2.5" src="https://www.salon.com/app/themes/salon/assets/img/mobile-logo.svg" width="136" height="40" alt="Salon logo" />
+            </a>
+        </div>
+        <div class="header__mobile__actions">
+            <a href="https://www.salon.com/premium?utm_source=header&#038;utm_medium=onsite&#038;utm_campaign=become-a-member-header-subscribe-premium" class="hide-if-premium header__subscribe-link" data-subscription-cta-region="header">
+    <button class="bg-[#ed2c1d] px-2 py-1 text-base font-bold text-white uppercase hover:bg-[#b20000]">
+    Subscribe</button>
+</a>
+            <button class="button__burger group/button__burger text-[#1e1e1e] dark:text-white text-2xl" aria-pressed="false" aria-controls="mobile-menu">
+    <i class="icon icon-burger block group-aria-pressed/button__burger:hidden" ></i>
+    <i class="icon icon-close hidden group-aria-pressed/button__burger:block" ></i>
+</button>
+        </div>
+    </div>
+    <nav
+    class="navigation__mobile"
+    aria-expanded="false"
+    id="mobile-menu"
+>
+    <div>
+        <div class="search__form w-full">
+    <form role="search" method="GET" action="https://www.salon.com/search/">
+        <div>
+                        <label for="search-form-1" class="hidden">Search</label>
+            <div class="relative">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-[#666666] dark:text-white">
+                    <i class="icon icon-search" ></i>
+                </div>
+                <input type="search" name="s" id="search-form-1" class="block w-full rounded-sm border border-[#a6a6a6] dark:border-white py-2 pr-4 pl-10 text-[#666666] dark:text-white text-base leading-4 placeholder:text-sm placeholder:text-[#666666] dark:placeholder:text-white placeholder:leading-4 outline-0 dark:bg-[#1d1d1d]" placeholder="Search" value="" />
+            </div>
+        </div>
+    </form>
+</div>
+        <div class="menu-burger-menu-container"><ul class="menu"><li class="menu-item"><a href="https://www.salon.com/category/news-and-politics">News &amp; Politics</a></li>
+<li class="menu-item"><a href="https://www.salon.com/category/culture">Culture</a></li>
+<li class="menu-item"><a href="https://www.salon.com/category/food">Food</a></li>
+<li class="menu-item"><a href="https://www.salon.com/category/science-and-health">Science &amp; Health</a></li>
+<li class="menu-item"><a href="https://www.salon.com/category/money">Money</a></li>
+<li class="menu-item"><a href="https://www.salon.com/category/life-stories">Life Stories</a></li>
+<li class="menu-item"><a href="https://www.salon.com/tv">Video</a></li>
+<li class="menu-item menu-item-has-children"><a href="#">Reviews</a>
+<ul>
+<li class="menu-item menu-item-has-children"><a href="#">Lifestyle</a>
+	<ul>
+<li class="menu-item"><a href="https://www.salon.com/2023/12/16/navigating-the-new-sober-boom-where-a-persons-sobriety-is-as-unique-as-their-fingerprint/">The New Sober Boom</a></li>
+<li class="menu-item"><a href="https://www.salon.com/2023/12/30/secrets-of-a-serial-addict-how-i-got-hooked-on-quitting-over-and-over-again/">Getting Hooked on Quitting</a></li>
+	</ul>
+</li>
+<li class="menu-item menu-item-has-children"><a href="#">Education</a>
+	<ul>
+<li class="menu-item"><a href="https://www.salon.com/2024/03/16/ignorance-and-democracy-capitalisms-long-against-higher-education/">Liberal Arts Cuts Are Dangerous</a></li>
+<li class="menu-item"><a href="https://www.salon.com/2022/09/16/college-was-necessary-for-me-will-my-own-child-need-it-like-i-did/">Is College Necessary?</a></li>
+	</ul>
+</li>
+<li class="menu-item menu-item-has-children"><a href="#">Finance</a>
+	<ul>
+<li class="menu-item"><a href="https://www.salon.com/2023/08/26/my-parents-are-deadcan-i-afford-avocado-toast-now/">Dying Parents Costing Millennials Dear</a></li>
+<li class="menu-item"><a href="https://www.salon.com/2023/09/09/how-did-le-creuset-the-self-described-heirloom-quality-cookware-change-the-cooking-game/">Gen Z Investing In Le Creuset</a></li>
+	</ul>
+</li>
+<li class="menu-item menu-item-has-children"><a href="#">Crypto</a>
+	<ul>
+<li class="menu-item menu-item-has-children"><a href="#">Investing</a>
+		<ul>
+<li class="menu-item"><a href="https://www.salon.com/2023/03/23/on-thursdays-we-wear-orange-sec-sues-lindsay-lohan-and-others-over-crypto-money-laundering-scam/">SEC vs Celebrity Crypto Promoters</a></li>
+<li class="menu-item"><a href="https://www.salon.com/2022/04/16/impulsive-psychopaths-like-crypto-dark-personality-traits-increase-bitcoin-enthusiasm_partner/">&#8216;Dark&#8217; Personalities Drawn to BTC</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+</ul></div>        <div id="userMenuContainerMobile">
+                    </div>
+        <div>
+            <div class="navigation__social">
+    <a href="https://x.com/Salon" target="_blank">
+        <i class="icon icon-twitter" ></i>
+    </a>
+    <a href="https://www.instagram.com/salonofficial" target="_blank">
+        <i class="icon icon-instagram" ></i>
+    </a>
+    <a href="https://www.youtube.com/user/SalonDotCom" target="_blank">
+        <i class="icon icon-youtube" ></i>
+    </a>
+    <a href="https://www.facebook.com/salon" target="_blank">
+        <i class="icon icon-facebook" ></i>
+    </a>
+    <a href="https://www.tiktok.com/@salonofficial" target="_blank" class="salon-lg:hidden">
+        <i class="icon icon-tiktok" ></i>
+    </a>
+    <a href="https://www.reddit.com/domain/salon.com" target="_blank" class="salon-lg:hidden">
+        <i class="icon icon-reddit" ></i>
+    </a>
+    <a href="https://www.linkedin.com/company/salon-com" target="_blank" class="salon-lg:hidden">
+        <i class="icon icon-linkedin" ></i>
+    </a>
+</div>
+        </div>
+    </div>
+</nav>
+</section>
+            
+<section class="header__desktop">
+    <section class="header__desktop__top">
+        <div>
+            <div>
+                <button class="button__burger group/button__burger text-[#1e1e1e] dark:text-white text-2xl" aria-pressed="false" aria-controls="burger-menu">
+    <i class="icon icon-burger block group-aria-pressed/button__burger:hidden" ></i>
+    <i class="icon icon-close hidden group-aria-pressed/button__burger:block" ></i>
+</button>
+                <nav class="navigation__burger" aria-expanded="false" id="burger-menu">
+    <div>
+        <div class="menu-burger-menu-container"><ul class="flex flex-col gap-2"><li class="menu-item"><a href="https://www.salon.com/category/news-and-politics">News &amp; Politics</a></li>
+<li class="menu-item"><a href="https://www.salon.com/category/culture">Culture</a></li>
+<li class="menu-item"><a href="https://www.salon.com/category/food">Food</a></li>
+<li class="menu-item"><a href="https://www.salon.com/category/science-and-health">Science &amp; Health</a></li>
+<li class="menu-item"><a href="https://www.salon.com/category/money">Money</a></li>
+<li class="menu-item"><a href="https://www.salon.com/category/life-stories">Life Stories</a></li>
+<li class="menu-item"><a href="https://www.salon.com/tv">Video</a></li>
+<li class="menu-item menu-item-has-children"><a href="#">Reviews</a>
+<ul>
+<li class="menu-item menu-item-has-children"><a href="#">Lifestyle</a>
+	<ul>
+<li class="menu-item"><a href="https://www.salon.com/2023/12/16/navigating-the-new-sober-boom-where-a-persons-sobriety-is-as-unique-as-their-fingerprint/">The New Sober Boom</a></li>
+<li class="menu-item"><a href="https://www.salon.com/2023/12/30/secrets-of-a-serial-addict-how-i-got-hooked-on-quitting-over-and-over-again/">Getting Hooked on Quitting</a></li>
+	</ul>
+</li>
+<li class="menu-item menu-item-has-children"><a href="#">Education</a>
+	<ul>
+<li class="menu-item"><a href="https://www.salon.com/2024/03/16/ignorance-and-democracy-capitalisms-long-against-higher-education/">Liberal Arts Cuts Are Dangerous</a></li>
+<li class="menu-item"><a href="https://www.salon.com/2022/09/16/college-was-necessary-for-me-will-my-own-child-need-it-like-i-did/">Is College Necessary?</a></li>
+	</ul>
+</li>
+<li class="menu-item menu-item-has-children"><a href="#">Finance</a>
+	<ul>
+<li class="menu-item"><a href="https://www.salon.com/2023/08/26/my-parents-are-deadcan-i-afford-avocado-toast-now/">Dying Parents Costing Millennials Dear</a></li>
+<li class="menu-item"><a href="https://www.salon.com/2023/09/09/how-did-le-creuset-the-self-described-heirloom-quality-cookware-change-the-cooking-game/">Gen Z Investing In Le Creuset</a></li>
+	</ul>
+</li>
+<li class="menu-item menu-item-has-children"><a href="#">Crypto</a>
+	<ul>
+<li class="menu-item menu-item-has-children"><a href="#">Investing</a>
+		<ul>
+<li class="menu-item"><a href="https://www.salon.com/2023/03/23/on-thursdays-we-wear-orange-sec-sues-lindsay-lohan-and-others-over-crypto-money-laundering-scam/">SEC vs Celebrity Crypto Promoters</a></li>
+<li class="menu-item"><a href="https://www.salon.com/2022/04/16/impulsive-psychopaths-like-crypto-dark-personality-traits-increase-bitcoin-enthusiasm_partner/">&#8216;Dark&#8217; Personalities Drawn to BTC</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+</ul></div>    </div>
+</nav>
+            </div>
+            <a href="https://www.salon.com/premium?utm_source=header&#038;utm_medium=onsite&#038;utm_campaign=become-a-member-header-subscribe-premium" class="hide-if-premium header__subscribe-link" data-subscription-cta-region="header">
+    <button class="bg-[#ed2c1d] px-2 py-1 text-base font-bold text-white uppercase hover:bg-[#b20000]">
+    Subscribe</button>
+</a>
+            <div class="subscriptionSlogan hide-if-premium">
+                Go ad-free with Premium            </div>
+                    </div>
+        <div>
+                            <a href="https://www.salon.com/newsletter?utm_source=header&#038;utm_medium=onsite&#038;utm_campaign=newsletter-signup-onsite-header" >
+    <button class="border border-[#ed2c1d] text-[#ed2c1d] px-2 py-1 text-base font-bold uppercase hover:text-[#b20000] hover:border-[#b20000]">
+    Newsletters</button>
+</a>
+                        <div class="navigation__social">
+    <a href="https://x.com/Salon" target="_blank">
+        <i class="icon icon-twitter" ></i>
+    </a>
+    <a href="https://www.instagram.com/salonofficial" target="_blank">
+        <i class="icon icon-instagram" ></i>
+    </a>
+    <a href="https://www.youtube.com/user/SalonDotCom" target="_blank">
+        <i class="icon icon-youtube" ></i>
+    </a>
+    <a href="https://www.facebook.com/salon" target="_blank">
+        <i class="icon icon-facebook" ></i>
+    </a>
+    <a href="https://www.tiktok.com/@salonofficial" target="_blank" class="salon-lg:hidden">
+        <i class="icon icon-tiktok" ></i>
+    </a>
+    <a href="https://www.reddit.com/domain/salon.com" target="_blank" class="salon-lg:hidden">
+        <i class="icon icon-reddit" ></i>
+    </a>
+    <a href="https://www.linkedin.com/company/salon-com" target="_blank" class="salon-lg:hidden">
+        <i class="icon icon-linkedin" ></i>
+    </a>
+</div>
+            <div class="dropdown__user group/dropdown__user relative text-left">
+    <div class="flex justify-center">
+        <button type="button" class="text-[#1e1e1e] dark:text-white group-hover/dropdown__user:text-[#ed2c1d]" id="dropdown-user-2" aria-haspopup="true">
+            <i class="icon icon-user text-2xl" ></i>
+        </button>
+    </div>
+    <div class="absolute right-0 z-10 pt-2 w-56 origin-top-right rounded-md bg-white dark:bg-[#1d1d1d] shadow-lg invisible transition-opacity ease-out delay-100 opacity-0 group-hover/dropdown__user:opacity-100 group-hover/dropdown__user:visible" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-user-2" tabindex="-1">
+        <div role="none" id="userMenuContainer"></div>
+    </div>
+</div>
+        </div>
+    </section>
+    <section class="header__desktop__middle">
+        
+<nav class="navigation__desktop">
+    <div>
+        <div>
+            
+                <ul class="menu"><li class="menu-item"><a href="https://www.salon.com/category/news-and-politics">News &amp; Politics</a></li><li class="menu-item"><a href="https://www.salon.com/category/culture">Culture</a></li><li class="menu-item"><a href="https://www.salon.com/category/food">Food</a></li></ul>            <div class="logo__desktop">
+                <a href="https://www.salon.com" aria-label="To Salon Homepage">
+                    <img src="https://www.salon.com/app/themes/salon/assets/img/salon-logo.svg" width="341" height="100" alt="Salon logo" />
+                </a>
+            </div>
+                <ul class="menu"><li class="menu-item"><a href="https://www.salon.com/category/science-and-health">Science &amp; Health</a></li><li class="menu-item"><a href="https://www.salon.com/category/money">Money</a></li><li class="menu-item"><a href="https://www.salon.com/tv">Video</a></li></ul>                    </div>
+    </div>
+</nav>
+    </section>
+    <section class="header__desktop__bottom">
+        <div>
+            <div class="search__form w-full">
+    <form role="search" method="GET" action="https://www.salon.com/search/">
+        <div>
+                        <label for="search-form-3" class="hidden">Search</label>
+            <div class="relative">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-[#666666] dark:text-white">
+                    <i class="icon icon-search" ></i>
+                </div>
+                <input type="search" name="s" id="search-form-3" class="block w-full rounded-sm border border-[#a6a6a6] dark:border-white py-2 pr-4 pl-10 text-[#666666] dark:text-white text-base leading-4 placeholder:text-sm placeholder:text-[#666666] dark:placeholder:text-white placeholder:leading-4 outline-0 dark:bg-[#1d1d1d]" placeholder="Search" value="" />
+            </div>
+        </div>
+    </form>
+</div>
+        </div>
+    </section>
+</section>
+        </header>
+    
+    <div class="raptive-salon-header hide-if-premium"></div>
+
+    <main class="main-container">
+
+<div class="articles">
+            <article id="post-789572" class="single-column post-789572 post type-post status-publish format-standard has-post-thumbnail hentry category-all-salon category-science-and-health tag-enlightenment-now tag-academics tag-all-salon tag-apocalypse tag-apocalyptic-anxiety tag-apocalyptic-thinking tag-authors tag-books tag-enlightenment tag-existential-threats tag-intellectual-dark-web tag-nuclear-fission tag-nuclear-fusion tag-nuclear-power tag-philosophy tag-psychology tag-quillette tag-science-and-health tag-steven-pinker tag-the-enlightenment" data-post-id="789572">
+    <!-- TODO: Add the preview message here ... -->
+    
+<section class="article__title">
+        <h1>Steven Pinker&#8217;s fake enlightenment: His book is full of misleading claims and false assertions</h1>
+    <h2>Harvard psychologist Pinker's bestseller "Enlightenment Now" is more than overly optimistic: It's deeply flawed</h2>
+    <div class="writers">
+                    <div>
+                <div class="by">
+                    <span>By</span>
+                                            <a href="https://www.salon.com/writer/phil_torres">
+                            Émile P. Torres                        </a>
+                                                            </div>
+                                    <div>
+                        Contributing Writer                    </div>
+                            </div>
+                <div class="date">
+                            <h3>
+                    <span>Published</span>
+                    <time datetime="2019-01-26T14:15:38-05:00">
+                        January 26, 2019 2:15PM (EST)                    </time>
+                </h3>
+                    </div>
+    </div>
+</section>
+    <section class="article__feature">
+    <!-- TODO: Add the featured video here... -->
+        <div class="attachment__image">
+    <div class="image ">
+        <img width="846" height="571" src="https://www.salon.com/app/uploads/2019/01/steven-pinker-rv.jpg" class=" attachment-full size-full position-center" alt="Steven Pinker (Getty/Brad Barket)" sizes="(max-width: 846px) 100vw, 846px" decoding="async" fetchpriority="high" srcset="https://www.salon.com/app/uploads/2019/01/steven-pinker-rv.jpg 846w, https://www.salon.com/app/uploads/2019/01/steven-pinker-rv-300x202.jpg 300w, https://www.salon.com/app/uploads/2019/01/steven-pinker-rv-768x518.jpg 768w" />    </div>
+            <div class="alt-text">
+            Steven Pinker (Getty/Brad Barket)        </div>
+    </div>
+</section>
+    <section class="main">
+        <div>
+            <!-- TODO: Add the functionality for the article sharing here ... -->
+            
+<section class="article__share">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.salon.com%2F2019%2F01%2F26%2Fsteven-pinkers-fake-enlightenment-his-book-is-full-of-misleading-claims-and-false-assertions%2F&#038;utm_source=facebook&#038;utm_medium=social&#038;utm_campaign=socialbuttons&#038;utm_content=share_button" class="button__share group/button__share flex items-center bg-[#5f5f5f] rounded text-white hover:text-white hover:no-underline h-8 max-w-[115px] min-[801px]:w-full transition-colors relative hover:bg-[#3a5697]" rel="nofollow">
+    <i class="icon icon-facebook bg-[#797777] fill-white max-w-9 !w-9 shrink-0 !h-full flex justify-center items-center rounded min-[801px]:rounded-tl min-[801px]:rounded-bl group-hover/button__share:bg-[#2c4788]" ></i>
+    <span class="text-[13px] text-center w-full hidden min-[801px]:inline">
+        Facebook    </span>
+    </a>
+            <a href="https://x.com/share?url=https%3A%2F%2Fwww.salon.com%2F2019%2F01%2F26%2Fsteven-pinkers-fake-enlightenment-his-book-is-full-of-misleading-claims-and-false-assertions%2F&#038;text=Steven+Pinker%E2%80%99s+fake+enlightenment%3A+His+book+is+full+of+misleading+claims+and+false+assertions&#038;utm_source=twitter&#038;utm_medium=social&#038;utm_campaign=socialbuttons&#038;utm_content=share_button" class="button__share group/button__share flex items-center bg-[#5f5f5f] rounded text-white hover:text-white hover:no-underline h-8 max-w-[115px] min-[801px]:w-full transition-colors relative hover:bg-[#03a2e0]" rel="nofollow">
+    <i class="icon icon-twitter bg-[#797777] fill-white max-w-9 !w-9 shrink-0 !h-full flex justify-center items-center rounded min-[801px]:rounded-tl min-[801px]:rounded-bl group-hover/button__share:bg-[#048cc1]" ></i>
+    <span class="text-[13px] text-center w-full hidden min-[801px]:inline">
+        X    </span>
+    </a>
+            <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.salon.com%2F2019%2F01%2F26%2Fsteven-pinkers-fake-enlightenment-his-book-is-full-of-misleading-claims-and-false-assertions%2F&#038;title=Steven+Pinker%E2%80%99s+fake+enlightenment%3A+His+book+is+full+of+misleading+claims+and+false+assertions&#038;utm_source=reddit&#038;utm_medium=social&#038;utm_campaign=socialbuttons&#038;utm_content=share_button" class="button__share group/button__share flex items-center bg-[#5f5f5f] rounded text-white hover:text-white hover:no-underline h-8 max-w-[115px] min-[801px]:w-full transition-colors relative hover:bg-[#ff661e]" rel="nofollow">
+    <i class="icon icon-reddit bg-[#797777] fill-white max-w-9 !w-9 shrink-0 !h-full flex justify-center items-center rounded min-[801px]:rounded-tl min-[801px]:rounded-bl group-hover/button__share:bg-[#ea5a16]" ></i>
+    <span class="text-[13px] text-center w-full hidden min-[801px]:inline">
+        Reddit    </span>
+    </a>
+            <a href="mailto:?subject=Steven%20Pinker%E2%80%99s%20fake%20enlightenment%3A%20His%20book%20is%20full%20of%20misleading%20claims%20and%20false%20assertions&#038;body=Check%20out%20this%20article%21%20https%3A%2F%2Fwww.salon.com%2F2019%2F01%2F26%2Fsteven-pinkers-fake-enlightenment-his-book-is-full-of-misleading-claims-and-false-assertions%2F%3Futm_source%3Demail%26utm_medium%3Dsocial%26utm_campaign%3Dsocialbuttons%26utm_content%3Dshare_button" class="button__share group/button__share flex items-center bg-[#5f5f5f] rounded text-white hover:text-white hover:no-underline h-8 max-w-[115px] min-[801px]:w-full transition-colors relative hover:bg-[#3d4e66]" >
+    <i class="icon icon-email bg-[#797777] fill-white max-w-9 !w-9 shrink-0 !h-full flex justify-center items-center rounded min-[801px]:rounded-tl min-[801px]:rounded-bl group-hover/button__share:bg-[#2d394a]" ></i>
+    <span class="text-[13px] text-center w-full hidden min-[801px]:inline">
+        Email    </span>
+    </a>
+        <div class="article__title-badges">
+        <div class="google-preferred-source-container">
+            <a
+                class="google-preferred-source"
+                href="https://www.google.com/preferences/source?q=salon.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Set Salon as a preferred source on Google News"
+                            >
+                <picture
+                    data-light-src="https://www.salon.com/app/themes/salon/assets/img/google_preferred_source_badge_light@2x.png"
+                    data-dark-src="https://www.salon.com/app/themes/salon/assets/img/google_preferred_source_badge_dark@2x.png"
+                >
+                    <source srcset="https://www.salon.com/app/themes/salon/assets/img/google_preferred_source_badge_light@2x.png" media="(prefers-color-scheme: dark)">
+                    <img
+                        src="https://www.salon.com/app/themes/salon/assets/img/google_preferred_source_badge_light@2x.png"
+                        alt="Set Salon as a preferred source on Google News"
+                        loading="lazy"
+                        width="676"
+                        height="213"
+                    >
+                </picture>
+            </a>
+        </div>
+    </div>
+    <template id="save-article-button">
+        
+<button type="button" id="saveArticleBtn-6340" onclick="saveArticle(this.id);" class="button__tertiary group/button__tertiary border-2 border-[#5f5f5f] rounded text-[#5f5f5f] text-sm font-bold px-2 py-1 h-8 lowercase flex items-center gap-x-1.5 hover:text-[#e42416] hover:border-[#e42416]">
+            <i class="icon icon-save !h-4 !w-3 text-[#5f5f5f] group-hover/button__tertiary:text-[#e42416] text-base" ></i>
+        <span class="btnLabel">Save</span>
+</button>
+    </template>
+</section>
+            <!-- TODO: Add the editor's note here ... -->
+                        <section class="article__content page-article"><p><span style="font-weight: 400;">In a </span><a href="https://quillette.com/2019/01/14/enlightenment-wars-some-reflections-on-enlightenment-now-one-year-later/" target="_blank" rel="noopener"><span style="font-weight: 400;">recent article</span></a><span style="font-weight: 400;"> for </span><span style="font-weight: 400;">Quillette</span><span style="font-weight: 400;">, the “Intellectual Dark Web’s” online safe space, Harvard psychologist Steven Pinker offers some reflections on his most recent book, </span><a href="https://amzn.to/2MA56kl" target="_blank" rel="noopener"><span style="font-weight: 400;">“Enlightenment Now</span></a><span style="font-weight: 400;">,” one year after it was published. Pinker notes that </span><span style="font-weight: 400;">EN </span><span style="font-weight: 400;">(as I will abbreviate it), a pollyannaish paean to Enlightenment “</span><a href="https://en.oxforddictionaries.com/definition/progressionism" target="_blank" rel="noopener"><span style="font-weight: 400;">progressionism</span></a><span style="font-weight: 400;">,” has been the target of “irate attacks from critics on both the right and the left.” </span></p>
+<p><span style="font-weight: 400;">Some have pointed out that modern racism more or less originated in the Enlightenment — contra Pinker — while others have accused the professor of various forms of scholarly malpractice by offering readers a skewed presentation of the facts. As the Princeton historian David Bell </span><a href="https://www.thenation.com/article/waiting-for-steven-pinkers-enlightenment/" target="_blank" rel="noopener"><span style="font-weight: 400;">puts it</span></a><span style="font-weight: 400;">, </span><span style="font-weight: 400;">EN </span><span style="font-weight: 400;">“makes use of selective data, dubious history, and, when all else fails, a contempt for ‘intellectuals’ straight out of </span><span style="font-weight: 400;">Breitbart</span><span style="font-weight: 400;">.”</span></p><div class="raptive-salon-video hide-if-premium"></div>
+<p><span style="font-weight: 400;">Since </span><a href="https://www.risksandreligion.org/" target="_blank" rel="noopener"><span style="font-weight: 400;">my primary area of academic research</span></a><span style="font-weight: 400;"> is “</span><a href="https://www.amazon.com/Morality-Foresight-Human-Flourishing-Introduction-ebook/dp/B0752VCJQ3/ref=sr_1_1?ie=UTF8&amp;qid=1546567127&amp;sr=8-1&amp;keywords=morality+foresight+torres" target="_blank" rel="noopener"><span style="font-weight: 400;">existential threats</span></a><span style="font-weight: 400;">,” and since Pinker has an entire chapter dedicated to this issue — aptly titled “Existential Threats” — I decided to pull out my exegetical microscope and take a closer look at what Pinker had to say. What I found was startling, but not altogether surprising in light of Bell’s observations: Mined quotes, cherry-picked data, false dichotomies, misrepresented research, misleading statements and outright false assertions on nearly every page.</span></p><div class="raptive-salon-content hide-if-premium"></div>
+<p><span style="font-weight: 400;">The problems were so pervasive that I ended up writing </span><a href="https://docs.wixstatic.com/ugd/d9aaad_8b76c6c86f314d0288161ae8a47a9821.pdf" target="_blank" rel="noopener"><span style="font-weight: 400;">an extended critique of just a few pages of the chapter</span></a><span style="font-weight: 400;">. (Examining the entire book would have been simply overwhelming.) In running a fine-tooth comb through single sentences and individual citations, I discovered a veritable treasure-trove of infractions, ranging from the trivial — for example, easily avoidable spelling mistakes — to the egregious — for example, attacking straw men and then declaring intellectual victory. In short, my reading of </span><span style="font-weight: 400;">EN </span><span style="font-weight: 400;">revealed not merely that the author (or his researchers) is fallible, but that </span><span style="font-weight: 400;">EN</span><span style="font-weight: 400;"> consists, at least in places, of blatantly bad scholarship.</span></p>
+<p><span style="font-weight: 400;">Let’s focus on just a few of these epistemic sins, beginning with the more amusing. In a passage seemingly intended to embarrass those who worry about “The End of the World,” Pinker writes the following: “</span><span style="font-weight: 400;">As the engineer </span><a href="https://en.wikipedia.org/wiki/Eric_Zencey" target="_blank" rel="noopener"><span style="font-weight: 400;">Eric Zencey</span></a><span style="font-weight: 400;"> has observed, ‘There is seduction in apocalyptic thinking. If one lives in the Last Days, one’s actions, one’s very life, take on historical meaning and no small measure of poignance.’”</span></p>
+<p><span style="font-weight: 400;">I was intrigued by this quote, so I decided to track down its origin. The reference that Pinker provides is to none other than a </span><span style="font-weight: 400;">Reason</span> <a href="http://reason.com/archives/2015/10/24/everybody-loves-a-good-apocaly" target="_blank" rel="noopener"><span style="font-weight: 400;">article</span></a><span style="font-weight: 400;"> written by Ronald Bailey, a libertarian and advocate of free-market solutions to climate change. Since Pinker strives not only to reach a wide audience with his books but for those books to exemplify good scholarly work — he is, after all, a professor at arguably the most prestigious institute of higher learning in the world — I was surprised that he didn’t cite the original, which would be normal scholarly practice.</span></p><div class="raptive-salon-content hide-if-premium"></div>
+<p><span style="font-weight: 400;">Much more suspicious, though, is that Bailey doesn’t provide a citation for the Zencey quote in his article. After some digital sleuthing, I found Zencey’s information and sent him an email about the quote. First, it turns out that Zencey </span><i><span style="font-weight: 400;">isn’t </span></i><span style="font-weight: 400;">an engineer, as Pinker claims, but a political economist. That’s a small mistake, but in a highly influential bestseller by one of the most visible brainiacs in the world, one should expect better. Furthermore, Zencey was quite exasperated by the misleading way that Pinker employs his quote. As he said to me via email:</span></p>
+<blockquote><p><span style="font-weight: 400;">I appreciate your effort to nail down the source, and I especially appreciate the opportunity to set the record a great deal straighter than it has been. That quotation has bedeviled me. It is accurate but taken completely out of context. … You’d be doing me a service if you set the record straight.</span></p></blockquote>
+<p><span style="font-weight: 400;">The original source is a quite contemplative article titled “</span><a href="http://www.jstor.org/stable/25124975?casa_token=CzwAElw0m3IAAAAA:ptFnEyQhl16AKMDGNX14AHaKG9-UylbD3Ooz4CQ1PgQXygekjEQKc8giS7uYlCJzPwQIy8E9_orgEtFRnAZF_GSDfHCGqoOrTAWGtKvBHJ9HebGMS9u2&amp;seq=1#page_scan_tab_contents" target="_blank" rel="noopener"><span style="font-weight: 400;">Apocalypse and Ecology</span></a><span style="font-weight: 400;">” that Zencey published in 1988. It describes how Zencey once anticipated a “coming transcendence of industrial society,” a sort of “apocalyptic redemption” that would bring about a new era marked by “the freedoms we would enjoy if only political power were decentralized and our economy given over to sustainable enterprises using renewable fuels and minimizing resources.” This view actually expressed a </span><i><span style="font-weight: 400;">hopeful</span></i><span style="font-weight: 400;"> form of apocalypticism, which is why Zencey describes it in the quote that Pinker uses as “seductive.” As Zencey writes, “we were optimists, filled with confidence in the power of education.” Thus, as Zencey told me,</span></p>
+<blockquote><p><span style="font-weight: 400;">too many people use that quotation [about “apocalyptic thinking”] to make it seem that I line up </span><i><span style="font-weight: 400;">against</span></i><span style="font-weight: 400;"> the idea that we face an ecological apocalypse. If on reading [“Apocalypse and Ecology”] you think I wasn’t sufficiently apocalyptic about the damage humans are doing to the ecosystems that are their life-support system, I can only plead that in 1988 we knew far less than we know now about how rapidly our ecological problems would foreclose upon us, and I wanted the ecology movement to reach an audience, not leave itself vulnerable to being apparently disproven in the short run.</span></p></blockquote>
+<p><span style="font-weight: 400;">In brief, Pinker borrowed a quote from Bailey, who didn’t cite the original source and who lifted the quote from its original context to mean the opposite of what Zencey had intended. This led Zencey to confess to me, “how this guy [i.e., Pinker] managed to become a public intellectual in fields so far removed from his expertise is something to wonder at.”</span></p><div class="raptive-salon-content hide-if-premium"></div>
+<p><span style="font-weight: 400;">If this were a single misdeed, one could perhaps forgive it. But it’s not the only error of this sort within just </span><i><span style="font-weight: 400;">one page</span></i><span style="font-weight: 400;"> in </span><span style="font-weight: 400;">EN</span><span style="font-weight: 400;">. Pinker also misuses a quote from a </span><span style="font-weight: 400;">New York Times</span> <a href="https://www.nytimes.com/2016/08/07/books/review/almighty-dan-zak.html" target="_blank" rel="noopener"><span style="font-weight: 400;">book review</span></a><span style="font-weight: 400;"> written by Kai Bird. Pinker, who observes that “humanity has a finite budget of resources, brainpower, and anxiety,” quotes Bird as saying, “these grim facts [about different doomsday scenarios] should lead any reasonable person to conclude that humanity is screwed.” To which Pinker adds that “if humanity is screwed, why sacrifice </span><i><span style="font-weight: 400;">anything</span></i><span style="font-weight: 400;"> to reduce potential risks?”</span></p>
+<p><span style="font-weight: 400;">But in context, Bird’s quote doesn’t mean that there’s no hope, nor does it apply to risks in general — as Pinker implies in </span><span style="font-weight: 400;">EN</span><span style="font-weight: 400;">— but rather to the specific threat posed by nuclear conflict. Indeed, I sent Bird an email in which I summarized what I thought he actually meant, versus how Pinker uses his quote. He responded: “I think you are accurately reflecting my views — I didn’t mean to say Armageddon is inevitable.” (Bird adds that he also believes “that the use of [nuclear] weapons is more likely than not.”)</span></p>
+<p><span style="font-weight: 400;">A similar problem arises when Pinker writes that “as long as we are entertaining hypothetical disasters far in the future, we must also ponder hypothetical advances that would allow us to survive them, such as growing food under lights powered with nuclear fusion.” This piqued my curiosity because I know of several “existential risk” scholars working on precisely these issues — and sure enough, Pinker here cites a book written by my colleagues David Denkenberger and Joshua Pearce, titled </span><a href="https://amzn.to/2MzVoP3" target="_blank" rel="noopener"><span style="font-weight: 400;">“Feeding Everyone No Matter What: Managing Food Security After Global Catastrophe</span></a><span style="font-weight: 400;">.”</span></p><div class="raptive-salon-content hide-if-premium"></div>
+<p><span style="font-weight: 400;">The problem is that, when one looks at the citation, Pinker seems to be implying that Denkenberger and Pearce endorse growing food under lights powered by nuclear fusion. But this is </span><i><span style="font-weight: 400;">not</span></i><span style="font-weight: 400;"> the case, since, as Denkenberger and Pearce note, growing food under lights with currently available electricity would be too inefficient and pricey. When I contacted Denkenberger about Pinker’s statement, he responded that “we never said nuclear fusion because we were only talking about currently available tech (e.g., nuclear fission), so you can definitely correct Pinker on that.”</span></p>
+<p><span style="font-weight: 400;">Even worse is Pinker’s discussion of advanced artificial intelligence. In making his case that worries about superintelligence are unfounded, he describes a computer scientist at Berkeley, Stuart Russell, as one of the “AI experts who are publicly skeptical” that “high-level AI pose[s] the threat of ‘an existential catastrophe.’” But, in reality, Russell is actually one of the most prominent AI experts </span><a href="https://www.technologyreview.com/s/602776/yes-we-are-worried-about-the-existential-risk-of-artificial-intelligence/" target="_blank" rel="noopener"><span style="font-weight: 400;">sounding the alarm that poorly designed AI systems could bring about the total annihilation of humanity</span></a><span style="font-weight: 400;">! This is a bit like calling Darwin a creationist, or saying that Einstein believed that “</span><a href="https://aeon.co/ideas/what-einstein-meant-by-god-does-not-play-dice" target="_blank" rel="noopener"><span style="font-weight: 400;">God really does play dice</span></a><span style="font-weight: 400;">.” It’s baffling that such a flagrant mistake made it to print — indeed, Russell himself told me via email that he’d “seen this and I agree it’s an incorrect characterization.”</span></p>
+<p><span style="font-weight: 400;">Furthermore, Pinker seriously misunderstands the arguments for why creating superintelligent machines could have disastrous consequences. First, he somewhat disparagingly refers to this scenario as the “Robopocalypse,” which is misleading, since </span><a href="https://futureoflife.org/background/aimyths/" target="_blank" rel="noopener"><span style="font-weight: 400;">no serious AI experts are worried about</span></a><span style="font-weight: 400;"> an uprising of </span><i><span style="font-weight: 400;">robots</span></i><span style="font-weight: 400;">. Rather, they are worried about the ability to </span><i><span style="font-weight: 400;">maintain control</span></i><span style="font-weight: 400;"> of what would almost certainly be the most powerful technology ever invented: Smarter-than-human algorithms.</span></p><div class="raptive-salon-content hide-if-premium"></div>
+<p><span style="font-weight: 400;">Second, Pinker’s criticisms of AI-doomsday scenarios completely miss the mark. In the wake of </span><span style="font-weight: 400;">EN</span><span style="font-weight: 400;">, some AI risk scholars have even started talking about “AI denialism,” on the model of “climate denialism,” in peer-reviewed academic papers, explicitly linking this phenomenon to Pinker’s wrongheaded conception of the subject in </span><span style="font-weight: 400;">EN</span><span style="font-weight: 400;"> and </span><a href="https://www.edge.org/response-detail/26243" target="_blank" rel="noopener"><span style="font-weight: 400;">elsewhere</span></a><span style="font-weight: 400;">. As the “riskologist” Seth Baum </span><a href="https://www.mdpi.com/2078-2489/9/9/209" target="_blank" rel="noopener"><span style="font-weight: 400;">writes</span></a><span style="font-weight: 400;">, “Pinker recently articulated a superintelligence skepticism that some observers have likened to politicized climate skepticism.”</span></p>
+<p><span style="font-weight: 400;">In a separate paper titled “</span><a href="https://www.mdpi.com/2078-2489/9/10/244" target="_blank" rel="noopener"><span style="font-weight: 400;">Countering Superintelligence Misinformation</span></a><span style="font-weight: 400;">,” Baum states that Pinker’s remarks “will occasionally be used [in Baum’s paper] as an example of superintelligence misinformation because they are so clearly false.” Later on, Baum notes that “some statements about superintelligence are clearly false. For example, </span><a href="https://www.popsci.com/robot-uprising-enlightenment-now" target="_blank" rel="noopener"><span style="font-weight: 400;">this statement</span></a><span style="font-weight: 400;"> from Steven Pinker: ‘As far as I know, there are no projects to build an AGI, not just because it would be commercially dubious, but also because the concept is barely coherent.’” Here, “AGI” means “</span><a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence" target="_blank" rel="noopener"><span style="font-weight: 400;">artificial general intelligence</span></a><span style="font-weight: 400;">,” and it’s just plain wrong that there are no projects to build AGI: There are at least 45, including one at Pinker’s own university. Once again, Pinker showed up to class without having done his homework.</span></p>
+<p><span style="font-weight: 400;">The computer scientist Roman Yampolskiy echoes this sentiment in a message to me, saying that</span></p>
+<blockquote><p><span style="font-weight: 400;">denialism is very common, but unlike other types, AI risk denialism is not limited to fringe elements and conspiracy theorists. In fact, a large number of accomplished and brilliant public intellectuals suffer from it. Dr. Pinker is no exception, and he uses his deep knowledge of psychology to make pseudo-profound statements about AI risk such as: “It’s a projection of evolved alpha-male psychology onto the concept of intelligence …” If only he could explain what would prevent an advanced artificial intelligence from making catastrophic mistakes or being explicitly programmed to cause maximum damage, all of us in the AI risk community would be able to sleep much better.</span></p></blockquote>
+<p><span style="font-weight: 400;">Finally, and perhaps most significantly, Pinker stumbles on the very first step of his “Existential Threats” chapter by framing the debate as being between </span><i><span style="font-weight: 400;">the optimists</span></i><span style="font-weight: 400;"> and </span><i><span style="font-weight: 400;">the pessimists</span></i><span style="font-weight: 400;">, where the latter category includes scientists worried about human extinction or civilizational collapse. But this completely mischaracterizes the situation. In reality, many of the secular scholars who are the most worried about existential threats are also “techno-utopians” who believe that, if only we survive, our descendants could colonize the known universe, eliminate all disease, reverse aging, upload our minds to computers, radically enhance our cognition and so on. The result could be the realization of astronomical amounts of value — and </span><i><span style="font-weight: 400;">this</span></i><span style="font-weight: 400;"> is why studying existential threats, even improbable ones, with an eye toward ensuring that they never happen matters so very much.</span></p><div class="raptive-salon-content hide-if-premium"></div>
+<p><span style="font-weight: 400;">In fact, the Oxford philosopher who coined the term “existential risk” in 2002 is also an outspoken “</span><a href="https://nickbostrom.com/papers/history.pdf" target="_blank" rel="noopener"><span style="font-weight: 400;">transhumanist</span></a><span style="font-weight: 400;">” who once published an article titled “</span><a href="https://nickbostrom.com/utopia.html" target="_blank" rel="noopener"><span style="font-weight: 400;">Letter From Utopia</span></a><span style="font-weight: 400;">.” In this missive, a future post-human being describes its life of extraordinary happiness and “surpassing bliss.” But as the fictional character declares, “to reach Utopia, you must first discover the means to three fundamental transformations.” One is to “elevate well-being” and another to “upgrade cognition,” but the most important is to “secure life!” This gets at the crucial point: Many optimists — people who see a possible techno-utopian state in our future — are also worried about the </span><i><span style="font-weight: 400;">insecurity </span></i><span style="font-weight: 400;">of life today, in the 21st century, since an existential disaster would by definition prevent techno-utopia from becoming techno-reality.</span></p>
+<p><span style="font-weight: 400;">So the truth is exactly opposite of what Pinker would have you believe: There aren’t two distinct schools of thought, two antithetical traditions battling it out about whether “we are at the most dangerous moment in the development of humanity,” </span><a href="https://www.theguardian.com/commentisfree/2016/dec/01/stephen-hawking-dangerous-time-planet-inequality" target="_blank" rel="noopener"><span style="font-weight: 400;">to quote</span></a><span style="font-weight: 400;"> Stephen Hawking in 2016. Rather, some people are worried about existential threats </span><i><span style="font-weight: 400;">precisely because</span></i><span style="font-weight: 400;"> they believe that the future could be unimaginably marvelous.</span></p>
+<p><span style="font-weight: 400;">In a </span><a href="https://www.nytimes.com/2009/11/15/books/review/Pinker-t.html" target="_blank" rel="noopener"><span style="font-weight: 400;">tepid review</span></a><span style="font-weight: 400;"> of Malcolm Gladwell’s book “</span><span style="font-weight: 400;"><a href="https://amzn.to/2G49bMv">Outliers: The Story of Success</a>“</span><span style="font-weight: 400;"> published in 2009, Pinker writes that, “the reasoning in ‘</span><span style="font-weight: 400;">Outliers</span><span style="font-weight: 400;">,’ which consists of cherry-picked anecdotes, post-hoc sophistry, and false dichotomies, had me gnawing on my Kindle.” Pinker then limns Gladwell as a “minor genius who unwittingly demonstrates the hazards of statistical reasoning and who occasionally blunders into spectacular failures.” I can relate to these frustrations, because I feel them about </span><span style="font-weight: 400;">EN</span><span style="font-weight: 400;">’s “minor-genius-level” discussion of existential threats. Indeed, the examples above are </span><a href="https://docs.wixstatic.com/ugd/d9aaad_8b76c6c86f314d0288161ae8a47a9821.pdf" target="_blank" rel="noopener"><span style="font-weight: 400;">just a few that I could have mentioned</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Let me end with a call for action: Don’t assume that Pinker’s scholarship is reliable. Comb through particular sentences and citations for other hidden — or perhaps intentionally concealed — errors in “Enlightenment Now.”</span><span style="font-weight: 400;"> Doing so could be, well, enlightening.</span></p>
+<hr><div class="raptive-salon-content hide-if-premium"></div></section>
+                <section class="article__writers mt-14">
+                                <div class="post-430202 writer type-writer status-publish hentry article__writers article__writer-container" data-writer-id="430202">
+
+                                    <div class="writer-bio-ajax-content">
+                        <h3>
+                            <span>By</span>
+                            <a href="https://www.salon.com/writer/phil_torres">
+                                Émile P. Torres                            </a>
+                        </h3>
+                    </div>
+
+                    <template class="writer-bio-template">
+                        <h3>
+                            <span>By</span>
+                            <a href="" class="writer-name-link">
+                            </a>
+                        </h3>
+
+                        <div class="socials" style="display: none;"> <a href="" class="social group/social facebook-link" target="_blank" style="display: none;">
+                                <i class="icon icon-facebook text-white h-5 w-5 flex items-center justify-center duration-[250ms] group-hover/social:scale-125" ></i>
+                            </a>
+                            <a href="" class="social group/social twitter-link" target="_blank" style="display: none;">
+                                <i class="icon icon-twitter text-white h-5 w-5 flex items-center justify-center duration-[250ms] group-hover/social:scale-125" ></i>
+                            </a>
+                            <a href="" class="social group/social instagram-link" target="_blank" style="display: none;">
+                                <i class="icon icon-instagram text-white h-5 w-5 flex items-center justify-center duration-[250ms] group-hover/social:scale-125" ></i>
+                            </a>
+                        </div>
+
+                        <div class="writer-bio-text"></div>
+
+                        <div class="more">
+                            <span>MORE FROM</span>
+                            <a href="" class="writer-more-from-link">
+                            </a>
+                        </div>
+                    </template>
+                            </div>
+            </section>
+            <hr>
+                <section class="article__topics">
+        <h2>
+            Related Topics            <span>
+                ------------------------------------------            </span>
+        </h2>
+        <div>
+                            <a href="https://www.salon.com/topic/enlightenment-now" class="delay-400 pointer">
+                    "Enlightenment Now"                </a>
+                            <a href="https://www.salon.com/topic/academics" class="delay-400 pointer">
+                    Academics                </a>
+                            <a href="https://www.salon.com/topic/all-salon" class="delay-400 pointer">
+                    All Salon                </a>
+                            <a href="https://www.salon.com/topic/apocalypse" class="delay-400 pointer">
+                    Apocalypse                </a>
+                            <a href="https://www.salon.com/topic/apocalyptic-anxiety" class="delay-400 pointer">
+                    Apocalyptic Anxiety                </a>
+                            <a href="https://www.salon.com/topic/apocalyptic-thinking" class="delay-400 pointer">
+                    Apocalyptic Thinking                </a>
+                            <a href="https://www.salon.com/topic/authors" class="delay-400 pointer">
+                    Authors                </a>
+                            <a href="https://www.salon.com/topic/books" class="delay-400 pointer">
+                    Books                </a>
+                            <a href="https://www.salon.com/topic/enlightenment" class="delay-400 pointer">
+                    Enlightenment                </a>
+                            <a href="https://www.salon.com/topic/existential-threats" class="delay-400 pointer">
+                    Existential Threats                </a>
+                            <a href="https://www.salon.com/topic/intellectual-dark-web" class="delay-400 pointer">
+                    Intellectual Dark Web                </a>
+                            <a href="https://www.salon.com/topic/nuclear-fission" class="delay-400 pointer">
+                    Nuclear Fission                </a>
+                            <a href="https://www.salon.com/topic/nuclear-fusion" class="delay-400 pointer">
+                    Nuclear Fusion                </a>
+                            <a href="https://www.salon.com/topic/nuclear-power" class="delay-400 pointer">
+                    Nuclear Power                </a>
+                            <a href="https://www.salon.com/topic/philosophy" class="delay-400 pointer">
+                    Philosophy                </a>
+                            <a href="https://www.salon.com/topic/psychology" class="delay-400 pointer">
+                    Psychology                </a>
+                            <a href="https://www.salon.com/topic/quillette" class="delay-400 pointer">
+                    Quillette                </a>
+                            <a href="https://www.salon.com/topic/science-and-health" class="delay-400 pointer">
+                    Science &amp; Health                </a>
+                            <a href="https://www.salon.com/topic/steven-pinker" class="delay-400 pointer">
+                    Steven Pinker                </a>
+                            <a href="https://www.salon.com/topic/the-enlightenment" class="delay-400 pointer">
+                    The Enlightenment                </a>
+                    </div>
+    </section>
+            
+<section class="article__related" data-post-id="789572" data-terms="academics,all-salon,apocalypse,apocalyptic-anxiety,apocalyptic-thinking,authors,books,enlightenment,enlightenment-now,existential-threats,intellectual-dark-web,nuclear-fission,nuclear-fusion,nuclear-power,philosophy,psychology,quillette,science-and-health,steven-pinker,the-enlightenment">
+    <h2>
+        <span>
+            Related Articles        </span>
+    </h2>
+    <div>
+        <template>
+            <a href="" class="flex min-[501px]:hidden">
+                <div class="attachment__image">
+                    <div class="image">
+                        <img src="https://www.salon.com/app/themes/salon/assets/img/salon-placeholder.webp" decoding="async" fetchpriority="high" alt="Salon placeholder" class="attachment-full size-full">
+                    </div>
+                </div>
+                <h5></h5>
+                <span></span>
+            </a>
+        </template>
+    </div>
+</section>
+            <hr>
+            <div class="dianomi_context hide-if-premium" data-dianomi-context-id="4879"></div>
+        </div>
+        
+<div class="sidebar-col">
+    <div class="dianomi_context hide-if-premium" data-dianomi-context-id="4876"></div>
+            <div class="raptive-salon-sticky-sidebar hide-if-premium"></div>
+    </div>
+    </section>
+</article>
+    </div>
+
+    </main>
+
+    <footer>
+        <ul class="navigation__footer mt-4 text-center"><li class="menu-item"><a href="https://www.salon.com">Home</a></li>
+<li class="menu-item"><a href="https://www.salon.com/about">About</a></li>
+<li class="menu-item"><a href="https://www.salon.com/about/staff">Staff</a></li>
+<li class="menu-item"><a href="https://www.salon.com/about/contact">Contact</a></li>
+<li class="menu-item"><a href="https://www.salon.com/about/policy">Privacy</a></li>
+<li class="menu-item"><a href="https://www.salon.com/about/tos">Terms of Service</a></li>
+<li class="menu-item"><a href="https://www.salon.com/archive">Archive</a></li>
+<li class="menu-item"><a href="/premium?utm_source=onsite&amp;utm_medium=organic&amp;utm_campaign=go-ad-free-footer">Go Ad Free</a></li>
+</ul>        <div class="footer__copyright">
+    <p>
+        Copyright © 2026 Salon.com, LLC. Reproduction of material from any Salon pages without written permission is strictly prohibited. SALON ® is registered in the U.S. Patent and Trademark Office as a trademark of Salon.com, LLC. Associated Press articles: Copyright © 2016 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.    </p>
+    <p>
+        <a href="https://www.salon.com/2026/06/02/best-vpn-services-for-2026/">
+            VPN Providers        </a>
+    </p>
+    <p>
+        <a href="https://www.salon.com/about/dmca">
+            DMCA Policy        </a>
+    </p>
+</div>
+    </footer>
+
+    <div class="modal__alert" role="dialog" aria-modal="true" aria-hidden="true" id="alert-modal">
+    <div></div>
+    <div>
+        <div>
+            
+<div class="modal__close">
+    <button type="button" aria-controls="alert-modal">
+        <i class="icon icon-close-extrabold block w-5 text-xl" ></i>
+    </button>
+</div>
+            <div class="modal__content">
+                <div class="message">
+                    This is an alert message.                </div>
+                <div class="modal__close">
+                    <button type="button" aria-controls="alert-modal">
+                        OK                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp/wp-*.php","/wp/wp-admin/*","/app/uploads/*","/app/*","/app/plugins/*","/app/themes/salon/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: 10a2 Oct HP Want to skip the ads? -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,380517,'ctflmwzzxpbmhestcqzm');</script>
+<!-- / OptinMonster --><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: Members Article Salon Live: Midterm Elections 9a1 -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,380517,'u1rrtmmizvhi8emz9dzm');</script>
+<!-- / OptinMonster -->		<script type="text/javascript">
+		var ctflmwzzxpbmhestcqzm_shortcode = true;var u1rrtmmizvhi8emz9dzm_shortcode = true;		</script>
+		<script id="global-salon-js-extra">
+var salonSubscriptionTracking = {"eventsEndpoint":"https://www.salon.com/wp-json/salon/v1/subscription-tracking/events","measurementId":"G-7VPPFM7ET6","pageContext":{"contentCategory":"article","currentPlan":null,"isCheckoutPage":false},"pendingSessionIds":[],"bootstrapEvents":[],"approximateBeginCheckout":"1"};
+//# sourceURL=global-salon-js-extra
+</script>
+<script type="module" data-wp-strategy="defer" defer id="global-salon-js" src="https://www.salon.com/app/themes/salon/dist/assets/global.js?ver=1.0.31"></script>
+<script type="module" data-wp-strategy="defer" defer id="article-salon-js" src="https://www.salon.com/app/themes/salon/dist/assets/article.js?ver=1.0.31"></script>
+<script data-wp-strategy="defer" defer id="ad-salon-js" src="https://www.salon.com/app/themes/salon/dist/assets/ad.js?ver=1.0.31"></script>
+<script>(function(d){var s=d.createElement("script");s.type="text/javascript";s.src="https://a.omappapi.com/app/js/api.min.js";s.async=true;s.id="omapi-script";d.getElementsByTagName("head")[0].appendChild(s);})(document);</script><script id="raptive-adblock-detection-js" src="https://www.salon.com/app/themes/salon/assets/js/ad/raptive-adblock-detection.js"></script>
+<script data-cfasync="false" data-abr-mode="essential" id="raptive-adblock-recovery-js" src="https://www.salon.com/app/themes/salon/assets/js/ad/raptive-adblock-recovery.js"></script>
+<script id="optinmonster-wp-helper-js" src="https://www.salon.com/app/plugins/optinmonster/assets/dist/js/helper.min.js?ver=2.16.24"></script>
+		<script type="text/javascript">var omapi_localized = {
+			ajax: 'https://www.salon.com/wp/wp-admin/admin-ajax.php?optin-monster-ajax-route=1',
+			nonce: '5743ffcf9c',
+			slugs:
+			{"ctflmwzzxpbmhestcqzm":{"slug":"ctflmwzzxpbmhestcqzm","mailpoet":false},"u1rrtmmizvhi8emz9dzm":{"slug":"u1rrtmmizvhi8emz9dzm","mailpoet":false}}		};</script>
+				<script type="text/javascript">var omapi_data = {"object_id":789572,"object_key":"post","object_type":"post","term_ids":[43,21,21613,1323,2671,4721,4725,4726,5743,8841,21611,22422,31826,47797,47799,47775,51066,53215,53671,58544,62756,65639],"wp_json":"https:\/\/www.salon.com\/wp-json","wc_active":false,"edd_active":false,"nonce":"cf708fa120"};</script>
+		</body>
+</html>

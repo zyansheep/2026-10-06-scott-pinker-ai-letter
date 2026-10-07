@@ -156,7 +156,8 @@
       "id": 9,
       "title": "'Things Will Never Be Chill Again': The Doomers Who Shaped the AI Safety Freakout",
       "authors": [
-        "(unknown)"
+        "Berber Jin",
+        "Keach Hagey"
       ],
       "year": 2026,
       "doi": null,
@@ -165,11 +166,11 @@
       "type": "news-article",
       "found_via": "Pinker tweet 2026-09-28",
       "download": null,
-      "local_file": "media/wsj-2026-09-27-things-will-never-be-chill-again-EXCERPT.md",
-      "status": "read-partial (excerpt)",
+      "local_file": "gaps/wsj-2026-09-things-will-never-be-chill-again-FULL.txt",
+      "status": "read-full",
       "relevance_level": "LOW",
       "relevance": "WSJ 'digging' Pinker cites in the cult tweet",
-      "archive_url": "https://web.archive.org/web/20261003170018/https://www.wsj.com/tech/ai/ai-safety-effective-altruism-anthropic-164b9d05"
+      "archive_url": "https://archive.is/20261004133739/https://www.wsj.com/tech/ai/ai-safety-effective-altruism-anthropic-164b9d05"
     },
     {
       "id": 10,
@@ -804,6 +805,154 @@
       "status": "read-partial",
       "relevance_level": "LOW",
       "relevance": "'under 10 percent'"
+    },
+    {
+      "id": 44,
+      "download": null,
+      "status": "read-full",
+      "relevance_level": "HIGH",
+      "title": "Steven Pinker on AI doom and consciousness (Conspicuous Cognition interview)",
+      "authors": [
+        "Dan Williams",
+        "Henry Shevlin",
+        "Steven Pinker"
+      ],
+      "year": 2026,
+      "url": "https://www.conspicuouscognition.com/p/steven-pinker-on-ai-doom-and-consciousness",
+      "type": "podcast-transcript",
+      "found_via": "gap-closer (Pinker tweet 2026-10-07)",
+      "local_file": "gaps/conspicuous-cognition-2026-10-07-pinker-ai-doom-transcript.txt",
+      "relevance": "Pinker's latest statement: 'kind of is a cult'; concessions on connectionism; what would change his mind"
+    },
+    {
+      "id": 45,
+      "download": null,
+      "status": "read-partial",
+      "relevance_level": "HIGH",
+      "title": "Steven Pinker and Stuart Russell on the Foundations, Benefits, and Possible Existential Risk of AI (FLI podcast)",
+      "authors": [
+        "Steven Pinker",
+        "Stuart Russell",
+        "Lucas Perry"
+      ],
+      "year": 2020,
+      "url": "https://futureoflife.org/podcast/steven-pinker-and-stuart-russell-on-the-foundations-benefits-and-possible-existential-risk-of-ai/",
+      "type": "podcast-transcript",
+      "found_via": "gap-closer",
+      "local_file": "gaps/russell-fli-2020-pinker-russell-transcript.txt",
+      "relevance": "Russell rejects Pinker's use of the bridges line"
+    },
+    {
+      "id": 46,
+      "download": null,
+      "status": "read-partial",
+      "relevance_level": "MODERATE",
+      "title": "Fears of an AI pioneer",
+      "authors": [
+        "John Bohannon"
+      ],
+      "year": 2015,
+      "doi": "10.1126/science.349.6245.252",
+      "url": "https://www.science.org/doi/10.1126/science.349.6245.252",
+      "archive_url": "https://web.archive.org/web/20240923123309/https://www.science.org/doi/10.1126/science.349.6245.252",
+      "journal": "Science",
+      "type": "journal-article",
+      "found_via": "gap-closer",
+      "local_file": "gaps/russell-science-2015-bohannon-fears-of-an-ai-pioneer.txt",
+      "relevance": "Source of the Russell 'building bridges' quote Pinker uses"
+    },
+    {
+      "id": 47,
+      "download": null,
+      "status": "read-partial (snippet)",
+      "relevance_level": "MODERATE",
+      "title": "Human Compatible (p. 158)",
+      "authors": [
+        "Stuart Russell"
+      ],
+      "year": 2019,
+      "url": "https://books.google.com/books?id=M1eFDwAAQBAJ",
+      "type": "book",
+      "found_via": "gap-closer (Google Books search-within)",
+      "relevance": "'Pinker's argument entirely misses the point'"
+    },
+    {
+      "id": 48,
+      "download": null,
+      "status": "read-partial",
+      "relevance_level": "MODERATE",
+      "title": "Pausing AI Developments Isn't Enough. We Need to Shut it All Down",
+      "authors": [
+        "Eliezer Yudkowsky"
+      ],
+      "year": 2023,
+      "url": "https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/",
+      "journal": "TIME",
+      "type": "op-ed",
+      "found_via": "red-team reviewer",
+      "relevance": "Checks Pinker's data-centre-bombing paraphrase"
+    },
+    {
+      "id": 49,
+      "download": null,
+      "status": "read-partial",
+      "relevance_level": "MODERATE",
+      "title": "Agentic Misalignment: How LLMs could be insider threats",
+      "authors": [
+        "Anthropic"
+      ],
+      "year": 2025,
+      "url": "https://www.anthropic.com/research/agentic-misalignment",
+      "type": "report",
+      "found_via": "red-team reviewer",
+      "relevance": "Simulated self-preservation (blackmail) results; no real-world instances known"
+    },
+    {
+      "id": 50,
+      "download": null,
+      "status": "scouted-only",
+      "relevance_level": "LOW",
+      "title": "Taking AI Welfare Seriously",
+      "authors": [
+        "Robert Long",
+        "Jeff Sebo",
+        "et al."
+      ],
+      "year": 2024,
+      "url": "https://arxiv.org/abs/2411.00986",
+      "type": "preprint",
+      "found_via": "red-team reviewer",
+      "relevance": "Context for Sebo's critique of Pinker"
+    },
+    {
+      "id": 51,
+      "download": null,
+      "status": "read-partial",
+      "relevance_level": "MODERATE",
+      "title": "Pinker's expert list: Ng, Agüera y Arcas, Kaplan, Narayanan & Kapoor (positions and backgrounds)",
+      "authors": [
+        "various"
+      ],
+      "year": 2026,
+      "url": "https://www.deeplearning.ai/the-batch/issue-371/",
+      "type": "web-pages",
+      "found_via": "validator",
+      "relevance": "Ng (The Batch), Agüera y Arcas (Noema), Kaplan (Persuasion, Wikipedia), Narayanan & Kapoor (Knight Columbia): all x-risk skeptics; Ng and Agüera y Arcas are deep-learning insiders"
+    },
+    {
+      "id": 52,
+      "download": null,
+      "status": "read-partial ([2nd] relays of Wired/Bloomberg)",
+      "relevance_level": "MODERATE",
+      "title": "Claude's enzyme discovery: expert reactions (secondary)",
+      "authors": [
+        "various"
+      ],
+      "year": 2026,
+      "url": "https://thenovscience.substack.com/p/claude-found-a-crispr-like-system",
+      "type": "web-pages",
+      "found_via": "validator",
+      "relevance": "'not a breakthrough'; 'the novel thing is how they found it'"
     }
   ]
 }
