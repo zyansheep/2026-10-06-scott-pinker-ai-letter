@@ -208,7 +208,7 @@
       "status": "read-full",
       "relevance_level": "VERY HIGH",
       "relevance": "Pinker quoted its hypothesis as its conclusion",
-      "html_file": "docs/RAND_RRA3034-1.html"
+      "html_filename": "RAND_RRA3034-1.html"
     },
     {
       "id": 12,
@@ -580,7 +580,7 @@
       "status": "read-partial",
       "relevance_level": "MODERATE",
       "relevance": "Mean ~18%, median 10%, 10% response rate",
-      "html_file": "docs/ESPAI2024 - Grace et al 2026.html"
+      "html_filename": "ESPAI2024 - Grace et al 2026.html"
     },
     {
       "id": 32,
@@ -600,8 +600,8 @@
       "status": "read-partial",
       "relevance_level": "MODERATE",
       "relevance": "Weaker support than Scott implies ('loading the methodological dice')",
-      "html_file": "docs/Long-range subjective probability - Tetlock et al 2023 (accepted manuscript).html",
-      "pdf_url": "https://faculty.wharton.upenn.edu/wp-content/uploads/2016/11/Long-range-subjective-probability.pdf"
+      "pdf_url": "https://faculty.wharton.upenn.edu/wp-content/uploads/2016/11/Long-range-subjective-probability.pdf",
+      "html_filename": "Long-range subjective probability - Tetlock et al 2023 (accepted manuscript).html"
     },
     {
       "id": 33,
