@@ -67,7 +67,7 @@
       ],
       "year": 2026,
       "doi": null,
-      "url": "https://theaustralian.com.au/inquirer/superintelligence-is-a-fantasy-leading-scientists-reject-apocalyptic-rogue-ai-extinction-warnings/news-story/618eef10b92d4357e51e4b459eaf9fa9",
+      "url": "https://www.theaustralian.com.au/inquirer/superintelligence-is-a-fantasy-leading-scientists-reject-apocalyptic-rogue-ai-extinction-warnings/news-story/618eef10b92d4357e51e4b459eaf9fa9",
       "journal": "The Australian",
       "type": "newspaper-article",
       "found_via": "URL in Zvi AI #187; full text from Lehmann's X long-post 2101052017347281300 via scry",
@@ -75,7 +75,8 @@
       "local_file": "media/lehmann-2026-09-18-australian-via-x.md",
       "status": "read-full",
       "relevance_level": "HIGH",
-      "relevance": "Article Pinker tweeted on 2026-09-18; source of 'unconventional lifestyles'"
+      "relevance": "Article Pinker tweeted on 2026-09-18; source of 'unconventional lifestyles'",
+      "archive_url": "https://archive.is/20260927140739/https://www.theaustralian.com.au/inquirer/superintelligence-is-a-fantasy-leading-scientists-reject-apocalyptic-rogue-ai-extinction-warnings/news-story/618eef10b92d4357e51e4b459eaf9fa9"
     },
     {
       "id": 5,
@@ -93,7 +94,8 @@
       "local_file": "media/newport-2026-09-05-how-scared-should-we-be-repost.md",
       "status": "read-full (unofficial repost)",
       "relevance_level": "MODERATE-HIGH",
-      "relevance": "'weirder than we realize'; group houses, polyamory, psychedelics"
+      "relevance": "'weirder than we realize'; group houses, polyamory, psychedelics",
+      "archive_url": "https://archive.is/20260908091028/https://www.nytimes.com/2026/09/05/opinion/ai-silicon-valley.html"
     },
     {
       "id": 6,
@@ -147,7 +149,8 @@
       "local_file": "media/goldberg-2026-09-why-tech-oligarchs-risk-apocalypse.md",
       "status": "read-full (syndicated copy)",
       "relevance_level": "MODERATE",
-      "relevance": "No 'insouciant'; targets oligarchs, not researchers"
+      "relevance": "No 'insouciant'; targets oligarchs, not researchers",
+      "archive_url": "https://archive.is/20260928173816/https://www.nytimes.com/2026/09/12/opinion/ai-tech-apocalypse-silicon-valley.html"
     },
     {
       "id": 9,
@@ -165,7 +168,8 @@
       "local_file": "media/wsj-2026-09-27-things-will-never-be-chill-again-EXCERPT.md",
       "status": "read-partial (excerpt)",
       "relevance_level": "LOW",
-      "relevance": "WSJ 'digging' Pinker cites in the cult tweet"
+      "relevance": "WSJ 'digging' Pinker cites in the cult tweet",
+      "archive_url": "https://web.archive.org/web/20261003170018/https://www.wsj.com/tech/ai/ai-safety-effective-altruism-anthropic-164b9d05"
     },
     {
       "id": 10,
@@ -203,7 +207,8 @@
       "local_file": "media/RAND_RRA3034-1.pdf",
       "status": "read-full",
       "relevance_level": "VERY HIGH",
-      "relevance": "Pinker quoted its hypothesis as its conclusion"
+      "relevance": "Pinker quoted its hypothesis as its conclusion",
+      "html_file": "docs/RAND_RRA3034-1.html"
     },
     {
       "id": 12,
@@ -511,7 +516,7 @@
       ],
       "year": 2026,
       "doi": null,
-      "url": "https://en.wikipedia.org/wiki/P(doom)",
+      "url": "https://en.wikipedia.org/wiki/P%28doom%29",
       "journal": null,
       "type": "web-page",
       "found_via": "post",
@@ -571,10 +576,11 @@
       "type": "report",
       "found_via": "post",
       "download": null,
-      "local_file": null,
+      "local_file": "media/ESPAI2024 - Grace et al 2026.pdf",
       "status": "read-partial",
       "relevance_level": "MODERATE",
-      "relevance": "Mean ~18%, median 10%, 10% response rate"
+      "relevance": "Mean ~18%, median 10%, 10% response rate",
+      "html_file": "docs/ESPAI2024 - Grace et al 2026.html"
     },
     {
       "id": 32,
@@ -590,10 +596,12 @@
       "type": "journal-article",
       "found_via": "post",
       "download": null,
-      "local_file": null,
+      "local_file": "media/Long-range subjective probability - Tetlock et al 2023 (accepted manuscript).pdf",
       "status": "read-partial",
       "relevance_level": "MODERATE",
-      "relevance": "Weaker support than Scott implies ('loading the methodological dice')"
+      "relevance": "Weaker support than Scott implies ('loading the methodological dice')",
+      "html_file": "docs/Long-range subjective probability - Tetlock et al 2023 (accepted manuscript).html",
+      "pdf_url": "https://faculty.wharton.upenn.edu/wp-content/uploads/2016/11/Long-range-subjective-probability.pdf"
     },
     {
       "id": 33,
@@ -622,7 +630,7 @@
       ],
       "year": 2026,
       "doi": null,
-      "url": "https://openai.com/navier-stokes-solution/",
+      "url": "https://openai.com/index/navier-stokes-solution/",
       "journal": null,
       "type": "web-page",
       "found_via": "sub-agent",

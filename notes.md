@@ -119,3 +119,28 @@ Tokens: (moratorium|preemption|bores|sb1047|regulation|regulate|deepfake(s)|misi
 ⇒ Scott's "you didn't join the fight against preemption" is consistent with the archive (absence, within archive coverage). "Never written any particular warning about mundane harms" is roughly right as to advocacy. Pinker mentions specific harms (scams, libel, hallucination) as asides, not campaigns. His letter does endorse oversight, liability and kill switches.
 
 ## Sub-agent results (2026-10-06): see report.md. Anna's Archive was unreachable (book_search returned nothing; annas-archive.li is a parked domain), so no downloads were spent and no ledger line was written.
+
+## Link rebuild (2026-10-07): text fragments, no end list
+The user asked for fragment links to original pages, archive copies for blocked pages, local pdf2html for PDFs, and no source list at the end. AGENTS.md was updated to match.
+- **Method.** report.md was rewritten with placeholders and resolved by `/tmp/pinker-scripts/fraglinks.py` (ephemeral):
+  - Web: fetch the page, extract the visible text with block boundaries, find the quote (normalizing curly quotes, dashes and whitespace), then build `#:~:text=start,end` from the page's own characters, encoding `-`, `,` and `&`. It checks that the start term's first occurrence is the intended passage.
+  - PDFs: the original URL with `#page=N`, plus `docs/*.html` fragments from `.bin/tools fragment`.
+- **Result.** 103 web fragments, 5 local fragments, 6 PDF page links and 9 Google Books search links. An independent re-check (`verify.py`) decoded all 108 fragments and found each start and end term in the page text (0 failures; 203 links total, none with raw spaces or unbalanced parentheses). Short generic terms ("writing in", "elifland") were checked in context by hand.
+- **Blocked originals:**
+  - Wayback Save Page Now (POST form) "captured" the two NYT op-eds with http_status 403 (the block page), and The Australian refused the crawler ("The target server blocks access").
+  - archive.today already had full-text snapshots, which I verified by fetching them and finding the quotes:
+    - Newport `archive.is/20260908091028/…`
+    - Goldberg `archive.is/20260928173816/…`
+    - Lehmann (The Australian) `archive.is/20260927140739/…`
+    - WSJ `archive.is/20261004133739/…`
+  - WSJ links use the Wayback copy `web.archive.org/web/20261003170018/…`, which contains the text.
+- **Local HTML** (pdf2htmlEX via podman, run by hand because these are open-access, not Anna's): `docs/RAND_RRA3034-1.html`, `docs/Long-range subjective probability - Tetlock et al 2023 (accepted manuscript).html`, `docs/ESPAI2024 - Grace et al 2026.html`. The PDFs are in `media/` and gitignored.
+- **Fixes along the way.** The OpenAI Navier-Stokes URL is `/index/navier-stokes-solution/` (the old one 404s). The Wikipedia P(doom) link had an unescaped `)`.
+
+## Wayback archiving of cited pages (2026-10-07)
+Asked to submit missing pages. I looked up each open cited URL in the CDX API (many lookups timed out, so those were submitted anyway; a re-capture is harmless) and submitted via the Save Page Now POST form.
+- **Already archived (status 200):** christiano (20250728005130), edge2014 (20260915205659), edge2015 (20260520163821), edgeblurb (20200123003743), freebeacon (20260930190926), gradient (20260909231105), leaderboard (20260914211041), mybet (20260925020933), navier (20261005200455), popsci (20260412051317), randland (20261004093835), sciam (20260929033120), suleyman (20261004125321).
+- **Newly captured, confirmed `success 200`:** quillette (20261007024521), gazette (20261007024619), aaronson (20261007024642), boudry (20261007024827), chalmers (20261007024857), clay (20261007024901), enzyme (20261007024915), espai_pdf (20261007024934), evitable (20261007024952), hogarth (20261007025008), pdoom (20261007025114).
+- **Submitted, unconfirmed:** scott, manifold, metr, rand_pdf, restart, ruanhtml, tetlockdoi, tetlock_pdf, yudkowsky, zvi187, zvi188. The status endpoint stopped responding, so these are queued at archive.org but not verified.
+- **No job ID returned:** arxiv.org/abs/2609.16247 (twice). The ai-torture-chamber repo got a job on its second try (unconfirmed).
+- **Blocked:** NYT ×2 were captured as 403 block pages, and The Australian refused the crawler. The report links archive.today copies instead (see above).
