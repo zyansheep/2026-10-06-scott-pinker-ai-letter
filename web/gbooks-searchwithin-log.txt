@@ -1,0 +1,172 @@
+# Google Books SearchWithinVolume2 results, fetched 2026-10-06T18:10:56-07:00 via curl (books.google.com/books?id=ID&jscmd=SearchWithinVolume2&q=...)
+# Volumes: hf9MDwAAQBAJ = Enlightenment Now, Viking hc 2018 (9780525427575); R5KADwAAQBAJ = Penguin pb 2019 (9780143111382); J6grDwAAQBAJ = ebook 2018 (9780698177888); iFhFEAAAQBAJ = Rationality, Viking 2021 (9780525561996)
+# Snippets are verbatim book text fragments as returned by Google; '...' marks elisions by Google. Results are flaky (rate limiting): a 0 can be a false negative.
+
+## [hf9MDwAAQBAJ] q="Existential Threats"
+n= 20
+ p. 291 | ... existential threats and figuring out how to save the world from them, including the Future of Humanity Institute, the Future of Life Institute, the Center for the Study of Existential Risk, and the Global Catastrophic Risk Institute ...
+ p. 534 | ... Existentialism , 33 , 40 , 446 , 447 existential threats , 290-321 artificial intelligence as , 296–300 , 477n20 Availability and Negativity biases and , 293 civilizations , destruction of , 295–6 dangers of overemphasizing , 291–2 ...
+ p. 319 | ... existential threat.121 In the near term, the greatest menace of nuclear war comes not so much from the number of weapons in existence as from the circum- stances in which they might be used. The policy of ... EXISTENTIAL THREATS 319.
+ p. xi | ... 12. SAFETY 167 CHAPTER 13. TERRORISM 191 CHAPTER 14. DEMOCRACY 199 214 CHAPTER 15. EQUAL RIGHTS CHAPTER 16. KNOWLEDGE CHAPTER 17. QUALITY OF LIFE 233 247 CHAPTER 18. HAPPINESS CHAPTER 19. EXISTENTIAL THREATS CHAPTER 20. THE xi.
+ p. 315 | ... existential threats, such as each other).102 Nuclear weapons are indiscriminately destructive and contaminate wide areas with radioactive fallout, including the con- tested territory and, depending on the ... EXISTENTIAL THREATS 315.
+ p. 301 | ... threats, and countries should clearly invest in both. Military, financial, energy, and Internet infrastructure should be made more secure and re- silient.36 Treaties and safeguards against biological weapons ... EXISTENTIAL THREATS 301.
+ p. 314 | ... threat worldwide— the team of criminal operatives, scientists and engineers necessary to acquire the compo- nents of, build and deliver such a weapon would be a formidably dif- ficult undertaking ... existential threats, 314 PROGRESS.
+ p. xii | ... EXISTENTIAL THREATS CHAPTER 20. THE FUTURE OF PROGRESS 262 290 322 PART III: REASON, SCIENCE, AND HUMANISM 347 CHAPTER 21. REASON 351 CHAPTER 22. SCIENCE 385 CHAPTER 23. HUMANISM 410 NOTES REFERENCES INDEX 455 493 525 LIST OF FIGURES 4 ...
+ p. 224 | ... existential threats and more eager to ex- press their ideals and to pursue opportunities in life. This shifts their values toward greater freedom for themselves and others. The transition is consistent with the psychologist Abraham ...
+ p. 293 | ... risk, because the scattershot data along the tail of the distribution generally misbehave, deviating from a smooth curve and making esti- mation impossible. All we know is that very bad things can happen ... EXISTENTIAL THREATS 293.
+ p. 309 | ... I do not believe that anything can be done to prevent it.76 And the journalist Jonathan Schell , whose 1982 bestseller The Fate of the Earth ended as follows : One day and it is hard to believe that it EXISTENTIAL THREATS 309.
+ p. 297 | ... and to take on still other problems that humans can't solve (like simulating the climate or sorting millions of accounting records). The problems are different, and the kinds of knowledge needed EXISTENTIAL THREATS 297.
+ p. 313 | ... risk, because a little algebra shows that the probability of our going a century without such a catastrophe is less than 37 percent. But if we can reduce the annual chance of nuclear war to a tenth of a ... EXISTENTIAL THREATS 313.
+ p. 33 | ... existential threats upon the world ( chap- ter 19 ) . And even if our technological civilization manages to escape out- right annihilation , it is spiraling into a dystopia of violence and injustice : a brave new world of terrorism ...
+ p. 311 | ... threat of nuclear terrorism entitled “Our Hair Is on Fire.”)84 The tactic is dubious. People are easily riled by actual attacks with guns and homemade bombs into supporting repressive measures like domestic ... EXISTENTIAL THREATS 311.
+ p. 324 | ... existential threats, these are accomplishments to savor. The Enlightenment is working: for two and a half centuries, peo- ple have used knowledge to enhance human flourishing. Scientists have exposed the workings of matter, life, and ...
+ p. 328 | ... existential threats . In the rest of this one I'll consider two 21st - century developments that fall short of global ca- tastrophe but still have been taken to suggest that our best days are be- hind us . The first raincloud is ...
+ p. 303 | ... the proportion of terrorists multiplied by the proportion of brilliant people. Terrorism is a demonstrably ineffective tactic, and a mind that delights in senseless mayhem for its own sake is probably not EXISTENTIAL THREATS 303.
+ p. 307 | ... threats to humanity are fanciful or infinitesimal , but one is real : nuclear war.66 The world has more than ten thousand nuclear weap- ons distributed among nine countries.67 Many are mounted on missiles or ... EXISTENTIAL THREATS 307.
+ p. 317 | ... and Pakistan's have grown to around 135 apiece, Israel's is estimated at around 80, and North Korea's is unknown but small.)117 As I mentioned, no additional countries are known to be pursuing nuclear weapons , and EXISTENTIAL THREATS 317.
+
+## [hf9MDwAAQBAJ] q="Humanity has a finite budget"
+n= 1
+ p. 291 | ... Human Era; The End: What Science and ... has serious downsides. One is that false alarms to catastrophic risks can ... humanity, can endanger it. A second hazard of enumerating doomsday scenarios is that human- ity has a finite budget ...
+
+## [R5KADwAAQBAJ] q="minuscule or unknown probabilities"
+n= 1
+ p. 292 | ... minuscule or unknown probabilities can only dilute the sense of urgency. Recall that people are poor at assessing probabilities, espe- cially small ones, and instead play out scenarios in their mind's eye. If two scenarios are equally ...
+
+## [hf9MDwAAQBAJ] q="Great Chain of Being"
+n= 2
+ p. 296 | ... Great Chain of Being and a Nietzschean will to power than to a modern scientific understanding.21 In this conception, intelligence is an all- powerful, wish- granting potion that agents possess in different amounts. Humans have more of ...
+ p. 337 | ... chain of command gives an American president enormous dis- cretion over the ... being precipitously reversed . By the design of the Founders , the American ... great again ; and even most corporations , which benefit from peace ...
+
+## [hf9MDwAAQBAJ] q="confusion of intelligence with motivation"
+n= 0
+
+## [hf9MDwAAQBAJ] q="bundled"
+n= 4
+ p. 297 | ... bundled (to varying degrees in different specimens) with goals such as dominating rivals and amassing resources. But it's a mis- take to confuse a circuit in the limbic brain of a certain species of primate with the very nature of ...
+ p. 245 | ... bundle of correlations among all the ways that life has improved and trace the causal arrows with certainty. But let's stop fretting for a moment about how hard it is to disentangle the strands and instead take note of their common ...
+ p. 448 | ... bundle , " grew out of the Romantic notion that the individual is a myth and that people are inextricable from their culture , bloodline , and homeland.119 The early fas- cist intellectuals , including Julius Evola ( 1898–1974 ) and ...
+ p. 338 | ... bundle of emotionally charged issues of the day. These included, recently, the euro currency (which arouses skepticism among many economists), intrusive regula- tion from Brussels, and pressure to accept large numbers of refugees from ...
+
+## [hf9MDwAAQBAJ] q="Li'l Abner"
+n= 0
+
+## [hf9MDwAAQBAJ] q="without this defect"
+n= 1
+ p. 297 | ... no law of complex systems that says that intelligent agents must turn into ruthless conquistadors. Indeed, we know of one highly advanced form of intelligence that evolved without this defect. They're called women. The second fallacy is ...
+
+## [R5KADwAAQBAJ] q="moronic"
+n= 1
+ p. 299 | ... moronic that they would give it control of the universe without testing how it works, and (2) the AI would be so brilliant that it could figure out how to transmute elements and rewire brains, yet so imbecilic that it would wreak havoc ...
+
+## [R5KADwAAQBAJ] q="imbecilic"
+n= 1
+ p. 299 | ... that it could figure out how to transmute elements and rewire brains, yet so imbecilic that it would wreak havoc based on elementary blunders of misunderstanding. The ability to choose an action that EXISTENTIAL THREATS 299.
+
+## [R5KADwAAQBAJ] q="Don't build one"
+n= 2
+ p. 299 | ... Built for Two” to itself. Of course, one can always imagine a Doomsday Computer that is malevolent, universally empow- ered, always on, and tamperproof. The way to deal with this threat is straightforward: don't build one. As the ...
+ p. 16 | ... one of the vast number of configurations that don't look like a castle than into the tiny few that do. I'll often refer to the statistical version of the Second Law, which does not apply specifically to temperature differences even- ing ...
+
+## [R5KADwAAQBAJ] q="Myhrvold"
+n= 3
+ p. 477 | ... Myhrvold ( 2014 ) , Ramez Naam ( 2010 ) , Peter Norvig ( 2015 ) , and Roger Schank ( 2015 ) . Skeptical psychologists and biologists include Roy Baumeister ( 2015 ) , Dylan Evans ( 2015 ) , Gary Marcus ( 2015 ) , Mark Pagel ( 2015 ) ...
+ p. 543 | ... Myhrvold , Nathan , 477n20 Naam , Ramez , 298 , 477n20 Nabokov , Vladimir , 261 Nader , Ralph , 177 Nagel , Thomas , 351–2 , 412 , 413 , 427 , 429 , 482n4 , 488n43 Nalin , David , 64 Namazie , Maryam , 443 Namibia , 203 NASA , 295 , 300 ...
+ p. 511 | ... Myhrvold , N. 2014. Commentary on Jaron Lanier's “ The myth of AI . ” Edge . https://www.edge.org / conversation / jaron_lanier - the - myth - of - ai # 25983 . Naam , R. 2010. Top five reasons “ the singularity ” is a misnomer ...
+
+## [R5KADwAAQBAJ] q="Hawking"
+n= 3
+ p. 477 | ... Hawking Warns Artificial Intelligence Could End Mankind , ” BBC News , Dec. 2 , 2014 , http : // www.bbc.com/news/technology-30290540 . 20. In a 2014 poll of the hundred most - cited AI researchers , just 8 percent feared that high ...
+ p. 308 | ... Hawking , Michio Kaku , Lawrence Krauss , and Max Tegmark . Sci- entists have founded the major activist and watchdog organizations , including the Union of Concerned Scientists , the Federation of American Scientists , the Committee ...
+ p. 537 | ... Hawking , Stephen , 296 , 308 Hayek , Friedrich , 5 , 365 health , 62-7 cancer , 61 , 146 dementia / Alzheimer's , 59 and Flynn effect , 241-2 happiness of nations with good , 271 and life expectancy , 59 See also food and food security ...
+
+## [hf9MDwAAQBAJ] q="Stuart Russell"
+n= 1
+ p. 549 | ... Russell , Bertrand , 421 , 445 Russell , Stuart , 300 , 477n20 Russia as autocracy , 201 , 203 , 205 , 335 civil war , 78 conflict with Georgia , 335 conflict with Ukraine , 158 , 159 , 335 Crimea annexation ( 2014 ) , 164 , 335 ...
+
+## [R5KADwAAQBAJ] q="insatiable drive for conquest"
+n= 1
+ p. 166 | ... insatiable drive for conquest. (And not just human nature; some com- mentators project the megalomania of Homo sapiens males onto every form of intelligence, warning that we must not search for extraterrestrial life lest an advanced ...
+
+## [hf9MDwAAQBAJ] q="dull"
+n= 2
+ p. 51 | ... dull - wittedness . Happiness is better than misery . Opportunities to enjoy family , friends , culture , and nature are better than drudgery and monotony . All these things can be measured . If they have increased over time , that is ...
+ p. 288 | ... dull . ” Figure 18-4 shows that over the decades in which fewer Americans said they were " very happy , " more of them said that " life is exciting . " 60 50 40 30 20 10 Ο 1970 1978 1986 1994 Life is exciting Very happy 2002 2010 2018 ...
+
+## [hf9MDwAAQBAJ] q="perfect omniscience"
+n= 0
+
+## [hf9MDwAAQBAJ] q="alpha"
+n= 0
+
+## [hf9MDwAAQBAJ] q="female lines"
+n= 0
+
+## [iFhFEAAAQBAJ] q="superforecasters"
+n= 0
+
+## [iFhFEAAAQBAJ] q="terrorist attack within the next year"
+n= 5
+ p. 162 | ... terrorist attack within the next year , for example , they'll first estimate a base rate by going to Wikipedia and counting the number of attacks in the region in the years preceding not a practice you're likely to see in the next op - 162 ...
+ p. 122 | ... in 2011 , which killed one worker years later ( the other deaths were caused ... terrorist attack in history by far was 9/11 , and it claimed 3,000 lives ... new federal department , massive surveillance of citizens and hardening ...
+ p. 183 | ... in knots . The human utility curve can't be both concave , explaining why we ... this appeal to emotions just pushes the paradox up a level : why did ... terrorist attack or an incident of food poisoning with a dozen victims can ...
+ p. 163 | ... in the next op - ed you read on what is in store for the world.19 Forbidden Base Rates and Bayesian Taboo Base ... terrorist attack . If you were a good Bayesian , you'd start with the base rate for that per- son's age , sex ...
+ p. 218 | ... in a way that failing to punish the guilty does not . A system that does not capriciously target people for ruination marks the difference between a regime of justice and a regime of terror ... act justified the use of " enhanced ...
+
+## [iFhFEAAAQBAJ] q="subjectivist"
+n= 7
+ p. 115 | ... subjectivist interpretation . Before you fling the die , based on everything you know , how would you quan- tify , on a scale from 0 to 1 , your belief that it will land even ? This credence estimate is sometimes called the Bayesian ...
+ p. 116 | ... subjectivist interpretation , I can put a number on my igno- rance . This offends some statisticians , who want to reserve the con- cept of probability for relative frequency in a set of events , which are really real and can be counted ...
+ p. 410 | ... subjectivist interpretation of probability , 115 , 116 , 151 , 194-96 sucker's payoff , 239 , 242 , 244 suicide , 156 Suits , Bernard , 346n28 sunk cost fallacy , 237-38 , 320 , 323 Sunstein , Cass , 56 Superfund sites , 191 ...
+ p. 409 | ... subjectivist probability and , 116 Siri , 108 slavery , 67 , 89 abolition and rationality , 334 , 335 , 336 , 337 , 338 , 339 slippery slope fallacy , 100-101 Slovic , Paul , 122 SMBC cartoon , 120 , 121 smoke alarms , 261 smoking , 257 ...
+ p. 151 | ... subjectivist meaning of " probabil- ity " that we met in the last chapter . ) Call it prob ( Hypothesis ) , the probability of a hypothesis , that is , our degree of credence that it is true . ( In the case of medical diagnosis , the ...
+ p. 406 | ... subjectivist interpretation , 115 , 116 , 151 , 194-96 See also availability heuristic ; conditional probability ; frequentist interpretation ; single - event probabilities probability neglect , 11 , 28 , 321 processes , random , 112 ...
+ p. 392 | ... subjectivist probability and , 115 , 151 updating , 157-58 visualization of , 170-71 - " LIKELIHOOD " term in equation , 152-54 bell curves as plot of , 205 , 205 , 351 definition , 152 , 351n6 , 352n6 , 352n21 statistical significance ...
+
+## [iFhFEAAAQBAJ] q="psychoanalysis"
+n= 1
+ p. 116 | ... in a set of events , which are really real and can be counted . One quipped that single - event prob- abilities belong not in mathematics but in psychoanalysis . Laypeople , too , can have trouble wrapping their minds 116 RATIONALITY.
+
+## [iFhFEAAAQBAJ] q="statisticians are divided"
+n= 2
+ p. 169 | ... statisticians are divided on how much sense that makes , perhaps they can be forgiven . Gigerenzer , together with Cosmides and Tooby , argues that people don't connect decimal fractions to single events , because that's not the way the ...
+ p. 137 | ... statisticians call it the Boy or Girl paradox . People tend to say .5 ; the correct an- swer is .33 . In this case ... divided by [ Girl - Girl plus Girl - Boy plus Boy - Girl ] ( three ) , which equals one third . Or , using the formula , we ...
+
+## [iFhFEAAAQBAJ] q="Risk and Reward"
+n= 16
+ p. 173 | ... RISK AND REWARD ( RATIONAL CHOICE AND EXPECTED UTILITY ) Everyone complains about his memory , and no one com- plains about his judgment . -LA ROCHEFOUCAULD S ome theories are ... Risk and Reward (Rational Choice and Expected Utility)
+ p. 197 | ... risk , and being manipulated by a choice of words . I suspect there are countless deci- sions in life where if we did multiply the risks by the rewards we would choose more wisely . When you buy a gadget ... RISK AND REWARD 197.
+ p. 183 | ... risk with in- surance , and convex , explaining why we seek risk by gambling . Per- haps we gamble for the thrill , just as we buy insurance for the peace of mind , but this appeal to emotions just pushes the ... RISK AND REWARD 183.
+ p. 193 | ... risk of dying on the operat- ing table , or with radiation . 30 Experimental participants are told that out of every 100 patients who chose surgery , 90 survived the opera- tion , 68 were alive after a year ... RISK AND REWARD 193.
+ p. xi | ... Risk and Reward ( Rational Choice and Expected Utility ) 173 7. Hits and False Alarms ( Signal Detection and Statistical Decision Theory ) 201 8. Self and Others ( Game Theory ) 227 9. Correlation and Causation 245 10. What's Wrong with ...
+ p. 189 | ... risk - averse . Now which of these two would you prefer ? Megabucks : 11 % chance of $ 1 million LottoUSA : 10 % chance of $ 2.5 million With this choice , people prefer LottoUSA , which tracks their ex- pected ... RISK AND REWARD 189.
+ p. 177 | ... risk , and may be distinguished from uncertainty , where the decider doesn't even know the probabilities and all bets are off . In 2002 , the US defense secretary Donald Rumsfeld famously explained the ... RISK AND REWARD 177.
+ p. 171 | ... Risk literacy is essential for doctors , judges , policymakers , and others who hold our lives in their hands . And since we all live in a world in ... RISK AND REWARD ( RATIONAL CHOICE AND EXPECTED UTILITY. BELIEFS AND EVIDENCE 171.
+ p. 185 | ... home , and so on . The other shortcut is that we may ignore a small difference in the values of one attribute when others seem more relevant . Savage asks us to consider a tourist who can't decide between RISK AND REWARD 185.
+ p. 191 | ... risk by in- suring themselves against some hazards , like fires , but not others , like hurricanes . 27 They buy insurance for peace of mind to give themselves one less thing to worry about . They would rather ... RISK AND REWARD 191.
+ p. 195 | ... this book , logic is in a separate chapter from probability theory . ( " P OR Q ; NOT P ; therefore , Q " is not just a statement with a very high probability ; it's a logical truth . ) It's why patent officers RISK AND REWARD 195.
+ p. 181 | ... including charity . But the relationship is not linear ; it's concave . In jargon , it shows " dimin- ishing marginal utility . " Utility 0 Money The psychological meaning is obvious : an extra hundred dollars RISK AND REWARD 181.
+ p. 179 | ... you irrational for preferring roulette . ( Of course , someone might call you irrational for gambling in the first place , since the expected value of both bets is negative , owing to the house's take , so the more you RISK AND REWARD 179.
+ p. 175 | ... in various ways ; the version I'll present here was formulated by the mathematician Leon- ard Savage and codified by the psychologists Reid Hastie and Robyn Dawes.5 A Theory of Rational Choice The first axiom may be RISK AND REWARD 175.
+ p. 187 | ... crazy contradiction ? It's easy : when faced with two choices with the same expected value , peo- ple may prefer the one with the higher probability but pay more for the one with the higher payoff . ( Concretely , RISK AND REWARD 187.
+ p. 199 | ... multiplied by the price you put on your life , which way would it go ? And if you don't think this way , can you call yourself rational ? 7 HITS AND FALSE ALARMS ( SIGNAL DETECTION AND STATISTICAL RISK AND REWARD 199.
+
+# --- retries of queries that returned 0 above but returned hits earlier the same day ---
+
+## [hf9MDwAAQBAJ] q="confusion of intelligence with motivation"
+n= 1
+ p. 297 | ... confusion of intelligence with motivation— of beliefs with desires, inferences with goals, thinking with wanting. Even if we did invent superhumanly intel- ligent robots, why would they want to enslave their masters or take over the ...
+
+## [hf9MDwAAQBAJ] q="Li'l Abner"
+n= 1
+ p. 297 | ... Li'l Abner, who deploy their considerable ingenuity to barbecue themselves for the benefit of human eaters. There is no law of complex systems that says that intelligent agents must turn into ruthless conquistadors. Indeed, we know of ...
+
+## [iFhFEAAAQBAJ] q="superforecasters"
+n= 3
+ p. 397 | ... 163-66 forecasting accuracy of regression equations vs. human experts , 278-80 the conjunction rule and , 22-29 importance of , 22-23 superforecasters , 162-63 forecasting ( cont . ) unpredictability of human behavior , INDEX 397.
+ p. 162 | ... superforecast- ers , " who really do have good track records at predicting economic and political outcomes . A common thread is that they are Bayesian : they start with a prior and update it from there . Asked to provide the probability ...
+ p. 385 | ... Superforecasting : The art and science of predic- tion . New York : Crown . Tetlock , P. E. , Kristel , O. V. , Elson , S. B. , Green , M. C. , & Lerner , J. S. 2000. The psychology of the unthinkable : Taboo trade - offs , forbidden ...
+
+## [iFhFEAAAQBAJ] q="good track records"
+n= 1
+ p. 162 | ... track records of many famous forecasters are risible . A big reason is that their careers depend on attracting ... good track records at predicting economic and political outcomes . A common thread is that they are Bayesian : they ...

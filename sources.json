@@ -1,0 +1,801 @@
+{
+  "session": {
+    "title": "Scott Alexander's open letter to Steven Pinker on AI: claim check and evaluation",
+    "date": "2026-10-06",
+    "question": "Corroborate the claims in Scott Alexander's 'An Open Letter To Steven Pinker On AI' (ACX, 2026-10-06) against Pinker's record, using scry for tweets; evaluate both positions and the wider dynamics."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "An Open Letter To Steven Pinker On AI",
+      "authors": [
+        "Scott Alexander"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://www.astralcodexten.com/p/an-open-letter-to-steven-pinker-on",
+      "journal": null,
+      "type": "blog-post",
+      "found_via": "user link (substack.com/home/post/p-218568314)",
+      "download": null,
+      "local_file": "post.md",
+      "status": "read-full",
+      "relevance_level": "VERY HIGH",
+      "relevance": "The post under evaluation"
+    },
+    {
+      "id": 2,
+      "title": "An Open Letter to Scott Alexander",
+      "authors": [
+        "Steven Pinker"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://quillette.com/2026/09/26/an-open-letter-to-scott-alexander-steven-pinker-ai-alignment-safety/",
+      "journal": "Quillette",
+      "type": "magazine-article",
+      "found_via": "linked from post",
+      "download": null,
+      "local_file": "pinker-quillette-letter.md",
+      "status": "read-full",
+      "relevance_level": "VERY HIGH",
+      "relevance": "Pinker's letter that Scott is replying to"
+    },
+    {
+      "id": 3,
+      "title": "Twitter/X historical archive via scry (twitter.tweets, tweets_latest, tweets_by_author, author_handles)",
+      "authors": [
+        "scry.io"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://mcp.scry.io",
+      "journal": null,
+      "type": "dataset",
+      "found_via": "AGENTS.md source ladder",
+      "download": null,
+      "local_file": "notes.md; scry-pinker-ai-tweets-pre2026-09.tsv",
+      "status": "read-full",
+      "relevance_level": "VERY HIGH",
+      "relevance": "Verbatim text of every tweet cited (Pinker author_id 107225267; Scott 1526643050; Lehmann 1398479138); SQL in notes.md"
+    },
+    {
+      "id": 4,
+      "title": "Superintelligence is a fantasy: leading scientists reject apocalyptic rogue AI extinction warnings",
+      "authors": [
+        "Claire Lehmann"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://theaustralian.com.au/inquirer/superintelligence-is-a-fantasy-leading-scientists-reject-apocalyptic-rogue-ai-extinction-warnings/news-story/618eef10b92d4357e51e4b459eaf9fa9",
+      "journal": "The Australian",
+      "type": "newspaper-article",
+      "found_via": "URL in Zvi AI #187; full text from Lehmann's X long-post 2101052017347281300 via scry",
+      "download": null,
+      "local_file": "media/lehmann-2026-09-18-australian-via-x.md",
+      "status": "read-full",
+      "relevance_level": "HIGH",
+      "relevance": "Article Pinker tweeted on 2026-09-18; source of 'unconventional lifestyles'"
+    },
+    {
+      "id": 5,
+      "title": "How Scared Should We Be of A.I. Right Now?",
+      "authors": [
+        "Cal Newport"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://www.nytimes.com/2026/09/05/opinion/ai-silicon-valley.html",
+      "journal": "New York Times",
+      "type": "op-ed",
+      "found_via": "Pinker tweet 2026-09-05",
+      "download": null,
+      "local_file": "media/newport-2026-09-05-how-scared-should-we-be-repost.md",
+      "status": "read-full (unofficial repost)",
+      "relevance_level": "MODERATE-HIGH",
+      "relevance": "'weirder than we realize'; group houses, polyamory, psychedelics"
+    },
+    {
+      "id": 6,
+      "title": "'Suicidal Compassion': Meet the Anthropic Officials Who Think AI Might Be Justified in Going Rogue Against the Humans Enslaving It",
+      "authors": [
+        "Aaron Sibarium"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://freebeacon.com/america/suicidal-compassion-meet-the-anthropic-officials-who-think-ai-might-be-justified-in-going-rogue-against-the-humans-enslaving-it/",
+      "journal": "Washington Free Beacon",
+      "type": "news-article",
+      "found_via": "Pinker tweet 2026-09-27",
+      "download": null,
+      "local_file": "media/freebeacon-sibarium-2026-09-25-suicidal-compassion.md",
+      "status": "read-full",
+      "relevance_level": "MODERATE",
+      "relevance": "Story Pinker boosted; Scott calls it 'suicidal empathy'"
+    },
+    {
+      "id": 7,
+      "title": "A warning about 'model welfare'",
+      "authors": [
+        "Mustafa Suleyman"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
+      "journal": null,
+      "type": "essay",
+      "found_via": "Pinker tweet 2026-09-28",
+      "download": null,
+      "local_file": "media/suleyman-2026-09-16-warning-about-model-welfare.md",
+      "status": "read-full",
+      "relevance_level": "MODERATE-HIGH",
+      "relevance": "Contains no 'depravity'; that word is Pinker's"
+    },
+    {
+      "id": 8,
+      "title": "Why Tech Oligarchs Are Willing to Risk Apocalypse",
+      "authors": [
+        "Michelle Goldberg"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://www.nytimes.com/2026/09/12/opinion/ai-tech-apocalypse-silicon-valley.html",
+      "journal": "New York Times",
+      "type": "op-ed",
+      "found_via": "Pinker tweet 2026-09-28",
+      "download": null,
+      "local_file": "media/goldberg-2026-09-why-tech-oligarchs-risk-apocalypse.md",
+      "status": "read-full (syndicated copy)",
+      "relevance_level": "MODERATE",
+      "relevance": "No 'insouciant'; targets oligarchs, not researchers"
+    },
+    {
+      "id": 9,
+      "title": "'Things Will Never Be Chill Again': The Doomers Who Shaped the AI Safety Freakout",
+      "authors": [
+        "(unknown)"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://www.wsj.com/tech/ai/ai-safety-effective-altruism-anthropic-164b9d05",
+      "journal": "Wall Street Journal",
+      "type": "news-article",
+      "found_via": "Pinker tweet 2026-09-28",
+      "download": null,
+      "local_file": "media/wsj-2026-09-27-things-will-never-be-chill-again-EXCERPT.md",
+      "status": "read-partial (excerpt)",
+      "relevance_level": "LOW",
+      "relevance": "WSJ 'digging' Pinker cites in the cult tweet"
+    },
+    {
+      "id": 10,
+      "title": "Why HAL 9000 Feared Death (and Real AIs Don't); What Does AI Want?",
+      "authors": [
+        "Maarten Boudry"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://maartenboudry.substack.com/p/why-hal-9000-feared-death-and-real",
+      "journal": null,
+      "type": "essay",
+      "found_via": "Pinker tweets 2026-05-06, 2026-07-31, 2026-09-29",
+      "download": null,
+      "local_file": "media/boudry-2026-03-25-why-hal-9000-feared-death.md; media/boudry-2026-07-30-what-does-ai-want.md",
+      "status": "read-full",
+      "relevance_level": "MODERATE-HIGH",
+      "relevance": "The anti-instrumental-convergence argument Pinker relies on"
+    },
+    {
+      "id": 11,
+      "title": "On the Extinction Risk from Artificial Intelligence (RR-A3034-1)",
+      "authors": [
+        "Michael J. D. Vermeer",
+        "Emily Lathrop",
+        "Alvin Moon"
+      ],
+      "year": 2025,
+      "doi": null,
+      "url": "https://www.rand.org/pubs/research_reports/RRA3034-1.html",
+      "journal": "RAND Corporation",
+      "type": "report",
+      "found_via": "linked from both letters",
+      "download": null,
+      "local_file": "media/RAND_RRA3034-1.pdf",
+      "status": "read-full",
+      "relevance_level": "VERY HIGH",
+      "relevance": "Pinker quoted its hypothesis as its conclusion"
+    },
+    {
+      "id": 12,
+      "title": "Could AI Really Kill Off Humans?",
+      "authors": [
+        "Michael J. D. Vermeer"
+      ],
+      "year": 2025,
+      "doi": null,
+      "url": "https://www.scientificamerican.com/article/could-ai-really-kill-off-humans/",
+      "journal": "Scientific American",
+      "type": "magazine-article",
+      "found_via": "sub-agent search",
+      "download": null,
+      "local_file": "media/vermeer-sciam-2025-05-06-could-ai-really-kill-off-humans.md",
+      "status": "read-full",
+      "relevance_level": "MODERATE",
+      "relevance": "Likely source of Pinker's 'granting the assumption' framing"
+    },
+    {
+      "id": 13,
+      "title": "Enlightenment Now: The Case for Reason, Science, Humanism, and Progress (ch. 19 'Existential Threats', pp. 290-321)",
+      "authors": [
+        "Steven Pinker"
+      ],
+      "year": 2018,
+      "doi": null,
+      "url": "https://books.google.com/books?id=hf9MDwAAQBAJ",
+      "journal": null,
+      "type": "book",
+      "found_via": "post; Google Books search-within (Anna's Archive unreachable)",
+      "download": null,
+      "local_file": "web/gbooks-searchwithin-log.txt",
+      "status": "read-partial (snippets)",
+      "relevance_level": "VERY HIGH",
+      "relevance": "Source of several of the quotes Scott uses"
+    },
+    {
+      "id": 14,
+      "title": "The robot uprising is unlikely (Enlightenment Now excerpt)",
+      "authors": [
+        "Steven Pinker"
+      ],
+      "year": 2018,
+      "doi": null,
+      "url": "https://www.popsci.com/robot-uprising-enlightenment-now/",
+      "journal": "Popular Science",
+      "type": "magazine-article",
+      "found_via": "Pinker tweet 2018-02-15",
+      "download": null,
+      "local_file": "web/popsci-pinker-2018.txt",
+      "status": "read-full",
+      "relevance_level": "HIGH",
+      "relevance": "Verbatim 'foom...' and Russell bridges passages"
+    },
+    {
+      "id": 15,
+      "title": "Thinking Does Not Imply Subjugating (Edge Question 2015)",
+      "authors": [
+        "Steven Pinker"
+      ],
+      "year": 2015,
+      "doi": null,
+      "url": "https://www.edge.org/response-detail/26243",
+      "journal": "Edge",
+      "type": "essay",
+      "found_via": "post",
+      "download": null,
+      "local_file": "web/edge-26243.txt",
+      "status": "read-full",
+      "relevance_level": "HIGH",
+      "relevance": "'parochial alpha-male psychology'; 'female lines'"
+    },
+    {
+      "id": 16,
+      "title": "The Myth of AI, Reality Club comments",
+      "authors": [
+        "Jaron Lanier",
+        "Steven Pinker",
+        "Stuart Russell",
+        "et al."
+      ],
+      "year": 2014,
+      "doi": null,
+      "url": "https://www.edge.org/conversation/jaron_lanier-the-myth-of-ai",
+      "journal": "Edge",
+      "type": "essay",
+      "found_via": "sub-agent",
+      "download": null,
+      "local_file": "web/edge-myth-of-ai-2014.txt",
+      "status": "read-full",
+      "relevance_level": "HIGH",
+      "relevance": "Pinker's 2014 alpha-male comment; Russell's 'intrinsic part of AI'"
+    },
+    {
+      "id": 17,
+      "title": "Superforecasting blurb (Edge Master Class 2015 pages; PRH page)",
+      "authors": [
+        "Steven Pinker"
+      ],
+      "year": 2015,
+      "doi": null,
+      "url": "https://www.edge.org/node/26348",
+      "journal": null,
+      "type": "web-page",
+      "found_via": "sub-agent",
+      "download": null,
+      "local_file": "web/edge-node-26348.txt; web/prh-superforecasting.html",
+      "status": "read-full",
+      "relevance_level": "MODERATE",
+      "relevance": "Confirms Pinker's blurb that Scott quotes"
+    },
+    {
+      "id": 18,
+      "title": "Rationality: What It Is, Why It Seems Scarce, Why It Matters",
+      "authors": [
+        "Steven Pinker"
+      ],
+      "year": 2021,
+      "doi": null,
+      "url": "https://books.google.com/books?id=iFhFEAAAQBAJ",
+      "journal": null,
+      "type": "book",
+      "found_via": "Google Books search-within",
+      "download": null,
+      "local_file": "web/gbooks-searchwithin-log.txt",
+      "status": "read-partial (snippets)",
+      "relevance_level": "MODERATE",
+      "relevance": "Treatment of subjective probability (pp. 115-118, 162-163)"
+    },
+    {
+      "id": 19,
+      "title": "Will ChatGPT supplant us as writers, thinkers?",
+      "authors": [
+        "Alvin Powell"
+      ],
+      "year": 2023,
+      "doi": null,
+      "url": "https://news.harvard.edu/gazette/story/2023/02/will-chatgpt-replace-human-writers-pinker-weighs-in/",
+      "journal": "Harvard Gazette",
+      "type": "news-article",
+      "found_via": "post",
+      "download": null,
+      "local_file": "web/harvard-gazette-2023-02-pinker-chatgpt.txt",
+      "status": "read-full",
+      "relevance_level": "HIGH",
+      "relevance": "'I doubt it will improve exponentially, but it will improve'"
+    },
+    {
+      "id": 20,
+      "title": "Steven Pinker and I debate AI scaling! (and follow-up ?p=6593)",
+      "authors": [
+        "Scott Aaronson",
+        "Steven Pinker"
+      ],
+      "year": 2022,
+      "doi": null,
+      "url": "https://scottaaronson.blog/?p=6524",
+      "journal": "Shtetl-Optimized",
+      "type": "blog-post",
+      "found_via": "post",
+      "download": null,
+      "local_file": "web/aaronson-6524.txt; web/aaronson-6593.txt",
+      "status": "read-full",
+      "relevance_level": "HIGH",
+      "relevance": "'Perhaps, though I doubt it' paragraph in full context"
+    },
+    {
+      "id": 21,
+      "title": "My Bet: AI Size Solves Flubs",
+      "authors": [
+        "Scott Alexander"
+      ],
+      "year": 2022,
+      "doi": null,
+      "url": "https://www.astralcodexten.com/p/my-bet-ai-size-solves-flubs",
+      "journal": null,
+      "type": "blog-post",
+      "found_via": "sub-agent",
+      "download": null,
+      "local_file": "web/acx-my-bet-ai-size-solves-flubs.txt",
+      "status": "read-full",
+      "relevance_level": "HIGH",
+      "relevance": "Shows GPT-3 already passing the trophies example on 2022-06-07"
+    },
+    {
+      "id": 22,
+      "title": "GPT-2 and the Nature of Intelligence",
+      "authors": [
+        "Gary Marcus"
+      ],
+      "year": 2020,
+      "doi": null,
+      "url": "https://thegradient.pub/gpt2-and-the-nature-of-intelligence/",
+      "journal": "The Gradient",
+      "type": "essay",
+      "found_via": "sub-agent",
+      "download": null,
+      "local_file": "web/gradient-marcus-gpt2-2020.txt",
+      "status": "read-full",
+      "relevance_level": "MODERATE",
+      "relevance": "Origin of the trophies example"
+    },
+    {
+      "id": 23,
+      "title": "Observational Scaling Laws and the Predictability of Language Model Performance",
+      "authors": [
+        "Yangjun Ruan",
+        "Chris J. Maddison",
+        "Tatsunori Hashimoto"
+      ],
+      "year": 2024,
+      "doi": "10.48550/arXiv.2405.10938",
+      "url": "https://arxiv.org/abs/2405.10938",
+      "journal": null,
+      "type": "preprint",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial",
+      "relevance_level": "MODERATE",
+      "relevance": "PC1 ~80% of variance over 8 benchmarks"
+    },
+    {
+      "id": 24,
+      "title": "The evolution of primate general and cultural intelligence",
+      "authors": [
+        "Simon M. Reader",
+        "Yfke Hager",
+        "Kevin N. Laland"
+      ],
+      "year": 2011,
+      "doi": "10.1098/rstb.2010.0342",
+      "url": "https://doi.org/10.1098/rstb.2010.0342",
+      "journal": "Phil Trans R Soc B",
+      "type": "journal-article",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial (abstract)",
+      "relevance_level": "LOW",
+      "relevance": "Primate g(S)"
+    },
+    {
+      "id": 25,
+      "title": "The evolution of self-control",
+      "authors": [
+        "Evan L. MacLean",
+        "et al."
+      ],
+      "year": 2014,
+      "doi": "10.1073/pnas.1323533111",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.1323533111",
+      "journal": "PNAS",
+      "type": "journal-article",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial (abstract)",
+      "relevance_level": "LOW",
+      "relevance": "Self-control across 36 species; not a bird g-factor"
+    },
+    {
+      "id": 26,
+      "title": "On the Impossibility of Supersized Machines",
+      "authors": [
+        "Ben Garfinkel",
+        "et al."
+      ],
+      "year": 2017,
+      "doi": null,
+      "url": "https://arxiv.org/abs/1703.10987",
+      "journal": null,
+      "type": "preprint",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial",
+      "relevance_level": "LOW",
+      "relevance": "Satire (dated April 1)"
+    },
+    {
+      "id": 27,
+      "title": "The Basic AI Drives",
+      "authors": [
+        "Stephen M. Omohundro"
+      ],
+      "year": 2008,
+      "doi": null,
+      "url": "https://selfawaresystems.com/wp-content/uploads/2008/01/ai_drives_final.pdf",
+      "journal": null,
+      "type": "conference-paper",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial",
+      "relevance_level": "MODERATE",
+      "relevance": "Instrumental convergence; AGI-08"
+    },
+    {
+      "id": 28,
+      "title": "P(doom) (Wikipedia, rev. 2026-10-03)",
+      "authors": [
+        "Wikipedia contributors"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://en.wikipedia.org/wiki/P(doom)",
+      "journal": null,
+      "type": "web-page",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-full",
+      "relevance_level": "MODERATE",
+      "relevance": "No 100%; Yampolskiy 99.9-99.999999%; Yudkowsky >95%"
+    },
+    {
+      "id": 29,
+      "title": "My views on 'doom'",
+      "authors": [
+        "Paul Christiano"
+      ],
+      "year": 2023,
+      "doi": null,
+      "url": "https://www.lesswrong.com/posts/xWMqsvHapP3nwdSW8",
+      "journal": null,
+      "type": "forum-post",
+      "found_via": "sub-agent",
+      "download": null,
+      "local_file": null,
+      "status": "read-full",
+      "relevance_level": "MODERATE",
+      "relevance": "20% most humans die; 11% AI takeover; contradicts Scott's '20-50% kills everyone'"
+    },
+    {
+      "id": 30,
+      "title": "MIRI announces new 'Death With Dignity' strategy",
+      "authors": [
+        "Eliezer Yudkowsky"
+      ],
+      "year": 2022,
+      "doi": null,
+      "url": "https://www.lesswrong.com/posts/j9Q8bRmwCgXRYAgcJ",
+      "journal": null,
+      "type": "forum-post",
+      "found_via": "sub-agent",
+      "download": null,
+      "local_file": null,
+      "status": "read-full",
+      "relevance_level": "MODERATE",
+      "relevance": "'from 0% to 0%': the near-certainty rhetoric behind Pinker's '100 percent'"
+    },
+    {
+      "id": 31,
+      "title": "Advanced AI according to 1,580 researchers (ESPAI 2024)",
+      "authors": [
+        "Katja Grace",
+        "et al."
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://aiimpacts.org/wp-content/uploads/2026/09/ESPAI2024.pdf",
+      "journal": "AI Impacts",
+      "type": "report",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial",
+      "relevance_level": "MODERATE",
+      "relevance": "Mean ~18%, median 10%, 10% response rate"
+    },
+    {
+      "id": 32,
+      "title": "Long-range subjective-probability forecasts of slow-motion variables in world politics",
+      "authors": [
+        "Philip E. Tetlock",
+        "et al."
+      ],
+      "year": 2023,
+      "doi": "10.1002/ffo2.157",
+      "url": "https://doi.org/10.1002/ffo2.157",
+      "journal": "Futures & Foresight Science",
+      "type": "journal-article",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial",
+      "relevance_level": "MODERATE",
+      "relevance": "Weaker support than Scott implies ('loading the methodological dice')"
+    },
+    {
+      "id": 33,
+      "title": "RAND Forecasting Initiative all-time leaderboard",
+      "authors": [
+        "RAND"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://www.randforecastinginitiative.org/leaderboards/",
+      "journal": null,
+      "type": "web-page",
+      "found_via": "sub-agent",
+      "download": null,
+      "local_file": null,
+      "status": "read-full",
+      "relevance_level": "LOW",
+      "relevance": "Lifland now #2"
+    },
+    {
+      "id": 34,
+      "title": "Navier-Stokes announcement (OpenAI) and Clay Institute statement",
+      "authors": [
+        "OpenAI",
+        "Clay Mathematics Institute"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://openai.com/navier-stokes-solution/",
+      "journal": null,
+      "type": "web-page",
+      "found_via": "sub-agent",
+      "download": null,
+      "local_file": null,
+      "status": "read-full",
+      "relevance_level": "LOW",
+      "relevance": "Forced singularity; Clay: 'apparently been settled', review ongoing"
+    },
+    {
+      "id": 35,
+      "title": "OpenAI-Hugging Face Incident Technical Report; METR investigation",
+      "authors": [
+        "OpenAI",
+        "METR"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+      "journal": null,
+      "type": "report",
+      "found_via": "sub-agent",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial",
+      "relevance_level": "MODERATE",
+      "relevance": "Scorer tampering + privilege escalation; METR: evasion 'fairly myopic'"
+    },
+    {
+      "id": 36,
+      "title": "Preparing for a restart after reading Slack (misalignment report)",
+      "authors": [
+        "OpenAI"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://alignment.openai.com/misalignment-reports/preparing-for-a-restart-after-reading-slack/",
+      "journal": null,
+      "type": "report",
+      "found_via": "Scott's figure source (Marcus Williams tweet 2106203042140102868)",
+      "download": null,
+      "local_file": null,
+      "status": "read-full",
+      "relevance_level": "MODERATE",
+      "relevance": "Model declined to restart itself; OpenAI judged it not misaligned"
+    },
+    {
+      "id": 37,
+      "title": "Claude discovers novel enzyme system",
+      "authors": [
+        "Anthropic"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "journal": null,
+      "type": "web-page",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial",
+      "relevance_level": "LOW",
+      "relevance": "'All of the lab work is performed by human scientists'"
+    },
+    {
+      "id": 38,
+      "title": "Pain-vector paper (arXiv 2609.16247)",
+      "authors": [
+        "Tagliabue",
+        "Dung",
+        "Cameron Berg"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://arxiv.org/abs/2609.16247",
+      "journal": null,
+      "type": "preprint",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial (abstract)",
+      "relevance_level": "LOW",
+      "relevance": "Small open models; the torture-chamber repo is clamped and has a stop button"
+    },
+    {
+      "id": 39,
+      "title": "NYC Board of Elections, NY-12 Democratic primary recap (2026-06-23)",
+      "authors": [
+        "NYC BOE"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://vote.nyc/sites/default/files/pdf/election_results/2026/20260623Primary%20Election/01101600012New%20York%20Democratic%20Representative%20in%20Congress%2012th%20Congressional%20District%20Recap.pdf",
+      "journal": null,
+      "type": "dataset",
+      "found_via": "sub-agent",
+      "download": null,
+      "local_file": null,
+      "status": "read-full",
+      "relevance_level": "LOW",
+      "relevance": "Bores lost (Lasher 38.9%, Bores 34.9%)"
+    },
+    {
+      "id": 40,
+      "title": "Coalition letter opposing the updated AI moratorium",
+      "authors": [
+        "Encode et al."
+      ],
+      "year": 2025,
+      "doi": null,
+      "url": "https://encodeai.org/wp-content/uploads/2025/06/Coalition-Letter_-Oppose-the-Updated-AI-Moratorium.pdf",
+      "journal": null,
+      "type": "letter",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-full",
+      "relevance_level": "LOW",
+      "relevance": "140+ organizations; confirms the x-risk / near-term coalition"
+    },
+    {
+      "id": 41,
+      "title": "AI #187: Coming Into Play; AI #188: Gemini Dot Argon",
+      "authors": [
+        "Zvi Mowshowitz"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://www.lesswrong.com/posts/o7pYWzWWwGDePoC5E/ai-187-coming-into-play",
+      "journal": null,
+      "type": "blog-post",
+      "found_via": "scry forums.posts",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial",
+      "relevance_level": "MODERATE",
+      "relevance": "Third-party commentary on the exchange"
+    },
+    {
+      "id": 42,
+      "title": "Melanie Mitchell works since 2022 (OpenAlex author A5086956524)",
+      "authors": [
+        "OpenAlex"
+      ],
+      "year": 2026,
+      "doi": null,
+      "url": "https://api.openalex.org/works?filter=author.id:A5086956524,from_publication_date:2022-06-01",
+      "journal": null,
+      "type": "dataset",
+      "found_via": "my pull",
+      "download": null,
+      "local_file": null,
+      "status": "read-full",
+      "relevance_level": "MODERATE",
+      "relevance": "27 works incl. LLM evaluation papers; contradicts 'no expertise in modern LLMs'"
+    },
+    {
+      "id": 43,
+      "title": "Chalmers, 'Could a Large Language Model Be Conscious?'",
+      "authors": [
+        "David Chalmers"
+      ],
+      "year": 2023,
+      "doi": null,
+      "url": "https://www.bostonreview.net/articles/could-a-large-language-model-be-conscious/",
+      "journal": "Boston Review",
+      "type": "essay",
+      "found_via": "post",
+      "download": null,
+      "local_file": null,
+      "status": "read-partial",
+      "relevance_level": "LOW",
+      "relevance": "'under 10 percent'"
+    }
+  ]
+}

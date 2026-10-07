@@ -1,0 +1,18 @@
+# Binary source files (restored via sources.json)
+*.pdf
+*.epub
+*.mobi
+*.azw3
+*.djvu
+
+# Converted text files from epub/pdf extraction
+*.txt
+
+# Allow HTML docs to be committed
+!docs/
+!docs/**
+
+# Editor/OS junk
+.DS_Store
+*~
+*.swp
