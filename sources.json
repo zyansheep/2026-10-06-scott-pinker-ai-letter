@@ -240,12 +240,17 @@
       "url": "https://books.google.com/books?id=hf9MDwAAQBAJ",
       "journal": null,
       "type": "book",
-      "found_via": "post; Google Books search-within (Anna's Archive unreachable)",
-      "download": null,
-      "local_file": "web/gbooks-searchwithin-log.txt",
-      "status": "read-partial (snippets)",
+      "found_via": "post; Google Books snippets; full text via Anna's Archive 2026-10-08 (md5 from scry books.catalog)",
+      "download": {
+        "hash": "b259c2938bdd52e6d95b4fbe4377742b",
+        "format": "epub",
+        "filename": "Enlightenment Now - Pinker 2018.epub"
+      },
+      "local_file": "media/Enlightenment Now - Pinker 2018.epub",
+      "status": "read-full (ch. 19, ch. 21 pp. 368-71, notes pp. 476-77, p. 166)",
       "relevance_level": "VERY HIGH",
-      "relevance": "Source of several of the quotes Scott uses"
+      "relevance": "Source of most book quotes in the dispute; retail EPUB of the first US edition with print page markers; local HTML copy kept out of the public repo",
+      "html_filename": "Enlightenment Now - Pinker 2018.html"
     },
     {
       "id": 14,

@@ -165,3 +165,51 @@ SELECT toString(tweet_id) AS id, argMax(author_handle, (length(author_handle) > 
 SELECT toString(tweet_id) AS id, min(original_timestamp) AS ts, argMax(text, version) AS t, max(like_count) AS likes, max(view_count) AS views, max(reply_count) AS replies, max(quote_count) AS quotes FROM twitter.tweets WHERE bucket_date >= '2026-10-06' AND lower(author_handle) = 'sarahthehaider' AND NOT startsWith(text, 'RT @') GROUP BY tweet_id ORDER BY ts ASC LIMIT 30
 ```
 Also: Google Books SearchWithinVolume2 on hf9MDwAAQBAJ (Enlightenment Now): "superforecasters" → pp. 368–71 (ch. 21 "Reason", pp. 351–84); "missile gap" → p. 291; "Rabinowitch" → p. 311.
+
+## Enlightenment Now full text (2026-10-08)
+- **Getting the file:**
+  - The Anna's MCP `book_search` returns nothing. The mirror heartbeat at open-slum.org 404s, so the tool falls back to the parked annas-archive.li, and the live mirrors (.gl/.gd/.pk) serve a DDoS-Guard page to scripted HTML requests.
+  - The JSON download API works on the live mirrors.
+  - MD5 taken from scry: `SELECT record_id, title, author, publisher, edition, year, extension, filesize, language_codes, isbn13, problem_count FROM books.catalog WHERE family = 'files' AND hasAllTokens(search_text_lc, tokens('enlightenment now pinker')) ORDER BY extension, filesize DESC LIMIT 40`.
+  - Picked `md5:b259c2938bdd52e6d95b4fbe4377742b` (epub, "Original Retail, 13 Feb 2018", Penguin Group).
+  - Downloaded via `https://annas-archive.gl/dyn/api/fast_download.json?md5=…&key=…`, with the downloaded file's MD5 verified. Ledger: 1 download on 2026-10-08.
+  - `.mcp.json` now sets `ANNAS_FIXED_BASE_URL=annas-archive.gl` so `book_download` works next session.
+- **Building the copy:** the EPUB carries `epub:type="pagebreak"` markers (pages 1–556). `/tmp/pinker-scripts/build_en_html.py` built `docs/Enlightenment Now - Pinker 2018.html`, with page labels supplied by CSS only so they don't break text fragments. It is gitignored because the repo is public.
+- **Every passage cited from the book was found on the stated page:**
+
+  | Passage | Page |
+  |---|---|
+  | "yet so moronic…" | 299 |
+  | "The way to deal with this threat … don't build one" | 299 |
+  | "self-refuting" | 299 |
+  | "too kitschy to take seriously" | 299 |
+  | "When we put aside fantasies like foom…" | 300 |
+  | "It is developed incrementally…" | 300 |
+  | Russell bridges | 300 |
+  | "is not an add-on to intelligence" | 300 |
+  | "The first fallacy is a confusion of intelligence with motivation" | 297 |
+  | "…limbic brain…" | 297 |
+  | "They're called women" | 297 |
+  | "God-like omniscience and omnipotence" | 297 |
+  | "nonsensical questions" | 297 |
+  | "Humans have more of it than animals" | 296 |
+  | "barely coherent" | 298 |
+  | "finite budget…" | 291–92 |
+  | "mythical 'missile gap'" | 291 |
+  | "more and bigger bombs" | 311 |
+  | "should revolutionize our understanding…" | 371 |
+  | Superforecasting discussion | 368–71 |
+  | "megalomania of Homo sapiens males" | 166 |
+
+- **Structure:**
+  - Chapter 19 spans pp. 290–321; chapter 20 starts on p. 322.
+  - Note 1 (p. 476): "Mythical missile gap".
+  - Note 20 (p. 477) lists "Stuart Russell (2015)" among "AI experts who are publicly skeptical" in this first-edition text.
+  - Note 31 (p. 477): "Quoted in J. Bohannon, “Fears of an AI Pioneer,” Science, July 17, 2016" (actually 2015).
+- **Absent from the whole book:** "perfect omniscience", "dull humans", "alpha-male", "parochial alpha-male", "female lines", "Freudian".
+
+## Scott's justification comment (2026-10-08 00:07 UTC), checked
+scry: `SELECT * FROM substack.comments WHERE toString(comment_id) = '355534771' LIMIT 1`. Its quoted phrases:
+- **"Disaster scenarios are cheap to play out in the probability-free zone of our imaginations…"**: Pinker, Edge 2014 (web/edge-myth-of-ai-2014.txt) ✓.
+- **"nonsensical"** p. 297, **"barely coherent"** p. 298, **"too kitschy to take seriously"** p. 299, **"self-refuting"** p. 299, **"digital megalomania"** p. 300, **"comic-book"** p. 297 (the foom sound effect) ✓.
+- **"Freudian projection"**: not found in the book, Pinker's tweets, or the saved interviews and transcripts.

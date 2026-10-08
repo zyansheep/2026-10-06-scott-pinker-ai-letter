@@ -16,3 +16,6 @@
 .DS_Store
 *~
 *.swp
+
+# Full copyrighted book: keep local (repo is public)
+docs/Enlightenment Now - Pinker 2018.html

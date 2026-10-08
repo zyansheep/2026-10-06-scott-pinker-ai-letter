@@ -1,5 +1,15 @@
 # Sources — Scott Alexander's open letter to Steven Pinker on AI: claim check and evaluation
 
+## Downloaded Papers
+
+### 13. Pinker 2018 — Enlightenment Now: The Case for Reason, Science, Humanism, and Progress (ch. 19 'Existential Threats', pp. 290-321)
+- **Title**: Enlightenment Now: The Case for Reason, Science, Humanism, and Progress (ch. 19 'Existential Threats', pp. 290-321)
+- **Authors**: Steven Pinker
+- **Year**: 2018
+- **Found via**: post; Google Books snippets; full text via Anna's Archive 2026-10-08 (md5 from scry books.catalog)
+- **Status**: `[downloaded]` `[read-full (ch. 19, ch. 21 pp. 368-71, notes pp. 476-77, p. 166)]`
+- **Relevance**: **VERY HIGH**. Source of most book quotes in the dispute; retail EPUB of the first US edition with print page markers; local HTML copy kept out of the public repo
+
 ## Additional Sources
 
 ### 1. Alexander 2026 — An Open Letter To Steven Pinker On AI
@@ -105,14 +115,6 @@
 - **Found via**: sub-agent search
 - **Status**: `[read-full]`
 - **Relevance**: **MODERATE**. Likely source of Pinker's 'granting the assumption' framing
-
-### 13. Pinker 2018 — Enlightenment Now: The Case for Reason, Science, Humanism, and Progress (ch. 19 'Existential Threats', pp. 290-321)
-- **Title**: Enlightenment Now: The Case for Reason, Science, Humanism, and Progress (ch. 19 'Existential Threats', pp. 290-321)
-- **Authors**: Steven Pinker
-- **Year**: 2018
-- **Found via**: post; Google Books search-within (Anna's Archive unreachable)
-- **Status**: `[read-partial (snippets)]`
-- **Relevance**: **VERY HIGH**. Source of several of the quotes Scott uses
 
 ### 14. Pinker 2018 — The robot uprising is unlikely (Enlightenment Now excerpt)
 - **Title**: The robot uprising is unlikely (Enlightenment Now excerpt)
