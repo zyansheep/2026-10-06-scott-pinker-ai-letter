@@ -1,0 +1,58 @@
+[
+ {
+  "id": 354670945,
+  "name": "Scott Alexander",
+  "date": "2026-10-06T23:12:54.332Z",
+  "ancestor_path": "354652397",
+  "body": "I started with a much meaner draft, and everyone who I asked for comments on the draft was horrified and said I needed to make it nicer, so I did."
+ },
+ {
+  "id": 355422418,
+  "name": "wrd",
+  "date": "2026-10-07T20:55:42.511Z",
+  "ancestor_path": "",
+  "body": "I think this is some of your worst writing. I guess being open-minded and charitable is no longer a thing for you.\n\nThis is really sad."
+ },
+ {
+  "id": 355534771,
+  "name": "Scott Alexander",
+  "date": "2026-10-08T00:07:44.462Z",
+  "ancestor_path": "354868766",
+  "body": "What?? I address all of those things, except one which is also wrong but it seemed petty to call him out here. Going in order:\n\n---- \"We\u2019re only scared of AI because we\u2019re male\"\n\nThis is section 8, about how we're \"projecting alpha-male psychology\". In other places he has even specifically said \"Freudian projection\", ie projecting our own qualities onto others.\n\nSee also his book, where he discusses the possibility that AI might have power-seeking goals and says \"Indeed, we know of one highly advanced form of intelligence that evolved without this defect. They\u2019re called women\"\n\n---- \"That we can\u2019t be trusted because we live \u2018unconventional lifestyles\u2019\"\n\n\"Unconventional lifestyles\" is a direct quote from the Claire Lehmann article that Pinker linked. This is the one I didn't mention because I was already giving him a lot of grief and it seemed petty to mention that the thing he denied signal-boosting was an exact quote from an article he signal-boosted.\n\n---- \"That our beliefs are inherently insensitive to people worried about near-term AI risks\"\n\nThis is section 6, \"You unfairly accuse us of \u201cdistracting from\u201d AI\u2019s mundane harms and near-term risks.\"\n\n---- \"That we\u2019re paranoid\"\n\nI'm not sure what there is to be debated here - his whole point is that we've devoted our lives to panicking about a threat that doesn't exist. But if you want specific quotes, \u201cDisaster scenarios are cheap to play out in the probability-free zone of our imaginations, and they can always find a worried, technophobic, or morbidly fascinated audience.\"\n\n--- \"That we should be laughed out of the room\"\n\nSome of the ways he's described us or our arguments over the years: \"nonsensical ... hype ... barely coherent ... too kitschy to take seriously ... self-refuting ... fantasies ... digital megalomania ... comic-book ... more a fantasy than a coherent concept ... magical wizard.\""
+ },
+ {
+  "id": 354697606,
+  "name": "Scott Alexander",
+  "date": "2026-10-07T00:02:15.908Z",
+  "ancestor_path": "354687416",
+  "body": "Eleos. I know the people involved are good and thoughtful, but I haven't done enough of a search to be able to confidently say they are the best."
+ },
+ {
+  "id": 355510486,
+  "name": "Scott Alexander",
+  "date": "2026-10-07T23:20:17.602Z",
+  "ancestor_path": "355422418",
+  "body": "People keep saying this, but I'm not sure what you want. I didn't lie about him or say anything false on here or spend any excess time insulting him above and beyond pointing out his errors, I just went over, in great detail, all the times he had been wrong or unfair. I tried to explain in the piece why something like this is necessary - I don't think you can win an academic debate when, separately, someone is poisoning the well against you and spreading misinformation about you, without also calling out the fact that they're doing this. Are you overupdating on the jokey duel framing, or is there something specific you think I should have done differently?"
+ },
+ {
+  "id": 354652397,
+  "name": "Linch",
+  "date": "2026-10-06T22:40:08.221Z",
+  "ancestor_path": "",
+  "body": "I like this essay though I feel like you're being too nice to Pinker. People with really bad arguments don't deserve the light of day imo."
+ },
+ {
+  "id": 354868766,
+  "name": "Ben Pomeranz",
+  "date": "2026-10-07T06:49:20.591Z",
+  "ancestor_path": "",
+  "body": "There is a pretty bad thing you do here, which I find out of step with your usual truth seeking MO. It's understandable to me, but still bad, so I'll point it out.\n\nYou said:\n\n\"You [Pinker] seemed surprised that I [Scott] was so angry at you... [Pinker's] contributions to the mass discourse have been to say, or to boost other people saying, that we\u2019re only scared of AI because we\u2019re male, that we can\u2019t be trusted because we live \u2018unconventional lifestyles\u2019, that our beliefs are inherently insensitive to people worried about near-term AI risks \u2026 that we\u2019re paranoid, that we should be laughed out of the room, and every other dirty attack he can think of.\u201d\n\nPinker says he hasn't said those things, and that he was puzzled by the false attack from you. I, to my chagrin, agreed with him.\n\nNow, you say: \"But rather than leave you puzzled, I hope you will forgive me if I dwell on the issues that made me make these accusations.\" Then, you go on to list many issues.\n\nThis is total deceptive word salad!\n\n1. You never address whether those specific accusations were true (I assume because they were false, but maybe for some other reason I can't think of).\n\n2. You write that \"[Pinker] seemed surprised that [you were] so angry at [Pinker],\" and then later saysthat to avoid leaving him puzzled, you'll address the issues which incited your accusation. This elides the fact that Pinker specifically says he's puzzled by [presumably false attack you never address], and you do not go on to address that.\n\n3. Instead of saying \"I don't stand by those few specific claims you're puzzled by. My bad. Here is what I'm very upset about,\" you just sneak this all into \"the issues that made [you] make [those] accusations.\" That is a really shady way to say \"different issues from the accusations you made.\" On a casual read, I'd assume most people don't notice it.\n\nI agree with you that we don't always need to be maximally truth seeking at the cost of catchy dunking, because catchy dunking has its benefits, but this seems over the line. You said several things, Pinker responded to a subset of them with \"these thing seem false and I'm confused,\" and you pwned him in return by saying all the different bad stuff he did (which I agree is bad), hiding the fact that you're not addressing those earlier statements with eloquent sleight of hand."
+ },
+ {
+  "id": 354687416,
+  "name": "Edward Gathuru",
+  "date": "2026-10-06T23:43:29.939Z",
+  "ancestor_path": "",
+  "body": "Which model welfare charity did you donate to? Do you have recommendations for that cause?"
+ }
+]

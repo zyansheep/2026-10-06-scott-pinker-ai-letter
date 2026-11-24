@@ -1,0 +1,352 @@
+{{Short description|Probability of existentially catastrophic outcomes in AI}} 
+{{for|the record label|P(doom) (record label)}}
+{{Alignment sidebar}}
+In the [[AI safety]] field, '''P(doom)''' is the probability of [[Global catastrophic risk|existentially catastrophic outcomes]] (so-called "doomsday scenarios") as a result of [[artificial intelligence]].<ref name=":1" /><ref>{{Cite web |last=Thomas |first=Sean |date=2024-03-04 |title=Are we ready for P(doom)? |url=https://www.spectator.co.uk/article/are-we-ready-for-pdoom/ |access-date=2024-06-19 |website=The Spectator |language=en-US}}</ref> The exact outcomes in question differ from one prediction to another, but generally allude to the [[existential risk from artificial intelligence|existential risk from artificial intelligence.]]<ref name=":2" /> Economic analyses show that even small existential risks due to AI would justify substantial investments in AI safety and alignment research.<ref>{{Cite journal |last=Jones |first=Charles I. |date=2024 |title=The AI Dilemma: Growth versus Existential Risk |url=https://pubs.aeaweb.org/doi/10.1257/aeri.20230570 |journal=American Economic Review: Insights |language=en |volume=6 |issue=4 |pages=575–590 |doi=10.1257/aeri.20230570 |issn=2640-205X|url-access=subscription }}</ref><ref>{{Cite journal |last=Growiec |first=Jakub |last2=Prettner |first2=Klaus |date=2026 |title=The economics of p(doom): Scenarios of existential risk and economic growth in the age of transformative AI |url=https://www.sciencedirect.com/science/article/pii/S0264999326002476 |journal=Economic Modelling |volume=163 |article-number=107718 |doi=10.1016/j.econmod.2026.107718 |issn=0264-9993}}</ref>
+
+The term was initially used as a shorthand for communication in the [[rationalist community]] (presumably first used by programmer Tim Tyler in a 2009 comment on [[LessWrong]]<ref>{{cite web |author=Tim Tyler |title=Comment on "This Failing Earth" |website=LessWrong |date=25 May 2009 |url=https://www.lesswrong.com/posts/2KNN9WPcyto7QH9pi/this-failing-earth?commentId=nvA3JjbaMa7YGrM7J}}</ref><ref>{{cite news |title=Silicon Valley Confronts a Grim New A.I. Metric |last=Roose |first=Kevin |work=The New York Times |date=6 December 2023 |url=https://www.nytimes.com/2023/12/06/business/dealbook/silicon-valley-artificial-intelligence.html|author-link=Kevin Roose}}</ref>) and among AI researchers. It came to prominence in 2023 following the release of [[GPT-4]], as high-profile figures such as [[Geoffrey Hinton]]<ref>{{Cite news |last=Metz |first=Cade |date=2023-05-01 |title='The Godfather of A.I.' Leaves Google and Warns of Danger Ahead |url=https://www.nytimes.com/2023/05/01/technology/ai-google-chatbot-engineer-quits-hinton.html |access-date=2024-06-19 |work=The New York Times |language=en-US |issn=0362-4331}}</ref> and [[Yoshua Bengio]]<ref>{{Cite news |title=One of the "godfathers of AI" airs his concerns |url=https://www.economist.com/by-invitation/2023/07/21/one-of-the-godfathers-of-ai-airs-his-concerns |access-date=2024-06-19 |newspaper=The Economist |issn=0013-0613}}</ref> began to warn of the risks of AI.<ref name=":0">{{Cite news |last=Roose |first=Kevin |date=2023-12-06 |title=Silicon Valley Confronts a Grim New A.I. Metric |url=https://www.nytimes.com/2023/12/06/business/dealbook/silicon-valley-artificial-intelligence.html |access-date=2024-06-17 |work=The New York Times |language=en-US |issn=0362-4331}}</ref> In a 2023 survey, AI researchers were asked to estimate the probability that future AI advancements could lead to human extinction or similarly severe and permanent disempowerment within the next 100 years. The [[mean value]] from the responses was 14.4%, with a [[Median|median value]] of 5%.<ref>{{Cite web |last=Piper |first=Kelsey |date=2024-01-10 |title=Thousands of AI experts are torn about what they've created, new study finds |url=https://www.vox.com/future-perfect/2024/1/10/24032987/ai-impacts-survey-artificial-intelligence-chatgpt-openai-existential-risk-superintelligence |access-date=2024-09-02 |website=Vox |language=en-US}}{{br}} Citing:{{Br}}{{Cite web |title=2023 Expert Survey on Progress in AI [AI Impacts Wiki] |url=https://wiki.aiimpacts.org/ai_timelines/predictions_of_human-level_ai_timelines/ai_timeline_surveys/2023_expert_survey_on_progress_in_ai |access-date=2024-09-02 |website=wiki.aiimpacts.org}}</ref>
+
+Some have criticized the concept of P(doom), arguing that the term is ambiguous and can alienate general audiences from AI risk discussions. Points of ambiguity include what scenarios qualify as "doom", the time frame that the probability covers, and the [[Conditional probability|conditions]] that are assumed.<ref name=":0" /><ref name="Isaac King" />
+
+== Notable P(doom) values ==
+{| class="wikitable sortable"
+! Name
+! class="unsortable" | Image
+! data-sort-type="number" | P(doom)
+! data-sort-type="isoDate" | Date
+! class="unsortable" | Notes
+! class="unsortable" | {{refh}}
+|-
+| [[15 (software engineer)|15]]
+| style="text-align:center;" | [[File:15 at Everfree Northwest 2025.png|80x100px|alt=15]]
+| data-sort-value="1%" | <1%<ref group=Note name=Note07/>
+| 2026-09-10
+| American computer scientist and software engineer, founder of [[15.ai]]
+| align="center" | <ref>{{Cite tweet |user= fifteenai|number=2098185941450211835|date=10 September 2026|title=For me, P(humans are extinct by 2100 due to AI) < 1% because I expect humanity will always find ways to intervene even as AI gets much more advanced.}}</ref><ref>{{Cite tweet |user= fifteenai|number=2097836108054933797|date=9 September 2026|title=<1% My P(doom) hasn't changed much. The Navier-Stokes proof is awesome but I don't really buy the doomsday "hype" surrounding it}}</ref>
+|-
+| {{sortname|Scott|Aaronson}}
+| style="text-align:center;" | [[File:Scott Aaronson retouched.jpg|80x100px|alt=Scott Aaronson]]
+| data-sort-value="2%" | 5-50%<ref group=Note name=Note08/>
+| 2026-10-27
+| American [[Theoretical computer science|theoretical computer scientist]] and Schlumberger Centennial Chair of Computer Science at the [[University of Texas at Austin]]
+| align="center" | <ref>{{Cite AV media |url=https://www.youtube.com/watch?v=NDS2dw1vJQs |title=AI Is SOLVING MATH Problems That Went Unsolved for CENTURIES{{!}} Scott Aaronson |language=en |access-date=2026-11-02}}</ref>
+|-
+| {{sortname|Sam|Altman}}
+| style="text-align:center;" | [[File:Meeting with Masayoshi Son and Sam Altman (February 3, 2025) (3x4 cropped on Altman).jpg|80x100px|alt=Sam Altman]]
+| data-sort-value="0.01%" | >0%<ref group=Note name=Note09/>
+| 2025-10-01
+| CEO of [[OpenAI]]
+| align="center" | <ref>{{Cite web |date=October 1, 2025 |title=OpenAI CEO Sam Altman: AI Warfare, Freedom & Immortality {{!}} MD MEETS Episode #1 |url=https://www.youtube.com/watch?v=rF0tQtDMwHM&t=1498 |website=YouTube}}</ref>
+|-
+| {{sortname|Dario|Amodei}}
+| style="text-align:center;" | [[File:Dario Amodei at TechCrunch Disrupt 2023 01 (cropped).jpg|80x100px|alt=Dario Amodei]]
+| data-sort-value="17.5%" | 10-25%
+| 2025-09-17
+| CEO of [[Anthropic]]
+| align="center" | <ref>{{cite web |last1=Morrone |first1=Megan |title=Amodei on AI: "There's a 25% chance that things go really, really badly" |url=https://www.axios.com/2025/09/17/anthropic-dario-amodei-p-doom-25-percent |website=Axios |access-date=19 September 2025}}</ref>
+|-
+| {{sortname|Marc|Andreessen}}
+| style="text-align:center;" | [[File:Marc Andreessen-9 (cropped).jpg|80x100px|alt=Marc Andreessen]]
+| data-sort-value="0%" | 0%
+| 2024-06-19
+| Co-founder of venture capital firm [[Andreessen Horowitz]]
+| align="center" | <ref>{{Cite magazine |last=Marantz |first=Andrew |date=2024-03-11 |title=Among the A.I. Doomsayers |url=https://www.newyorker.com/magazine/2024/03/18/among-the-ai-doomsayers |access-date=2024-06-19 |magazine=The New Yorker |language=en-US |issn=0028-792X}}</ref>
+|-
+| {{sortname|Yoshua|Bengio}}
+| style="text-align:center;" | [[File:ICLR 2025 - Yoshua Bengio 02.jpg|80x100px|alt=Yoshua Bengio]]
+| 20%<ref group=Note name=Note02/>
+| 2023-07-15
+| Computer scientist, director of the [[Mila (research institute)|Mila]] institute, and the Turing award winner
+| align="center" | <ref name=":2">{{Cite news |date=2023-07-14 |title=It started as a dark in-joke. It could also be one of the most important questions facing humanity |url=https://www.abc.net.au/news/2023-07-15/whats-your-pdoom-ai-researchers-worry-catastrophe/102591340 |access-date=2024-06-18 |work=ABC News |language=en-AU}}</ref>
+|-
+| {{sortname|Grady|Booch}}
+| style="text-align:center;" | [[File:Grady Booch, CHM 2011 2 cropped.jpg|80x100px|alt=Grady Booch]]
+| data-sort-value="0%" | {{circa|0%|sortable=yes}}<ref group=Note name=Note04/>
+| 2023-12-07
+| American software engineer
+| align="center" | <ref name=":1" />
+|-
+| {{sortname|Vitalik|Buterin}}
+| style="text-align:center;" | [[File:Vitalik Buterin TechCrunch London 2015 (cropped).jpg|80x100px|alt=Vitalik Buterin]]
+| data-sort-value="12%" | 12%
+| 2025-08-12
+| Co-founder of [[Ethereum]]
+| align="center" | <ref>{{cite web|last=Shapira|first=Liron|date=2025-08-12|title=VITALIK vs. AI DOOMER — Will "d/acc" Protect Humanity from Superintelligent AI?|url=https://www.youtube.com/watch?v=hxlcQzvnmWI&t=555s|website=YouTube|access-date=2025-10-03}}</ref>
+|-
+| {{sortname|Paul|Christiano}}
+| style="text-align:center;" | [[File:Paul Christiano - Mechanistic Estimation - IPAM at UCLA - 0-34-09 (cropped).jpg|80x100px|alt=Paul Christiano]]
+| 50% <ref group="Note">c. 50% that "humanity has somehow irreversibly messed up our future within 10 years of building powerful AI".
+
+c. 20% each for human extinction and for AI takeover as a result of building powerful AI. (Partly overlapping.)
+
+Further details and probabilities are in "[https://ai-alignment.com/my-views-on-doom-4788b1cd0c72 My views on 'doom']".</ref>
+| 2023-05-03
+| Former Head of research at the [[USAISI|US AI Safety Institute]]
+| align="center" | <ref>{{Cite web |date=2023-05-03 |title=ChatGPT creator says there's 50% chance AI ends in 'doom' |url=https://www.independent.co.uk/tech/chatgpt-openai-ai-apocalypse-warning-b2331369.html |access-date=2024-06-19 |website=The Independent |language=en}}</ref> <ref>{{Cite web |last=Christiano |first=Paul |date=2023-04-27 |title=My views on “doom” |url=https://ai-alignment.com/my-views-on-doom-4788b1cd0c72 |access-date=2026-10-07 |website=Medium |language=en}}</ref>
+|-
+| {{sortname|Andrew|Critch|Center for Applied Rationality}}
+|
+| 85%
+| 2024-11-15
+| Founder of the [[Center for Applied Rationality]]
+| align="center" | <ref>{{Cite AV media |url=https://www.youtube.com/watch?v=opIvVzJF8t0 |title=Andrew Critch vs. Liron Shapira: Will AI Extinction Be Fast Or Slow? |date=2024-11-15 |last=Doom Debates |access-date=2025-05-31 |via=YouTube}}</ref>
+|-
+| [[Destiny (streamer)|Destiny]]
+| style="text-align:center;" | [[File:Steven "Destiny" Bonnell, 2022 (cropped).jpg|80x100px|alt=Destiny]]
+| 5%
+| 2026-02-17
+| American [[live streamer]] and [[political commentator]]
+| align="center" | <ref name="Destiny-doom-2026">{{cite web |last=Shapira |first=Liron |date=2026-02-17 |title=Destiny Raises His P(Doom) At The End |url=https://lironshapira.substack.com/p/destiny-doom-debates |website=Doom Debates |at=Transcript, 0:59:37–0:59:52 }}</ref>
+|-
+| {{sortname|David|Duvenaud}}
+|
+| 85%
+| 2025-04-18
+| Canadian computer scientist specializing in probabilistic machine learning, generative AI, and AI safety. He is a [[CIFAR]] AI chair since 2021 and a [[Schwartz Reisman Chair in Technology and Society]] at the [[University of Toronto]] since 2024.
+| align="center" | <ref>{{Cite web |last=Liron |first=Shapira |title=Top AI Professor Has 85% P(Doom) — David Duvenaud, Fmr. Anthropic Safety Team Lead |url=https://www.youtube.com/watch?v=mb9w7lFIHRM |website=Doom Debates}}</ref>
+|-
+| {{sortname|Lex|Fridman}}
+| style="text-align:center;" | [[File:Lex Fridman teaching at MIT in 2018.png|80x100px|alt=Lex Fridman]]
+| 10%
+| 2025-06-05
+| American [[computer scientist]] and host of Lex Fridman Podcast
+| align="center" | <ref>{{Cite web |date=2025-06-05 |title=Archives: sundar-pichai-transcript |url=https://lexfridman.com/sundar-pichai-transcript#chapter9_p_doom_:~:text=I%20would%20say%20my%20p(doom)%20is%20about%2010%25 |access-date=2025-06-06 |website=Lex Fridman |language=en-US}}</ref>
+|-
+| {{sortname|Demis|Hassabis}}
+| style="text-align:center;" | [[File:Demis Hassabis, 2024 Nobel Prize Laureate in Chemistry 7 (cropped).jpg|80x100px|alt=Demis Hassabis]]
+| data-sort-value="0.01%" | >0%<ref group=Note name=Note10/>
+| 2024-02-23
+| Co-founder and CEO of [[Google DeepMind]] and [[Isomorphic Labs]] and 2024 [[List of Nobel laureates in Chemistry|Nobel Prize laureate in Chemistry]]
+| align="center" | <ref>{{cite web |date=23 February 2024 |title=Demis Hassabis on Chatbots to AGI {{!}} EP 71 |url=https://www.youtube.com/watch?v=nwUARJeeplA&t=2330s |access-date=8 October 2024 |website=[[YouTube]]}}</ref>
+|-
+| {{sortname|Dan|Hendrycks}}
+| style="text-align:center;" | [[File:Dan Hendrycks 2025 (cropped).jpg|80x100px|alt=Dan Hendrycks]]
+| data-sort-value="80%" | >80%<ref group=Note name=Note03/>
+| 2023-12-07
+| Director of [[Center for AI Safety]]
+| align="center" | <ref name=":1" />
+|-
+| {{sortname|Geoffrey|Hinton}}
+| style="text-align:center;" | [[File:Geoffrey Hinton in 2026.jpg|80x100px|alt=Geoffrey Hinton]]
+| data-sort-value="50%" | {{ubl|10-20% (all-things-considered)|>50% (independent impression)}}
+| 2024-06-27
+| "Godfather of AI" and 2024 [[List of Nobel laureates in Physics|Nobel Prize laureate in Physics]], University Professor emeritus at the [[University of Toronto]]
+| align="center" | <ref>{{Cite AV media |url=https://www.youtube.com/watch?v=PTF5Up1hMhw&t=2283s |title=Q&A with Geoffrey Hinton |date=2024-06-27 |last=METR (Model Evaluation & Threat Research) |access-date=2025-02-07 |via=YouTube}}</ref>
+|-
+| {{sortname|Evan|Hubinger}}
+|
+| data-sort-value="10%" | >10%<ref group=Note name=Note12/>
+| 2026-09-08
+| Alignment lead at Anthropic
+| align="center" | <ref>{{Cite web |date=2026-09-09 |title=Experts weigh in as researcher says AI has more than 10% chance of 'killing all humans' |url=https://www.cnbc.com/2026/09/09/anthropic-researcher-quits-ai-safety.html |access-date=2026-10-15 |website=CNBC |language=en}}</ref>
+|-
+| {{sortname|Geoffrey|Irving}}
+|
+| 50%<ref group=Note name=Note11/>
+| 2026-10-15
+| Computer Scientist worked at [[OpenAI]], [[Google DeepMind]], and the United Kingdom's [[AI Security Institute|AI Safety Institute]]
+| align="center" | <ref>{{Cite web |last=Irving |first=Geoffrey |title=Geoffrey Irving |url=https://x.com/geoffreyirving/status/2110761297688346776 |website=X}}</ref>
+|-
+| {{sortname|Holden|Karnofsky}}
+| style="text-align:center;" | [[File:Holden Karnofsky 0.jpg|80x100px|alt=Holden Karnofsky]]
+| data-sort-value="50%" | 10-90% <ref group="Note">Quote: "Even this 'easier' version of the question (conditional on a nearcast rather than a forecast) is far from easy. At the moment, the main thing I want to emphasize is that '''I don’t currently have much sympathy for someone who’s highly confident that AI takeover would or would not happen''' (that is, for anyone who thinks the odds of AI takeover in this nearcast are under 10% or over 90%)."</ref>
+| 2022-08-29
+| Former Executive Director of [[Open Philanthropy]]
+| align="center" | <ref>{{Cite web |last=Karnofsky |first=Holden |date=2022-08-29 |title=How might we align transformative Al if it's developed very soon? |url=https://www.alignmentforum.org/posts/rCJQAkPTEypGjSJ8X/how-might-we-align-transformative-ai-if-it-s-developed-very#So__would_civilization_survive_ |access-date=2026-10-06 |website=Alignment Forum}}</ref>
+|-
+| {{sortname|Lina|Khan}}
+| style="text-align:center;" | [[File:Lina Khan portrait.jpg|80x100px|alt=Lina Khan]]
+| {{circa|15%|sortable=yes}}
+| 
+| Former chair of the [[Federal Trade Commission]]
+| align="center" | <ref name=":0" />
+|-
+| {{sortname|Daniel|Kokotajlo|dab=researcher}}
+|
+| data-sort-value="75%" | 70–80%
+| 2025-04-03
+| AI researcher and founder of [[AI Futures Project]], formerly of [[OpenAI]]
+| align="center" | <ref>{{Cite web |last=Kokotajlo |first=Daniel |date=April 3, 2025 |title=2027 Intelligence Explosion Month-by-Month Model |url=https://www.youtube.com/watch?v=htOvH12T7mU |website=youtube.com}}</ref>
+|-
+| {{sortname|David|Krueger|dab=professor}}
+|
+| 75%
+| 
+| American machine learning professor and advocate for the reduction of risks related to artificial intelligence.
+| align="center" | <ref>{{Cite web |last=Krueger |first=David |title="AI Will Be The Last Mistake Humanity Ever Makes..." {{!}} David Krueger {{!}} 8:10 |url=https://www.youtube.com/watch?v=PyBw-dIcKW4 |website=The Smart Cookies Podcast}}</ref>
+|-
+| {{sortname|Connor|Leahy}}
+| style="text-align:center;" | [[File:Connor Leahy at Web Summit Rio 2026.jpg|80x100px|alt=Connor Leahy]]
+| data-sort-value="95%" | 90%+
+| 2024-11-22
+| German-American AI researcher; cofounder of [[EleutherAI]].
+| align="center" | <ref>{{Cite AV media |url=https://www.youtube.com/watch?v=nUV5-SLdkuQ |title=Connor Leahy on Why Humanity Risks Extinction from AGI |date=2024-11-22 |last=Future of Life Institute |access-date=2025-05-31 |via=YouTube}}</ref>
+|-
+| {{sortname|Yann|LeCun}}
+| style="text-align:center;" | [[File:Laura Chaubard & Yann Le Cun - 2024 (53814052697) (cropped).jpg|80x100px|alt=Yann LeCun]]
+| data-sort-value="0.005%" | <0.01%<ref group=Note name=Note06/>
+| 2024-04-07
+| Previously chief AI Scientist at [[Meta Platforms|Meta]]
+| align="center" | <ref>{{Cite web |author1=Wayne Williams |date=2024-04-07 |title=Top AI researcher says AI will end humanity and we should stop developing it now — but don't worry, Elon Musk disagrees |url=https://www.techradar.com/pro/top-ai-researcher-says-ai-will-end-humanity-and-we-should-stop-developing-it-now-but-dont-worry-elon-musk-disagrees |access-date=2024-06-19 |website=TechRadar |language=en}}</ref>
+|-
+| {{sortname|Shane|Legg}}
+| style="text-align:center;" | [[File:Shane Legg.jpg|80x100px|alt=Shane Legg]]
+| data-sort-value="27.5%" | {{circa|5–50%}}
+| 2025-05-23
+| Co-founder and Chief AGI Scientist of [[Google DeepMind]]
+| align="center" | <ref>{{cite web |url=https://www.lesswrong.com/posts/No5JpRCHzBrWA4jmS/q-and-a-with-shane-legg-on-risks-from-ai |access-date=2025-05-23 |date=2011-05-17 |title=Q&A with Shane Legg on risks from AI |work=Less Wrong }}</ref>
+|-
+| {{sortname|Jan|Leike}}
+|
+| data-sort-value="50%" | 10–90%
+| 2023-07-12
+| AI alignment researcher at [[Anthropic]], formerly of [[Google DeepMind|DeepMind]] and [[OpenAI]]
+| align="center" | <ref name=":1">{{Cite news |last=Railey |first=Clint |date=2023-07-12 |title=P(doom) is AI's latest apocalypse metric. Here's how to calculate your score |url=https://www.fastcompany.com/90994526/pdoom-explained-how-to-calculate-your-score-on-ai-apocalypse-metric |website=Fast Company}}</ref>
+|-
+| {{sortname|William|MacAskill}}
+| style="text-align:center;" | [[File:William MacAskill Portrait 2015 (cropped).jpg|80x100px|alt=William MacAskill]]
+| data-sort-value="5.5%" | 1-10%
+| 
+| Scottish philosopher and author of ''[[What We Owe the Future]]''
+| align="center" | <ref>{{cite web |last=MacAskill |first=William |title=Will MacAskill on AI causing a “century in a decade” — and how we're completely unprepared {{!}} 80,000 Hours |url=https://80000hours.org/podcast/episodes/will-macaskill-century-in-a-decade-navigating-intelligence-explosion/?t=3459#the-grand-superintelligence-challenges-005739 |website=80000hours.org |at=The grand superintelligence challenges [00:57:39]}}</ref>
+|-
+| {{sortname|Benjamin|Mann}}
+|
+| data-sort-value="5%" | 0–10%
+| 2025-07-22
+| Co-founder of [[Anthropic]]
+| align="center" | <ref>{{Cite AV media |url=https://www.youtube.com/watch?v=WWoyWNhx2XU |title=Anthropic co-founder: AGI predictions, leaving OpenAI, what keeps him up at night {{!}} Ben Mann |date=2025-07-20 |last=Lenny's Podcast |access-date=2025-07-22 |via=YouTube}}</ref>
+|-
+| {{sortname|Emad|Mostaque}}
+| style="text-align:center;" | [[File:Mostaque.jpg|80x100px|alt=Emad Mostaque]]
+| 50%
+| 2024-12-04
+| Co-founder of [[Stability AI]]
+| align="center" | <ref>{{Cite tweet|last=Mostaque|first=Emad|user=EMostaque|number=1864266899170767105|date=2024-12-04|title=My P(doom) is 50%.|access-date=2025-05-31}}</ref>
+|-
+| {{sortname|Zvi|Mowshowitz}}
+| style="text-align:center;" | [[File:Zvi Mowshowitz playing poker at Manifest 2023.jpg|80x100px|alt=Zvi Mowshowitz]]
+| 70%
+| 2025-09-06
+| Writer on artificial intelligence, director on the board of the [[Center for Applied Rationality]], former competitive [[Magic: The Gathering]] player
+| align="center" | <ref>{{Cite web |date=September 6, 2025 |title=Zvi Mowshowitz on Longer Timelines, RL-induced Doom, and Why China is Refusing H20s |url=https://www.cognitiverevolution.ai/zvi-mowshowitz-on-longer-timelines-rl-induced-doom-and-why-china-is-refusing-h20s/ |website=The Cognitive Revolution}}</ref>
+|-
+| {{sortname|Elon|Musk}}
+| style="text-align:center;" | [[File:Elon Musk - 54820081119 (cropped).jpg|80x100px|alt=Elon Musk]]
+| data-sort-value="20%" | {{circa|10–30%}}
+| 
+| Businessman and CEO of [[Twitter under Elon Musk|X]], [[Tesla, Inc.|Tesla]], and [[SpaceX]]
+| align="center" | <ref>{{Cite web |last=Tangalakis-Lippert |first=Katherine |title=Elon Musk says there could be a 20% chance AI destroys humanity — but we should do it anyway |url=https://www.businessinsider.com/elon-musk-20-percent-chance-ai-destroys-humanity-2024-3 |access-date=2024-06-19 |website=Business Insider |language=en-US}}</ref>
+|-
+| {{sortname|Casey|Newton}}
+| style="text-align:center;" | [[File:Casey Newton from 2021 interview.png|80x100px|alt=Casey Newton]]
+| 5%
+| 
+| American technology journalist
+| align="center" | <ref name=":1" />
+|-
+| {{sortname|Toby|Ord}}
+| style="text-align:center;" | [[File:Toby Ord.jpg|80x100px|alt=Toby Ord]]
+| 10%
+| 2023-10-08
+| Australian philosopher and author of [[The Precipice: Existential Risk and the Future of Humanity|The Precipice]]
+| align="center" | <ref>{{Cite news |date=2023-10-08 |title=Is there really a 1 in 6 chance of human extinction this century? |url=https://www.abc.net.au/news/2023-10-08/is-there-really-a-1-in-6-chance-of-human-extinction/102942530 |access-date=2024-09-01 |work=ABC News |language=en-AU}}</ref>
+|-
+| {{sortname|Kevin|Roose}}
+| style="text-align:center;" | [[File:Kevin Roose.jpg|80x100px|alt=Kevin Roose]]
+| 5-15%
+| 
+| American technology journalist
+| align="center" | <ref name=":1" />
+|-
+| {{sortname|Emmett|Shear}}
+| style="text-align:center;" | [[File:Web Summit 2018 - Contentmakers - Day 2, November 7 SM7 9280 (45715722382) (cropped).jpg|80x100px|alt=Emmett Shear]]
+| data-sort-value="27.5%" | 5–50%
+| 
+| Co-founder of [[Twitch (service)|Twitch]] and former interim CEO of [[OpenAI]]
+| align="center" | <ref name=":0" />
+|-
+| {{sortname|Nate|Silver}}
+| style="text-align:center;" | [[File:Nate silver poker (cropped).jpg|80x100px|alt=Nate Silver]]
+| data-sort-value="7.5%" | 5–10%
+| 2025-01-27
+| Statistician, founder of [[FiveThirtyEight]]
+| align="center" | <ref>{{cite web |url=https://www.natesilver.net/p/its-time-to-come-to-grips-with-ai |access-date=2025-02-03 |date=2025-01-27 |title=It's time to come to grips with AI |work=Silver Bulletin }}</ref>
+|-
+| {{sortname|Max|Tegmark}}
+| style="text-align:center;" | [[File:Partnership - CGTN & Razor Broadcast Studio (54919125534) (cropped).jpg|80x100px|alt=Max Tegmark]]
+| data-sort-value="95%" | >90%
+| 2025-04-30
+| Swedish-American physicist, [[machine learning]] researcher, and author, best known for theorising the [[mathematical universe hypothesis]] and co-founding the [[Future of Life Institute]].
+| align="center" | <ref>{{Cite web |last=Tegmark |first=Max |date=30 April 2025 |title=My P(doom) Estimate |url=https://x.com/tegmark/status/1917580821101437280 |archive-url=https://web.archive.org/web/20250502114739/https://x.com/tegmark/status/1917580821101437280 |archive-date=2025-05-02 |access-date=2025-05-31 |website=X (formerly Twitter) |language=en |url-status=live }}</ref>
+|-
+| {{sortname|Roman|Yampolskiy}}
+| style="text-align:center;" | [[File:SCH1473 (52734656870) (cropped).jpg|80x100px|alt=Roman Yampolskiy]]
+| 99.9%–99.999999%<ref group=Note name=Note05/>
+| 
+| Latvian computer scientist, formerly a research advisor of the [[Machine Intelligence Research Institute]], and an AI safety fellow of the [[Foresight Institute]]
+| align="center" | <ref>{{Cite web |last=Altchek |first=Ana |title=Why this AI researcher thinks there's a 99.9% chance AI wipes us out |url=https://www.businessinsider.com/ai-researcher-roman-yampolskiy-lex-fridman-human-extinction-prediction-2024-6 |access-date=2024-06-18 |website=Business Insider |language=en-US}}</ref><ref>{{Cite tweet |user= romanyam|first=Roman|last=Yampolskiy|number=1767575356155027503|date=12 March 2024|title=I am at 99.999999% https://pauseai.info/pdoom}}</ref>
+|-
+| {{sortname|Eliezer|Yudkowsky}}
+| style="text-align:center;" | [[File:Eliezer Yudkowsky, Stanford 2006 (square crop).jpg|80x100px|alt=Eliezer Yudkowsky]]
+| data-sort-value="97.5%" | >95%
+| 
+| Founder of the [[Machine Intelligence Research Institute]], author of ''[[If Anyone Builds It, Everyone Dies]]''.
+| align="center" | <ref name=":1" />
+|}
+
+== Criticism ==
+P(doom) has been described as "unhelpful" as a meaningful measure of risk by academics and in news coverage, in part due to the lack of clarity about whether or not a given prediction is conditional on the existence of [[artificial general intelligence]], the time frame, and the precise meaning of "doom". Instead, it has been proposed that use of the term should be interpreted as a social signal that one is a part of an in-group that has seriously considered the risks of AI.<ref name=":0" /><ref name="Isaac King">{{Cite journal|last=King |first=Isaac |date=2024-01-01 |title=Stop talking about p(doom) |url=https://www.lesswrong.com/posts/EwyviSHWrQcvicsry/stop-talking-about-p-doom |language=en | website=[[LessWrong]]}}</ref>
+
+== In popular culture ==
+In 2024, Australian rock band [[King Gizzard & the Lizard Wizard]] launched their new label, named p(doom) Records.<ref>{{Cite web |date=2024-05-07 |title=GUM & Ambrose Kenny-Smith are teaming up again for new collaborative album 'III Times' |url=https://diymag.com/news/gum-ambrose-kenny-smith-iii-times |access-date=2024-06-19 |website=DIY |language=en}}</ref>
+
+== See also ==
+{{div col}}
+* [[Existential risk from artificial general intelligence]]
+* [[Statement on AI risk of extinction]]
+* [[AI alignment]]
+* [[AI takeover]]
+* [[AI safety]]
+* [[Future of Life Institute]]
+* [[Survivalism]]
+* [[Human extinction]]
+* [[Global catastrophic risk]]
+* [[Homo sapiens]]
+* [[Neanderthal extinction]]  
+* [[Superintelligence ban]]  
+* ''[[Superintelligence: Paths, Dangers, Strategies]]''
+* [[Superintelligence]]  
+* [[Future of Humanity Institute]]  
+* [[Machine Intelligence Research Institute]]  
+* [[Artificial intelligence arms race]]
+{{div col end}}
+
+==Notes==
+{{reflist|group=Note|refs=
+
+<ref name=Note02>"Professor Bengio shared his p(doom), saying: "I got around, like, 20 per cent probability that it turns out catastrophic."
+
+Professor Bengio arrived at the figure based on several inputs, including a 50 per cent probability that AI would reach human-level capabilities within a decade, and a greater than 50 per cent likelihood that AI or humans themselves would turn the technology against humanity at scale."</ref>
+<ref name=Note03>Up from ~20% 2 years prior.</ref>
+<ref name=Note04>Equivalent to "P(all the oxygen in my room spontaneously moving to a corner thereby suffocating me)".</ref>
+<ref name=Note05>Within the next 100 years.</ref>
+<ref name=Note06>"Less likely than an asteroid wiping us out".</ref>
+<ref name=Note07>Refers to “P(humans are extinct by 2100 due to AI)”, factoring in expected human intervention.</ref>
+<ref name=Note08>"Depending on the definition of doom." Accounts for "all kinds of scenarios where humans doom themselves" where AI plays a "causal role".</ref>
+<ref name=Note09>"Big enough to take seriously."</ref>
+<ref name=Note10>"Worth researching really carefully."</ref>
+<ref name=Note11>If artificial superintelligence is created. Value reflects Irving's personal uncertainty.</ref>
+<ref name=Note12>Probability of human extinction "within the next decade" from 2026.</ref>
+}}
+
+== References ==
+<!-- Inline citations added to your article will automatically display here. See en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->
+{{reflist}}
+
+== External links ==
+* [https://superintelligence-statement.org Statement on Superintelligence]
+* [https://futureoflife.org/ai-safety-index-summer-2026/ AI Safety Index by FLI]
+
+[[Category:Existential risk from artificial intelligence]]
+[[Category:Prediction]]
+[[Category:Surveys (human research)]]

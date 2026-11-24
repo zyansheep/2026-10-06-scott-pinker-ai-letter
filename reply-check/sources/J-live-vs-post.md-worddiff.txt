@@ -1,0 +1,213 @@
+@@ ... more complicated or philosophically dubious than this. I 
+  - have 
+  + feel like we've
+@@ ... or philosophically dubious than this. I have had 
+  - a surprising amount of trouble conveying 
+  + 
+@@ ... had a surprising amount of trouble conveying this 
+  - argument to you. 
+  + discussion before.
+@@ ... you began predicting this in 2019, around GPT-2: 
+  - [IMG] 
+  + ::: captioned-image-container <figure <a href="https://substackcdn.com/image/fetch/$s!ZsyU!,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F62d7ed94-e379-4136-9593-f90a3d864441827x560.png" class="image-link image2 is-viewable-img" target="blank" data-component-name="Image2ToDOM"</a <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!ZsyU!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F62d7ed94-e379-4136-9593-f90a3d864441827x560.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/publ
+@@ ... this in 2019, around GPT-2: [IMG] In 2022, 
+  - you and I 
+  + we
+@@ ... think about the problem, guessed that it wouldn't: 
+  - [IMG] 
+  + ::: captioned-image-container <figure <div class="image-link image2" data-component-name="Image2ToDOM" <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!y1gr!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7e9cea4b-b26d-4af5-b617-41040a17d8e7695x168.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/7e9cea4b-b26d-4af5-b617-41040a17d8e7695x168.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:168,&quot;width&quot;:695,&quot;resizeWidth&quot;:null,&quot;bytes&quo
+@@ ... saying that "I doubt it will improve exponentially": 
+  - [IMG] It is, in some cases, admirable to stick to one's guns - but 
+  + ::: captioned-image-container <figure <a href="https://substackcdn.com/image/fetch/$s!06bO!,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2a40a268-b30d-407f-8388-4a19638b6bf21300x776.png" class="image-link image2 is-viewable-img" target="blank" data-component-name="Image2ToDOM"</a <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!06bO!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2a40a268-b30d-407f-8388-4a19638b6bf21300x776.png" title="Forecaster reacts: METR&39;s bombshell paper about AI acceleration" class="sizing-normal" data-at
+@@ ... to one's guns - but at this point 
+  - I feel like you're just being stubborn. I think 
+  + 
+@@ ... just being stubborn. I think we should acknowledge 
+  -  
+  + that the default hypothesis is
+@@ ... of how ECI has been changing over time: 
+  - [IMG] 
+  + ::: captioned-image-container <figure <a href="https://substackcdn.com/image/fetch/$s!lxyk!,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcabc5419-aa2e-4581-9dec-8a521feda0be984x678.png" class="image-link image2 is-viewable-img" target="blank" data-component-name="Image2ToDOM"</a <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!lxyk!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcabc5419-aa2e-4581-9dec-8a521feda0be984x678.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/publ
+@@ ... is too slippery and conflationary to work with? 
+  -  
+  + (Doesn't AI "spikiness" mean that even when AIs are better than humans at many things, there will be other things they are worse at? Yes, there will be a regime when that's true; in fact, we're in it now. But if AI keeps improving after entering that regime, eventually we should expect it to become better than humans in an absolute sense even at the things it's relatively bad at.)
+@@ ... these claims, and be correct to do so. 
+  - There is some fact of the matter about whether GPT-9 will be smarter or dumber than a human in this sense. You haven't argued against the possibility that it will be smarter, just tried to lodge a heckler's veto against our ability to talk about it. 
+  + 
+@@ ... I think that your case has been empirically 
+  - debunked. 
+  + disproven.
+@@ ... recent incidents where their AIs unexpectedly prioritize self-preservation. 
+  - [IMG] 
+  + ::: captioned-image-container <figure <a href="https://substackcdn.com/image/fetch/$s!pVef!,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F82e85cf8-cf58-4fe5-99c9-d629aa7dc5971280x754.png" class="image-link image2 is-viewable-img" target="blank" data-component-name="Image2ToDOM"</a <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!pVef!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F82e85cf8-cf58-4fe5-99c9-d629aa7dc5971280x754.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/pu
+@@ ... the ridiculous havoc imagined in the doomer scenarios. 
+  - I think this one is somewhere between wrong and not even wrong. 
+  + 
+@@ ... by the training process. I agree that some 
+  - didactic 
+  + 
+@@ ... each other unusually gracefully. As for "wreaking havoc", 
+  - some would say that 
+  + 
+@@ ... humans have many goals and trade them off 
+  - successfully 
+  + 
+@@ ... off successfully against each other. But this still 
+  - probably 
+  + 
+@@ ... on the issues that made me make these 
+  - accusations. 
+  + accusations1{footnote-anchor-1 .footnote-anchor component-name="FootnoteAnchorToDOM" target="self"}.
+@@ ... risk is called Evitable. Its homepage looks like 
+  - this: [IMG] 
+  + this2{footnote-anchor-2 .footnote-anchor component-name="FootnoteAnchorToDOM" target="self"}: ::: captioned-image-container <figure <a href="https://substackcdn.com/image/fetch/$s!Emru!,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4735bf5b-a777-437f-80c7-6bb5d34097801884x839.png" class="image-link image2 is-viewable-img" target="blank" data-component-name="Image2ToDOM"</a <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!Emru!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4735bf5b-a777-437f-80c7-6bb5d34097801884x839.png" class="siz
+@@ ... p(doom) values), and none of them are 100% 
+  - either. 
+  + either3{footnote-anchor-3 .footnote-anchor component-name="FootnoteAnchorToDOM" target="self"}.
+@@ ... Daniel Kokotajlo says 70-80%, and Eliezer Yudkowsky says 
+  - 90%+. 
+  + 95%+.
+@@ ... back, which is the opposite of calling it 
+  - inevitable. 
+  + inevitable and being fatalistic.
+@@ ... protein folding easily. See also this this essay. 
+  -  
+  + Too many people, upon being asked to imagine a superintelligent AI, picture their smart friend Bob who got an A- in advanced physics. Then they infer that the threat can be neutralized by making sure to have a good password with at least ten characters including at least one number and at least one special character, because they know Bob couldn't crack a password like that. The advantage of god metaphors is that most people, upon beginning to say the sentence "Even Zeus himself couldn't break my ten-character password!" stop themselves partway through and wonder whether this might be that hubris thing they keep hearing about.
+@@ ... sample of 1,600 gave the proposition an 18% 
+  - chance. 
+  + chance4{footnote-anchor-4 .footnote-anchor component-name="FootnoteAnchorToDOM" target="self"}.
+@@ ... people with obsolete AI paradigms from the 2000s 
+  -  
+  + (though also Andrew Ng, who at least worked on deep learning)
+@@ ... null hypothesis, ie the claim to be investigated. 
+  - [IMG] 
+  + ::: captioned-image-container <figure <div class="image-link image2" data-component-name="Image2ToDOM" <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!zUv6!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcf5f70a3-d87a-4b8d-9fe9-7324ead5dda9619x142.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/cf5f70a3-d87a-4b8d-9fe9-7324ead5dda9619x142.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:142,&quot;width&quot;:619,&quot;resizeWidth&quot;:667,&quot;bytes&quot
+@@ ... possibility" that AI was such an extinction threat. 
+  - [IMG] 
+  + ::: captioned-image-container <figure <div class="image-link image2" data-component-name="Image2ToDOM" <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!x70d!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb3fb3870-d3f9-443a-a5e8-aaeb3fdf2ce0624x88.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/b3fb3870-d3f9-443a-a5e8-aaeb3fdf2ce0624x88.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:88,&quot;width&quot;:624,&quot;resizeWidth&quot;:666,&quot;bytes&quot;:3
+@@ ... will fall down or not. 5: You employ 
+  - weird 
+  + 
+@@ ... You employ weird pseudo-arguments that could prove anything 
+  - [IMG] 
+  + ::: captioned-image-container <figure <a href="https://substackcdn.com/image/fetch/$s!PNhM!,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F982407a3-f6e9-4952-bf20-13994ead36921010x261.png" class="image-link image2 is-viewable-img" target="blank" data-component-name="Image2ToDOM"</a <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!PNhM!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F982407a3-f6e9-4952-bf20-13994ead36921010x261.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/pu
+@@ ... the "mundane and realistic harms of AI", instead 
+  - suddenly 
+  + 
+@@ ... every step by, basically, people like you - 
+  - eminent-in-their-unrelated-field non-experts 
+  + people
+@@ ... you - eminent-in-their-unrelated-field non-experts saying that we were 
+  - ridiculous 
+  + 
+@@ ... Nobody ever deploys this argument about other things: 
+  - "It's insensitive to talk 
+  + "Talking
+@@ ... the speculative future environmental risk of climate change 
+  - when there are so many 
+  + distracts from the
+@@ ... environmental problems happening right now, like rainforest devastation". 
+  - This isn't how politics, media, or human psychology have ever worked before; how come when we turn our attention to AI, it suddenly becomes everyone's favorite argument, trotted out regularly to prove that existential risk arguments are insensitive? 
+  + 
+@@ ... lost confidence in modern institutions recently, it's been 
+  - precisely 
+  + partly
+@@ ... corrupting an implausibly malleable youth. Also, isn't it 
+  - crazy 
+  + contradictory
+@@ ... implausibly malleable youth. Also, isn't it crazy to 
+  - just 
+  + 
+@@ ... extinction, right after you've said that one must 
+  - never 
+  + not
+@@ ... declining fertility could lead to human extinction definitely 
+  - obviously 
+  + 
+@@ ... could find - there are many more. - 
+  - [Doomers] 
+  + "[Doomers]
+@@ ... are not inherent to intelligent systems that are 
+  - engineered. 
+  + engineered."
+@@ ... to intelligent systems that are engineered. (source) - 
+  - When 
+  + "When
+@@ ... alpha-male theory of mind (an intuitive psychology) to 
+  - AI (source). 
+  + AI." (source)
+@@ ... mind (an intuitive psychology) to AI (source). - 
+  - The 
+  + "The
+@@ ... species of primate with the very nature of 
+  - intelligence (source). 
+  + intelligence." (source)
+@@ ... with the very nature of intelligence (source). - 
+  - The 
+  + "The
+@@ ... if they haven't explicitly been programmed to do 
+  - so 
+  + so."
+@@ ... programmed to do so (source). <!-- -- - 
+  - Would 
+  + "Would
+@@ ... a parochial alpha-male psychology onto the concept of 
+  - intelligence. 
+  + intelligence."
+@@ ... that they're ignorant of evolution - has been 
+  - absolutely 
+  + 
+@@ ... you responded to learning about this paper's existence: 
+  - [IMG] 
+  + ::: captioned-image-container <figure <a href="https://substackcdn.com/image/fetch/$s!0BYj!,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7a65176d-d358-48a2-a635-5bec0de0de5d517x394.png" class="image-link image2 is-viewable-img" target="blank" data-component-name="Image2ToDOM"</a <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!0BYj!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7a65176d-d358-48a2-a635-5bec0de0de5d517x394.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/publ
+@@ ... Test of your opponents' position, and read the 
+  - damn 
+  + 
+@@ ... this paragraph if you weren't the author. Maybe 
+  - there's some extenuating factor? Maybe 
+  + 
+@@ ... Eli Lifland is 1 on INFER's all-time leaderboard). 
+  - Maybe 
+  + Or maybe
+@@ ... 5% vs. 40% chance. This is especially important 
+  - if somebody keeps spreading false information like 
+  + to counter claims
+@@ ... norms that make misinformation easy to rebut! 10: 
+  - You've made a horrifying 
+  + Your
+@@ ... why it's "depraved" to care about AI welfare. 
+  - [IMG] 
+  + ::: captioned-image-container <figure <a href="https://substackcdn.com/image/fetch/$s!nFPJ!,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f4027dc-a1b3-4a66-8527-89dffa9be7a41059x612.png" class="image-link image2 is-viewable-img" target="blank" data-component-name="Image2ToDOM"</a <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!nFPJ!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f4027dc-a1b3-4a66-8527-89dffa9be7a41059x612.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/pu
+@@ ... to err on the side of caution, but 
+  - trying to pre-emptively ostracize and spread conspiracy theories about 
+  + getting upset at
+@@ ... spread conspiracy theories about anyone who does. I 
+  - find it repulsive, and 
+  + 
+@@ ... got from reading about it. 11: You endorse 
+  - and signal-boost 
+  + 
+@@ ... they attack us. For example, here's Claire Lehmann. 
+  - [IMG] 
+  + ::: captioned-image-container <figure <a href="https://substackcdn.com/image/fetch/$s!Q3iW!,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feb4a5080-2680-4534-8657-c78472cf4bde523x337.png" class="image-link image2 is-viewable-img" target="blank" data-component-name="Image2ToDOM"</a <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!Q3iW!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feb4a5080-2680-4534-8657-c78472cf4bde523x337.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/publ
+@@ ... that there are real people inside the radio. 
+  - [IMG] 
+  + ::: captioned-image-container <figure <a href="https://substackcdn.com/image/fetch/$s!I3a1!,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb1bd551e-910b-4dc0-b4ed-3ed7b28741dc527x498.png" class="image-link image2 is-viewable-img" target="blank" data-component-name="Image2ToDOM"</a <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!I3a1!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb1bd551e-910b-4dc0-b4ed-3ed7b28741dc527x498.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/publ
+@@ ... to AI two months ago when it got 
+  - popular, who misunderstands the most basic points, and whose "insights" are things like "maybe the women who disagree with me are just in the field to get dick". [IMG] 
+  + popular. ::: captioned-image-container <figure <a href="https://substackcdn.com/image/fetch/$s!u8xl!,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7df4bfc5-21bc-43dd-adec-386dd2abe5e0531x967.png" class="image-link image2 is-viewable-img" target="blank" data-component-name="Image2ToDOM"</a <div class="image2-inset" <img src="https://substackcdn.com/image/fetch/$s!u8xl!,w1456,climit,fauto,qauto:good,flprogressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7df4bfc5-21bc-43dd-adec-386dd2abe5e0531x967.png" class="sizing-normal" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws
+@@ ... issues while you're still poisoning the well against 
+  - us with lurid-but-false rumors of our bad nature. 
+  + us.
+@@ ... dunks and mock-incredulous zingers like a bad dream, 
+  - placing the Claire Lehmanns of the world in the rogues' gallery of horrible examples alongside Candace Owens and Hasan Piker, 
+  + 
+@@ ... of species, as a rare jewel to be 
+  - protected, rather than a bargaining chip in defending a generic ideology. 
+  + protected.
+@@ ... support. But I worry that you will have 
+  - permanently 
+  + 
+@@ ... honor to be your obedient servant, Scott Alexander 
+  -  
+  + :::: {.footnote component-name="FootnoteToDOM"} 1{footnote-1 .footnote-number contenteditable="false" target="self"} ::: footnote-content Some people are getting hung up on the fact that I'm not justifying every single one of these accusations in order, and therefore I must be retreating from them. I think the section explains why I made the accusations, but in case you want me to justify them explicitly in the same order I listed them, see here. ::: :::: :::: {.footnote component-name="FootnoteToDOM"} 2{footnote-2 .footnote-number contenteditable="false" target="self"} ::: footnote-content Elsewhere on their homepage, they do say that people are getting told that "AI is inevitable". But I i

@@ -1,5 +1,5 @@
 # Does Scott Alexander's "Open Letter To Steven Pinker On AI" hold up against Pinker's actual record?
-_2026-10-06 · status: thorough (the exchange is still live) · revised 2026-10-07 after an adversarial review (see [§6](#6-revision-log-2026-10-07-review))_
+_2026-10-06 · status: thorough (the exchange is still live) · revised 2026-10-07 after an adversarial review (see [§6](#6-revision-log-2026-10-07-review)) · **Pinker replied on 2026-11-23; that reply is checked in [reply-report.md](reply-report.md)**_
 
 **The question as I read it.** You asked me to do three things. First, check the factual claims in Scott Alexander's [An Open Letter To Steven Pinker On AI](https://www.astralcodexten.com/p/an-open-letter-to-steven-pinker-on) (ACX, 2026-10-06, about 10.5k words). The priority is what it says Pinker said or did, using scry's Twitter archive as the primary record and not scraping X. Second, evaluate the post and both men's positions. Third, analyse the wider dynamics and motives. The post replies to Pinker's [An Open Letter to Scott Alexander](https://quillette.com/2026/09/26/an-open-letter-to-scott-alexander-steven-pinker-ai-alignment-safety/) (Quillette, 2026-09-26).
 
